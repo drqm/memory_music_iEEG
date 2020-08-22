@@ -2,13 +2,13 @@
 """
 Created on Mon Jun 15 11:28:26 2020
 
-@author: au571303
+@author: David Quiroga
 """
-
 #################### Load libraries and set directories #######################
 from random import shuffle
 from psychopy import prefs
-prefs.hardware['audioLib'] = ['pyo']
+prefs.hardware['audioLib'] = ['PTB']
+#prefs.hardware['audioLib'] = ['pyo']
 from psychopy import visual, core, sound, event, gui #, logging
 import itertools as it
 import os
@@ -198,7 +198,7 @@ fixationCross = visual.TextStim(win, text='+', color='black', height=0.2)
 
 ## create a silent sound to prevent buffer issues
 silentDur = .5
-silent = sound.Sound('C', secs=silentDur, volume=0)
+silent = sound.Sound('C', secs=silentDur, volume=0, sampleRate = 44100, stereo = True)
 
 # set relevant clocks:
 RT = core.Clock()
