@@ -1,6 +1,14 @@
 setwd('C:/Users/au571303/Documents/projects/memory_music_iEEG')
-library(ggplot2)
+library(MASS)
 library(lme4)
+library(effects)
+library(ggplot2)
+library(viridis)
+library(RColorBrewer)
+library(ez)
+library(ordinal)
+
+
 
 files <- list.files('logs', pattern = 'pilot')
 
@@ -20,10 +28,40 @@ d$acc <- as.numeric(d$type == d$response)
 d$type <- as.character(d$type)
 #accuracy summary:
 prop.table(table(d$subject,d$acc),1)
-
-ggplot(d,aes(type,rt, color = subject)) +
+subs = c("Pilot_6","pilot7","pilot8","pilot9")
+ggplot(d[d$subject== subs,],aes(block,rt, color = subject)) +
   geom_jitter(width = 0.05) +
   geom_boxplot(alpha = 0.3,
              color = 'black', width = 0.2) +
   geom_violin(color = 'black',
-              alpha = 0.2,trim = FALSE)
+              alpha = 0.2,trim = FALSE)+
+  facet_wrap(~type)
+
+ggplot(d[d$subject== subs,],aes(block, fill = as.character(acc))) +
+  geom_bar(position = "fill") +
+  labs(fill="Accuracy",y="Proportion")+
+  scale_fill_viridis(discrete = T)+
+  facet_wrap(~subject)
+
+ggplot(d,aes(subject, fill = as.character(acc))) +
+  geom_bar(position = "fill") +
+  labs(fill="Accuracy",y="Proportion")+
+  scale_fill_viridis(discrete = T) +
+  facet_wrap(~block)
+
+
+ggplot(d,aes(block,rt, color = subject)) +
+  geom_jitter(width = 0.05) +
+  geom_boxplot(alpha = 0.3,
+               color = 'black', width = 0.2) +
+  geom_violin(color = 'black',
+              alpha = 0.2,trim = FALSE)+
+  facet_wrap(~type)
+
+ggplot(d[d$subject== c("FS","Pilot_6","pilot7"),],aes(block,rt, color = subject)) +
+  geom_jitter(width = 0.05) +
+  geom_boxplot(alpha = 0.3,
+               color = 'black', width = 0.2) +
+  geom_violin(color = 'black',
+              alpha = 0.2,trim = FALSE)+
+  facet_wrap(~type)

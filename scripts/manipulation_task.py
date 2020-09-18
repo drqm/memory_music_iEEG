@@ -113,16 +113,16 @@ for bidx,b in enumerate(blocknames):
        diff1 = [[l[a] for a in [2,0,1]] for l in primes[0:12]]
        diff2 = [[l[a] for a in [0,1,2]] for l in primes[12:25]]
        diff = list(it.chain(diff1,diff2))
-
+    
     # lists of trial information
     primes = list(it.chain(primes,primes))
     targets = list(it.chain(same,diff))    
     trialID = list(range(len(primes)))   # trial number (before scrambling)
-    
+
     # random trial order
     rand = trialID.copy()
     shuffle(rand)   
-    
+
     trialID = [id + 1 for id in trialID] # record trial identity
     melID = list(range(2))*24 
     melID = [id + 1 for id in melID] # record melody identity
