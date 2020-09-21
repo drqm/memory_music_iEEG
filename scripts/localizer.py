@@ -11,6 +11,8 @@ prefs.hardware['audioLib'] = ['PTB']
 from psychopy import visual, core, sound, event, gui, logging
 import os
 import numpy as np
+#from triggers import setParallelData
+#setParallelData(0)
 
 os.chdir('C:/Users/au571303/Documents/projects/memory_music_iEEG')
 stim_dir = 'stimuli/manipulation'
@@ -103,6 +105,7 @@ core.wait(0.5)
 
 for s in seq:
     sounds[int(s)-1].play()
+    #setParallelData(int(s)) # for sending triggers
     logging.flush()
     core.wait(0.5)
 

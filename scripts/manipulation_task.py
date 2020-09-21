@@ -13,6 +13,8 @@ from psychopy import visual, core, sound, event, gui #, logging
 import itertools as it
 import os
 import numpy as np
+#from triggers import setParallelData
+#setParallelData(0)
 
 os.chdir('C:/Users/au571303/Documents/projects/memory_music_iEEG')
 stim_dir = 'stimuli/manipulation'
@@ -332,9 +334,12 @@ for bidx, b in enumerate(bnames): # loop over blocks
         pmel = block['primes'][tidx] #prime melody
         tmel = block['targets'][tidx] # target melody
         # present prime (loop over sounds):
-        for ps in pmel:
+        for p,ps in enumerate(pmel):
+            trigger = str(p + 1) + str(ps)
             sounds[ps-1].play()
-            core.wait(0.5)     
+            #setParallelData(int(trigger)) # for sending triggers
+            print(trigger)
+            core.wait(0.5)
                    
         #delay period:
         core.wait(3)
@@ -342,7 +347,10 @@ for bidx, b in enumerate(bnames): # loop over blocks
         #present target (loop over sounds)
 
         for midx, ts in enumerate(tmel):
+            trigger = str(block['type'][tidx]) + str(midx + 1) + str(ts) 
             sounds[ts-1].play()
+            #setParallelData(int(trigger)) # for sending triggers
+            print(trigger)
             #clear events and reset the clock for RT
             if midx == 0:
                event.clearEvents(eventType='keyboard')
