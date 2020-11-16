@@ -17,7 +17,7 @@ import numpy as np
 #setParallelData(0)
 
 os.chdir('C:/Users/au571303/Documents/projects/memory_music_iEEG')
-stim_dir = 'stimuli/manipulation'
+stim_dir = 'stimuli/manipulation_normalized'
 log_dir = 'logs'
 rgnSeed = np.random.randint(900509)
 ###############################################################################
