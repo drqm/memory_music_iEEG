@@ -65,7 +65,7 @@ os.chdir(stimdir + '/recogdef')
 pathwave = stimdir + '/recogdef'
 wavefilesd = []
 wavenamesd = []
-for file in os.listdir(pathwave):
+for file in sorted(os.listdir(pathwave)):
     if file.endswith(".wav"):
         wavenamesd.append(file)
         wavefilesd.append(sound.Sound(file))
@@ -122,6 +122,7 @@ for ll in range(2):
     event.waitKeys(keyList = [SPAAAAACE])
     fix_c.draw()
     win.flip()
+    core.wait(0.5)
     Bachminor.play() #open again this line later
     core.wait(17.5) #open again this line later
 
@@ -146,6 +147,7 @@ for wavve in range(len(wavefiles)):
     core.wait(1)
     fix_c.draw()
     win.flip()
+    core.wait(0.5)
     ttime = block_time.getTime() #this should not be useful anymore..
     wavezip[wavve][1].play()
     RT.reset()
