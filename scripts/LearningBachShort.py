@@ -54,7 +54,14 @@ subID = ID.show()
 #create csv file for log
 filename = logdir + '/' + subID[0] + '_learning_bach.csv'
 logfile = open(filename,'w')
-logfile.write("subj;trial;response;RT \n")
+logfile.write("subj;trial;response;RT;time \n")
+
+#create log file
+block_time = core.Clock()
+logging.setDefaultClock(block_time)
+filename2 = logdir + '/' + subID[0] + '_learning_bach.log'
+lastLog = logging.LogFile(filename2, level=logging.INFO, filemode='a')
+
 
 #getting file for learning phase
 os.chdir(stimdir + '/learningdef')
@@ -124,6 +131,7 @@ for ll in range(2):
     win.flip()
     core.wait(0.5)
     Bachminor.play() #open again this line later
+    event.clearEvents(eventType='keyboard')
     core.wait(17.5) #open again this line later
 
 #actual experiment (recognition phase)
@@ -150,6 +158,7 @@ for wavve in range(len(wavefiles)):
     core.wait(0.5)
     ttime = block_time.getTime() #this should not be useful anymore..
     wavezip[wavve][1].play()
+    event.clearEvents(eventType='keyboard')
     RT.reset()
     resp = None
     while resp == None:
@@ -162,14 +171,15 @@ for wavve in range(len(wavefiles)):
             rt = RT.getTime()
     core.wait(1)
     #writing RT, trial ID, subject's response
-    lrow = '{};{};{};{} \n'
-    lrow = lrow.format(subID[0],wavezip[wavve][0], resp, round(rt*1000))
+    lrow = '{};{};{};{};{} \n'
+    lrow = lrow.format(subID[0],wavezip[wavve][0], resp, round(rt*1000),str(ttime))
     logfile.write(lrow)
-    
+
+logging.flush()    
 logfile.close()
 
 #final message
-playlear = visual.TextStim(win,text = 'Tha was the end. \n
+playlear = visual.TextStim(win,text = 'That was the end. \n
                                       'Thank you very much! \n\n 
                                       'Press space to end this part of the experiment',
                             color = 'black')
