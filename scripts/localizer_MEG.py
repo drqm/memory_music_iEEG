@@ -19,8 +19,8 @@ stim_dir = 'stimuli/manipulation'
 log_dir = 'logs'
 rgnSeed = np.random.randint(900509)
 col = 'white'
-n_tones = 150
-n_targets = 40
+n_tones = 60
+n_targets = 0
 frate = 60 #120
 prd = 1000/frate
 ######################## create stimulus sequence ############################
@@ -66,23 +66,28 @@ ID_box = gui.Dlg(title = 'Subject identity')
 ID_box.addField('ID: ')
 sub_id = ID_box.show()
 
-win = visual.Window(fullscr=True, color=[.0, .0, .0])
+win = visual.Window(fullscr=True, color='black')
 
 ##### create text oBjects to display during the experiment:
 
 instructions = visual.TextStim(win, text = "In the following, you will hear "
-                                           "a sequence of sounds. Please listen "
-                                           "attentively to them.\n\n "
+                                           "a series of sounds. \n\n"
+                                           "After each sound finishes, you will "
+                                           "see the word IMAGINE on the screen. \n\n"
+                                           "When this happens, please replay the sound "
+                                           "very vividly in your mind. \n\n"
                                            "Ready?",
                                          wrapWidth=1.8, color = col)
-   
+                                         
 endText = visual.TextStim(win, text='That is the end of the first task. \n'
                                     'We will continue in a moment',
                           wrapWidth=1.8, color = col)
 
+count_txt = ['Listen','Listen','Imagine','Imagine']
+durs = [450,450,850,850]
 fixationCross = visual.TextStim(win, text='+', color=col, height=0.2)
 
-## create a silent sound to prevent buffer issues
+# create a silent sound to prevent buffer issues
 silentDur = .5
 silent = sound.Sound('C', secs=silentDur, volume=0, sampleRate = 44100, stereo = True)
 
@@ -103,19 +108,21 @@ core.wait(0.5)
 nextFlip = win.getFutureFlipTime(clock='ptb')
 
 for s in seq:
-#   win.callOnFlip(setParallelData, int(s)) 
-    win.callOnFlip(print, int(s))            
+#   win.callOnFlip(setParallelData, int(s))
+    win.callOnFlip(print, int(s))
     sounds[int(s)-1].play(when = nextFlip)
-    for frs in range(int(np.round(50/prd))): # 6 frames = 50 ms
-        fixationCross.draw()
-        win.flip()  
-#            win.callOnFlip(setParallelData, 0)
-    win.callOnFlip(print, 0)
-    for frs in range(int(np.round(450/prd))): # 30 frames = 450 ms
-        fixationCross.draw()
-        win.flip()
+    for cidx,cc in enumerate(count_txt):
+        count_msg = visual.TextStim(win, text=cc, color = col, height = 0.3)
+        for frs in range(int(np.round(50/prd))): # 6 frames = 50 ms
+            count_msg.draw()
+            win.flip()
+    #            win.callOnFlip(setParallelData, 0)
+        win.callOnFlip(print, 0)
+        for frs in range(int(np.round(durs[cidx]/prd))): # 30 frames = 450 ms
+            count_msg.draw()
+            win.flip()
     nextFlip = win.getFutureFlipTime(clock='ptb')
-#    logging.flush()
+    logging.flush()
 
 endText.draw()
 win.flip()
