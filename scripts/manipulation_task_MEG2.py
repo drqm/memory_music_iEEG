@@ -19,7 +19,7 @@ import numpy as np
 os.chdir('C:/Users/au571303/Documents/projects/memory_music_iEEG')
 stim_dir = 'stimuli/manipulation'
 log_dir = 'logs'
-frate = 48#60 #120
+frate = 60 #48 #60 #120
 prd = 1000/frate
 rgnSeed = np.random.randint(900509)
 col = 'white'
@@ -27,49 +27,48 @@ col = 'white'
 
 ######### Prepare block-specific texts to display in the experiment ##########
 
-instructions = [['You will hear pairs of short melodies for the next minutes.\n\n'
-                'Your task is to memorize very well the first melody. After a\n'
-                'short silent period, you will hear the second melody. Please\n'  
-                'indicate whether the second melody is EXACTLY THE SAME as or \n'
-                'different from the first melody by pressing the buttons as follows:\n\n'
-                '1 = same, 2 = different\n\n'
-                'Make sure to rehearse the melody in your head during the silent period.\n'
-                'Please answer as fast as you can after hearing the second melody\n'
-                'Do you have any questions?'],
+instructions = [['You will hear a melody.\n\n'
+                 'After it finishes, you will see the word "IMAGINE" on the screen. \n'
+                 'When this happens, please replay very vividly the SAME melody '
+                 'in your mind. \n\n'
+                 'After some time, you will hear a second melody. Please '
+                 'indicate whether the second melody is EXACTLY THE SAME as the '
+                 'first melody or not by pressing the buttons as follows:\n\n'
+                 '1 = same, 2 = different\n\n'],
                 
-                ['You will hear pairs of short melodies for the next minutes.\n\n'
-                'Your task is to memorize very well the first melody. After a\n'
-                'short silent period, you will hear the second melody. Please\n'  
-                'indicate whether the second melody is an INVERTED version of the\n'
-                'first melody or not (for example: C B A is an inversion of A B C)\n'
-                'by pressing the buttons as follows:\n\n'
-                '1 = inverted, 2 = other\n\n'
-                'Make sure to invert the melody in your head during the silent period.\n'
-                'Please answer as fast as you can after hearing the second melody\n'
-                'Do you have any questions?']]
+                ['You will hear a melody.\n\n'
+                 'After it finishes, you will see the word "IMAGINE" on the screen. \n'
+                 'When this happens, please replay very vividly an INVERTED version '
+                 'of the melody in your mind (for example: C B A is an inversion of A B C). \n\n' 
+                 'After some time, you will hear a second melody. Please indicate '
+                 'whether the second melody is an INVERTED version of the '
+                 'first melody or not by pressing the buttons as follows:\n\n'
+                 '1 = inverted, 2 = other\n\n']]
 
-rehearse_texts = [["Now take your time to rehearse the original melody in your head.\n"
-                   "When ready, press a button to hear the second melody\n and"
+rehearse_texts = [["Imagine \n\n"
+                   "Now take your time to imagine the original melody in your head.\n"
+                   "When ready, press a button to hear the second melody and"
                    " provide an answer."],
                   
-                  ["Now take your time to imagine how an INVERTED version\n of"
-                   " this melody would sound.\n\n Remember: A B C inverted"
-                   " would become C B A.\n\n When ready, press a button to hear the"
-                   " second melody\n and provide an answer."]]
+                  ["Imagine \n\n"
+                   "Now take your time to imagine how an INVERTED version of "
+                   "this melody would sound.\n\n Remember: A B C inverted "
+                   "would become C B A.\n\n When ready, press a button to hear the "
+                   "second melody and provide an answer."]]
 
 continue_texts = [["Those were all the example melodies. Now we are ready\n"
                    "to begin with the real experiment. The melodies will play \n"
                    "automatically. Trials will go faster than the examples.\n"
                    "Remember that you will have to answer: \n\n 1: same, 2: different\n\n"
-                   "as fast as you can. Remember to rehearse the melody in\n"
-                   "the silent period. The experiment will start in a moment.\n"],
+                   "Remember to replay the melody very vividly in your mind.\n"
+                   "The experiment will start in a moment.\n"],
                   
                   ["Those were all the example melodies. Now we are ready\n"
                    "to begin with the real experiment. The melodies will play\n"
                    "automatically. Trials will go faster than the examples.\n"
                    "Remember that you will have to answer:\n\n 1: inverted, 2: other\n\n"
-                   "as fast as you can. Remember to invert the melody in\n"
-                   "the silent period. The experiment will start in a moment.\n"]]
+                   "Remember to imagine the inverted melody very vividly in your mind.\n"
+                   "The experiment will start in a moment.\n"]]
 
 feedback_same_texts = [["Did you answer correctly?\n\n"
                         "The second melody was EXACTLY THE SAME as the first melody.\n"
@@ -175,7 +174,7 @@ if sub_id[1] == '2':
    block_order = [1,0]
 
 ##### create window to display text:
-win = visual.Window(fullscr=True, color=[.0, .0, .0])
+win = visual.Window(fullscr=True, color='black')
 
 ##### create other text ojects to display during the experiment:
     
@@ -193,11 +192,12 @@ practice_txt = visual.TextStim(win, text = "Before doing the task, let's "
 
 pause_txt = visual.TextStim(win, text = "Now it is time for a little pause\n\n"
                                         "Please rest as much as you need.\n "
-                                        "Just let us know when you are ready to continue",
+                                        "Press a button when ready to continue",
                                          wrapWidth=1.8, color = col)
 
-fixationCross = visual.TextStim(win, text='+', color=col, height=0.2)
-
+fixationCross = visual.TextStim(win, text='+', color=col, height=0.3)
+listen_txt =  visual.TextStim(win, text='Listen', color=col, height=0.3)
+imagine_txt = visual.TextStim(win, text='Imagine', color=col, height=0.3)
 #logging.console.setLevel(logging.WARNING)
 #lastLog = logging.LogFile("lastRun.log", level=logging.DATA, filemode='w')
 
@@ -207,7 +207,7 @@ silent = sound.Sound('C', secs=silentDur, volume=0, sampleRate = 44100, stereo =
 
 # set relevant clocks:
 RT = core.Clock()
-block_time = core.Clock() 
+block_time = core.Clock()
 
 ##############################################################################
 
@@ -223,14 +223,13 @@ for bidx, b in enumerate(bnames): # loop over blocks
     ################### prepare block-specific variables #####################
     block = blocks[b]
     if bidx == (len(bnames) - 1):
-        blockendText = visual.TextStim(win, text= "This is the end of the block"
-                                                   " and the experiment\n",
+        blockendText = visual.TextStim(win, text= "This is the end of this part of the experiment. "
+                                                  "We will continue in a moment\n",
                                color=col, wrapWidth=1.8)
     else:
-        blockendText = visual.TextStim(win, text= "This is the end of the block."
-                                                  "Now take a little break\n"
-                                                  "and let us know when you are ready \n"
-                                                  "to continue \n",
+        blockendText = visual.TextStim(win, text= "This is the end of the block. "
+                                                  "Now take a little break."
+                                                  "We will continue in a moment \n",
                                color=col,wrapWidth=1.8)
         
     instr = visual.TextStim(win, text=block['instructions'][0],
@@ -280,8 +279,7 @@ for bidx, b in enumerate(bnames): # loop over blocks
         
         #prime melody:
             
-        melody1_txt = visual.TextStim(win, text = "melody 1", color = col)
-        melody1_txt.draw(win)
+        listen_txt.draw(win)
         win.flip()
         silent.play()  # to prevent omission/cut of the first stimulus
         core.wait(1)
@@ -296,8 +294,7 @@ for bidx, b in enumerate(bnames): # loop over blocks
         
         # target melody:
             
-        melody2_txt = visual.TextStim(win, text = "melody 2", color = col)
-        melody2_txt.draw(win)
+        listen_txt.draw(win)
         win.flip()
         silent.play()  # to prevent omission/cut of the first stimulus
                    
@@ -323,15 +320,13 @@ for bidx, b in enumerate(bnames): # loop over blocks
     core.wait(silentDur)
 
     for tidx, t in enumerate(block['primes']):     # loop over trials:
-        trialtxt = visual.TextStim(win, text='trial {}'.format(tidx + 1),
-                                   color=col, height = 0.2)
+        trialtxt = visual.TextStim(win, text='Trial {} / 60'.format(tidx + 1),
+                                   color=col, height = 0.3)
         trialtxt.draw()
         win.flip()
-        ttime = block_time.getTime() ## track trial onset
-        core.wait(0.3)
-        fixationCross.draw()
-        win.flip()
-        core.wait(3)
+        ttime = block_time.getTime() #  track trial onset
+        core.wait(2.5)
+
         pmel = block['primes'][tidx] #prime melody
         tmel = block['targets'][tidx] # target melody
         # present prime (loop over sounds):
@@ -342,20 +337,25 @@ for bidx, b in enumerate(bnames): # loop over blocks
             win.callOnFlip(print, int(trigger))            
             sounds[ps-1].play(when = nextFlip)
             for frs in range(int(np.round(50/prd))): # 6 frames = 50 ms
-                fixationCross.draw()
-                win.flip()  
+                listen_txt.draw()
+                win.flip()
 #            win.callOnFlip(setParallelData, 0)
             win.callOnFlip(print, 0)
             for frs in range(int(np.round(450/prd))): # 30 frames = 450 ms
-                fixationCross.draw()
+                listen_txt.draw()
                 win.flip()
             nextFlip = win.getFutureFlipTime(clock='ptb')
-                   
+        
+        for frs in range(int(np.round(450/prd))): # 30 frames = 450 ms
+            listen_txt.draw()
+            win.flip()
+            
         #delay period:
-        core.wait(3)
+        for frs in range(int(np.round(2000/prd))): # 30 frames = 450 ms
+            imagine_txt.draw()
+            win.flip()
        
         #present target (loop over sounds)
-
         for midx, ts in enumerate(tmel):
             trigger = str(block['type'][tidx]) + str(midx + 1) + str(ts) 
 #            win.callOnFlip(setParallelData, int(trigger))           
@@ -366,12 +366,12 @@ for bidx, b in enumerate(bnames): # loop over blocks
                 event.clearEvents(eventType='keyboard')
                 RT.reset()  
             for frs in range(int(np.round(50/prd))): # 6 frames = 50 ms
-                fixationCross.draw()
+                listen_txt.draw()
                 win.flip()  
 #            win.callOnFlip(setParallelData, 0)
             win.callOnFlip(print, 0)
             for frs in range(int(np.round(450/prd))): # 30 frames = 450 ms
-                fixationCross.draw()
+                listen_txt.draw()
                 win.flip()
             nextFlip = win.getFutureFlipTime(clock='ptb')
         
@@ -393,21 +393,18 @@ for bidx, b in enumerate(bnames): # loop over blocks
                            pmel[0],pmel[1],pmel[2], tmel[0],tmel[1],tmel[2],
                            block['type'][tidx], resp,rt*1000)
         logfile.write(lrow)            
-        core.wait(0.3)  # 300 ms after response, to start new trial
+        core.wait(0.1)  # 100 ms after response, to start new trial
         
         # now we introduce a small pause in trial 30 so that participants can rest
         if tidx == 29:
             pause_txt.draw()
             win.flip()
-            event.waitKeys(keyList=[keyNext])
+            event.waitKeys()
             
     logfile.close() # save log file
     
     blockendText.draw()
     win.flip()
     event.waitKeys(keyList=[keyNext])
-
-endText.draw()
-win.flip()
 core.wait(2)
 core.quit()
