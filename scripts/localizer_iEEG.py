@@ -16,9 +16,10 @@ import numpy as np
 
 # set your own project directory:
 os.chdir('C:/Users/au571303/Documents/projects/memory_music_iEEG')
-stim_dir = 'stimuli/manipulation'
+stim_dir = 'stimuli/manipulation_normalized'
 log_dir = 'logs'
-rgnSeed = np.random.randint(900509)
+# uncomment to fixate randomization seed
+#rgnSeed = np.random.randint(900509)
 col = 'white'
 n_tones = 40 # 35 trials per tone for iEEG
 n_targets = 0
@@ -83,7 +84,7 @@ instructions = visual.TextStim(win, text = "In the following, you will hear "
                                            "Ready?",
                                          wrapWidth=1.8, color = col)
                                          
-endText = visual.TextStim(win, text='That is the end of the first task. \n'
+endText = visual.TextStim(win, text='That is the end of the task. \n'
                                     'Press a key to finish',
                           wrapWidth=1.8, color = col)
 

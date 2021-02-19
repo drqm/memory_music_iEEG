@@ -18,7 +18,7 @@ import numpy as np
 
 # set your own project directory:
 os.chdir('C:/Users/au571303/Documents/projects/memory_music_iEEG')
-stim_dir = 'stimuli/manipulation'
+stim_dir = 'stimuli/manipulation_normalized'
 log_dir = 'logs'
 # Set the frame rate of your screen. Not doing this may create timing issues
 frate = 60 #48 #60 #120 
