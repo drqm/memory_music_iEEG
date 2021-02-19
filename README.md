@@ -2,7 +2,7 @@
 
 In this repository you will find the implementation of experimental paradigms investigating musical memory and imagery with intracranial EEG and MEG. The experiment consists of three tasks:
 
-1- A recognition memory task in which participant listen to a short musical excerpt (from a J.S. Bach work) and afterwards are presented with short melodies which could belong or not to the musical excerpt. Participants decide whether each melody is "old" or "new".
+1- A recognition memory task in which participants listen to a short musical excerpt (from a J.S. Bach work) and afterwards are presented with short melodies which could belong or not to the musical excerpt. Participants decide whether each melody is "old" or "new".
 
 2- An working memory and imagery task in which participants are presented with a short three-note melody, then are asked to imagine it vividly on cue, and finally are required to decide if the second melody is the same or different from the first. In this task, there is a second block in which participants need to mentally invert the melody in their minds (e.g. ABC becomes CBA) and judge whether the second melody is an iverted version of the first or not. The two blocks (maintanance and manipulation) are counterbalanced across subjects.
 
