@@ -23,12 +23,15 @@ These are the approximate durations and number of trials in each task:
 For iEEG
 
 Task 1: 42 trials (21 old, 21 new) (5 minutes)
+
 task 2: 96 trials (48 maintenance: 24 same, 24 different; 48 manipulation: 24 inverted, 24 not inverted/other) (17 minutes)
+
 task 3: 120 trials (40 for each tone) (5 minutes)
 
 for MEG:
 
 task 2: 120 trials (60 maintenance: 30 same, 30 different; 60 manipulation: 30 inverted, 30 not inverted/other) (21 minutes)
+
 task 3: 180 trials (60 for each tone) (8 minutes)
 
 Simuli found under the "stimuli" folder. Log files stored in the "logs" folder.
