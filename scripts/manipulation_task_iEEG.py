@@ -18,7 +18,7 @@ import numpy as np
 
 # set your own project directory:
 os.chdir('C:/Users/au571303/Documents/projects/memory_music_iEEG')
-stim_dir = 'stimuli/manipulation_normalized'
+stim_dir = 'stimuli/manipulation'
 log_dir = 'logs'
 # Set the frame rate of your screen. Not doing this may create timing issues
 frate = 60 #48 #60 #120 
@@ -105,20 +105,20 @@ for bidx,b in enumerate(blocknames):
                  'instructions': [],'continue': [], 'feedback_same': [],
                  'feedback_diff': [], 'order_same': [], 'order_diff': []}
 
-    # create prime melodies (15 repetitions of the two melodies)
-    primes = [[1,2,3],[3,2,1]]*15 # 60 melodies per block
+    # create prime melodies (12 repetitions of the two melodies)
+    primes = [[1,2,3],[3,2,1]]*12 # 48 melodies per block
     
     # create targets:
     if b == 'recognize':
        same = primes.copy()
-       diff1 = [[l[a] for a in [2,1,0]] for l in primes[0:15]]
-       diff2 = [[l[a] for a in [0,2,1]] for l in primes[15:31]]
+       diff1 = [[l[a] for a in [2,1,0]] for l in primes[0:12]]
+       diff2 = [[l[a] for a in [0,2,1]] for l in primes[12:25]]
        diff = list(it.chain(diff1,diff2))
 
     elif b == 'invert':
        same = [[l[a] for a in [2,1,0]] for l in primes]
-       diff1 = [[l[a] for a in [2,0,1]] for l in primes[0:15]]
-       diff2 = [[l[a] for a in [0,1,2]] for l in primes[15:31]]
+       diff1 = [[l[a] for a in [2,0,1]] for l in primes[0:12]]
+       diff2 = [[l[a] for a in [0,1,2]] for l in primes[12:25]]
        diff = list(it.chain(diff1,diff2))
     
     # lists of trial information
@@ -131,7 +131,7 @@ for bidx,b in enumerate(blocknames):
     shuffle(rand)   
 
     trialID = [id + 1 for id in trialID] # record trial identity
-    melID = list(range(2))*30 
+    melID = list(range(2))*24
     melID = [id + 1 for id in melID] # record melody identity
 
     # store randomized versions in corresponding block dictionary:
@@ -139,7 +139,7 @@ for bidx,b in enumerate(blocknames):
     blocks[b]['targets'] = [targets[t] for t in rand]
     blocks[b]['melID'] = [melID[m] for m in rand]
     blocks[b]['trialID'] = [trialID[t] for t in rand]
-    blocks[b]['type'] = [1 if x < 30 else 2 for x in rand]
+    blocks[b]['type'] = [1 if x < 24 else 2 for x in rand]
     blocks[b]['melodies'] = [list(l) for l in list(it.permutations(stim))]
     blocks[b]['stim'] = ['{}/{}.wav'.format(stim_dir,s) for s in stim]
     blocks[b]['instructions'] = instructions[bidx]
@@ -156,7 +156,7 @@ for bidx,b in enumerate(blocknames):
 
 #### Prepare relevant keys:
     
-keyNext = 'space' # key to advance
+#keyNext = 'space' # key to advance
 
 #### function to quit the experiment and save log file:
 def quit_and_save():
@@ -183,7 +183,7 @@ win = visual.Window(fullscr=True, color='black')
 
 ##### create other text ojects to display during the experiment:
     
-nextText = visual.TextStim(win, text='(press a button to continue)',
+nextText = visual.TextStim(win, text='(press a key to continue)',
                            color=col, pos=(0, -0.8))
 
 endText = visual.TextStim(win, text='The end\n\nThank you for your participation!',
@@ -191,13 +191,13 @@ endText = visual.TextStim(win, text='The end\n\nThank you for your participation
 
 practice_txt = visual.TextStim(win, text = "Before doing the task, let's "
                                            "hear a couple of examples.\n\n"
-                                           "Press a button to hear and memorize"
+                                           "Press a key to hear and memorize"
                                            " a first melody.\n\n Ready?",
                                          wrapWidth=1.8, color = col)
 
 pause_txt = visual.TextStim(win, text = "Now it is time for a little pause\n\n"
                                         "Please rest as much as you need.\n "
-                                        "Press a button when ready to continue",
+                                        "Press a key when ready to continue",
                                          wrapWidth=1.8, color = col)
 
 fixationCross = visual.TextStim(win, text='+', color=col, height=0.3)
@@ -205,7 +205,7 @@ listen_txt =  visual.TextStim(win, text='Listen', color=col, height=0.2)
 imagine_txt = visual.TextStim(win, text='Imagine', color=col, height=0.2)
 
 # set default log file
-log_fn_def = log_dir + '/' + sub_id[0] +  '_MEG_default.log'
+log_fn_def = log_dir + '/' + sub_id[0] +  '_iEEG_default.log'
 lastLog = logging.LogFile(log_fn_def, level=logging.INFO, filemode='a')
 
 ## create a silent sound to prevent buffer issues
@@ -230,13 +230,13 @@ for bidx, b in enumerate(bnames): # loop over blocks
     ################### prepare block-specific variables #####################
     block = blocks[b]
     if bidx == (len(bnames) - 1):
-        blockendText = visual.TextStim(win, text= "This is the end of this part of the experiment.\n\n "
-                                                  "We will continue in a moment\n",
+        blockendText = visual.TextStim(win, text= "This is the end of the task.\n\n "
+                                                "Press a key to end this part of the experiment.",
                                color=col, wrapWidth=1.8)
     else:
         blockendText = visual.TextStim(win, text= "This is the end of the block.\n "
                                                   "Now take a little break.\n\n"
-                                                  "We will continue in a moment \n",
+                                                  "Press a key to continue when ready. \n",
                                color=col,wrapWidth=1.8)
         
     instr = visual.TextStim(win, text=block['instructions'][0],
@@ -249,7 +249,7 @@ for bidx, b in enumerate(bnames): # loop over blocks
                                 wrapWidth=1.8, color = col)
    
     #### initialize custom log file:
-    filename = log_dir + '/' + sub_id[0] + '_' + b + '_MEG.csv'
+    filename = log_dir + '/' + sub_id[0] + '_' + b + '_iEEG.csv'
     logfile = open(filename,'w')
     logfile.write("subject,block,time,melID,trialID,prime,"
                   "target,type,response,rt\n")
@@ -317,7 +317,7 @@ for bidx, b in enumerate(bnames): # loop over blocks
         
     continue_txt.draw()
     win.flip()
-    event.waitKeys(keyList=[keyNext])
+    event.waitKeys()
         
     ###################### Now we begin the real task ########################
     
@@ -327,7 +327,7 @@ for bidx, b in enumerate(bnames): # loop over blocks
     core.wait(silentDur)
 
     for tidx, t in enumerate(block['primes']):     # loop over trials:
-        trialtxt = visual.TextStim(win, text='Trial {} / 60'.format(tidx + 1),
+        trialtxt = visual.TextStim(win, text='Trial {} / 48'.format(tidx + 1),
                                    color=col, height = 0.2)
         trialtxt.draw()
         win.flip()
@@ -412,6 +412,6 @@ for bidx, b in enumerate(bnames): # loop over blocks
     
     blockendText.draw()
     win.flip()
-    event.waitKeys(keyList=[keyNext])
+    event.waitKeys()
 core.wait(2)
 core.quit()

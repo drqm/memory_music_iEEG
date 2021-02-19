@@ -25,7 +25,7 @@ from random import shuffle
 from psychopy import prefs
 #prefs.hardware['audioLib'] = ['pyo']
 prefs.hardware['audioLib'] = ['PTB']
-from psychopy import visual, core, sound, event, gui, monitors #, logging
+from psychopy import visual, core, sound, event, gui, monitors, logging
 import itertools as it
 import os
 import numpy as np
@@ -52,16 +52,15 @@ ID.addField('ID: ')
 subID = ID.show()
 
 #create csv file for log
-filename = logdir + '/' + subID[0] + '_learning_bach.csv'
+filename = logdir + '/' + subID[0] + '_learning_bach_iEEG_custom.csv'
 logfile = open(filename,'w')
 logfile.write("subj;trial;response;RT;time \n")
 
 #create log file
 block_time = core.Clock()
 logging.setDefaultClock(block_time)
-filename2 = logdir + '/' + subID[0] + '_learning_bach.log'
+filename2 = logdir + '/' + subID[0] + '_learning_bach_iEEG_default.log'
 lastLog = logging.LogFile(filename2, level=logging.INFO, filemode='a')
-
 
 #getting file for learning phase
 os.chdir(stimdir + '/learningdef')
@@ -95,21 +94,22 @@ block_time = core.Clock() #this should not be useful anymore..
 SPAAAAACE = 'space'
 
 #preparing window for the screen
-win = visual.Window(fullscr = True, color = [.9,.9,.9])
+color_txt = 'white'
+win = visual.Window(fullscr = True, color = 'black')#[.9,.9,.9])
 pd = visual.TextStim(win,text = 'First, you will listen to a complete musical piece '
-                                '(Learning phase). \n Please try to remember it as ' 
-                                'much as possible. \n Second, you will listen to 42 '
-                                'short musical excerpts (Recognition phase). \n For '
+                                '(Learning phase). \n\n Please try to remember it as ' 
+                                'much as possible. \n\n Second, you will listen to 42 '
+                                'short musical excerpts (Recognition phase). \n\n For '
                                 'each of them you will be asked to indicate whether '
                                 'they were extracted from the musical piece of the '
                                 'learning phase or not. \n\n Press space to continue',
-                                color = 'black', height = 0.1)
+                                color = color_txt, height = 0.1)
 instr = visual.TextStim(win,text = 'Learning phase \n\n Now you are going to listen '
-                                   'to a complete musical piece \n Please try to '
+                                   'to a complete musical piece \n\n Please try to '
                                    'remember it as much as possible \n\n Press space '
-                                   'to continue',color = 'black')
-instrrec = visual.TextStim(win,text = 'recognition part..',color = 'black')
-fix_c = visual.TextStim(win,text = '+', color = 'black',height = 0.2)
+                                   'to continue',color = color_txt)
+instrrec = visual.TextStim(win,text = 'recognition part..',color = color_txt)
+fix_c = visual.TextStim(win,text = '+', color = color_txt,height = 0.2)
 block_time.reset() #this should not be useful anymore..
 
 #actual experiment (learning phase)
@@ -123,7 +123,7 @@ ttime = block_time.getTime() #this should not be useful anymore..
 #playing the whole musical piece 2 times
 for ll in range(2):
     dumm = 'Repetition ' + str(ll+1) + '\n Press space to continue'
-    playlear = visual.TextStim(win,text = dumm, color = 'black')
+    playlear = visual.TextStim(win,text = dumm, color = color_txt)
     playlear.draw()
     win.flip()
     event.waitKeys(keyList = [SPAAAAACE])
@@ -132,16 +132,16 @@ for ll in range(2):
     core.wait(0.5)
     Bachminor.play() #open again this line later
     event.clearEvents(eventType='keyboard')
-    core.wait(17.5) #open again this line later
+    core.wait(26) #open again this line later
 
 #actual experiment (recognition phase)
 playrec = visual.TextStim(win,text = 'Recognition phase \n\n Now you are going to '
-                                     'listen to 42 short musical excerpts. \n For '
+                                     'listen to 42 short musical excerpts. \n\n For '
                                      'each of them please indicate with the keyboard '
                                      'whether they were extracted from the musical '
-                                     'piece that you have just listened to (press R) '
-                                     'or not (press T). \n\n Press space to continue',
-                                     color = 'black')
+                                     'piece that you have just listened to (press 1) '
+                                     'or not (press 2). \n\n Press space to continue',
+                                     color = color_txt)
 playrec.draw()
 win.flip()
 event.waitKeys(keyList = [SPAAAAACE])
@@ -149,7 +149,7 @@ event.waitKeys(keyList = [SPAAAAACE])
 for wavve in range(len(wavefiles)):
     #displaying the progressive trial number for participants' comfort
     jes = 'trial number ' + str((wavve + 1)) + ' / ' + str(len(wavefiles))
-    instrrectr = visual.TextStim(win,text = jes,color = 'black')
+    instrrectr = visual.TextStim(win,text = jes,color = color_txt)
     instrrectr.draw()
     win.flip()
     core.wait(1)
@@ -162,7 +162,7 @@ for wavve in range(len(wavefiles)):
     RT.reset()
     resp = None
     while resp == None:
-        key = event.getKeys(keyList = ['r','t'])
+        key = event.getKeys(keyList = ['1','2'])
         if len(key) > 0:
             rt = RT.getTime()
             resp = key[0][0]
@@ -175,14 +175,14 @@ for wavve in range(len(wavefiles)):
     lrow = lrow.format(subID[0],wavezip[wavve][0], resp, round(rt*1000),str(ttime))
     logfile.write(lrow)
 
-logging.flush()    
+logging.flush()
 logfile.close()
 
 #final message
-playlear = visual.TextStim(win,text = 'That was the end. \n
-                                      'Thank you very much! \n\n 
+playlear = visual.TextStim(win,text = 'That was the end. \n'
+                                      'Thank you very much! \n\n '
                                       'Press space to end this part of the experiment',
-                            color = 'black')
+                            color = color_txt)
 playlear.draw()
 win.flip()
 event.waitKeys(keyList = [SPAAAAACE])

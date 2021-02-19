@@ -16,12 +16,11 @@ import numpy as np
 
 # set your own project directory:
 os.chdir('C:/Users/au571303/Documents/projects/memory_music_iEEG')
-stim_dir = 'stimuli/manipulation_normalized'
+stim_dir = 'stimuli/manipulation'
 log_dir = 'logs'
-# uncomment to fixate randomization seed
-# rgnSeed = np.random.randint(900509)
+rgnSeed = np.random.randint(900509)
 col = 'white'
-n_tones = 60 # 35 for iEEG
+n_tones = 40 # 35 trials per tone for iEEG
 n_targets = 0
 
 # Set the frame rate of your screen. Not doing this may create timing issues
@@ -57,7 +56,7 @@ sounds = [sound.Sound('{}/{}.wav'.format(stim_dir,int(s))) for s in np.unique(se
 
 #### Prepare relevant keys:
     
-keyNext = 'space' # key to advance
+#keyNext = 'space' # key to advance
 
 #### function to quit the experiment and save log file:
 def quit_and_save():
@@ -84,12 +83,12 @@ instructions = visual.TextStim(win, text = "In the following, you will hear "
                                            "Ready?",
                                          wrapWidth=1.8, color = col)
                                          
-endText = visual.TextStim(win, text='That is the end of the task. \n'
-                                    'We will continue in a moment',
+endText = visual.TextStim(win, text='That is the end of the first task. \n'
+                                    'Press a key to finish',
                           wrapWidth=1.8, color = col)
 
 count_txt = ['Listen','Listen','Imagine','Imagine']
-durs = [600,550,600,550]
+durs = [550,600,550,600]
 fixationCross = visual.TextStim(win, text='+', color=col, height=0.2)
 
 # create a silent sound to prevent buffer issues
@@ -97,14 +96,14 @@ silentDur = .5
 silent = sound.Sound('C', secs=silentDur, volume=0, sampleRate = 44100, stereo = True)
 
 # start log file:
-filename = log_dir + '/' + sub_id[0] + '_localizer_MEG.log'
+filename = log_dir + '/' + sub_id[0] + '_localizer_iEEG.log'
 lastLog = logging.LogFile(filename, level=logging.INFO, filemode='w')
 ##############################################################################
 
 ############################# Start the task #################################
 instructions.draw()
 win.flip()
-event.waitKeys(keyList=[keyNext])
+event.waitKeys()
 
 fixationCross.draw()
 win.flip()
@@ -131,6 +130,6 @@ for s in seq:
 
 endText.draw()
 win.flip()
-event.waitKeys(keyList=[keyNext])
+event.waitKeys()
 win.close()
 core.quit() 
