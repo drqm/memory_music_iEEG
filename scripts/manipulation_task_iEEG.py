@@ -210,7 +210,7 @@ lastLog = logging.LogFile(log_fn_def, level=logging.INFO, filemode='a')
 
 ## create a silent sound to prevent buffer issues
 silentDur = .5
-silent = sound.Sound('C', secs=silentDur, volume=0, sampleRate = 44100, stereo = True)
+silent = sound.Sound('C', secs=silentDur, volume=0, sampleRate = 44100, stereo = False)
 
 # set relevant clocks:
 RT = core.Clock()

@@ -94,7 +94,7 @@ fixationCross = visual.TextStim(win, text='+', color=col, height=0.2)
 
 # create a silent sound to prevent buffer issues
 silentDur = .5
-silent = sound.Sound('C', secs=silentDur, volume=0, sampleRate = 44100, stereo = True)
+silent = sound.Sound('C', secs=silentDur, volume=0, sampleRate = 44100, stereo = False)
 
 # start log file:
 filename = log_dir + '/' + sub_id[0] + '_localizer_MEG.log'
