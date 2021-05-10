@@ -21,7 +21,7 @@ log_dir = 'logs'
 # uncomment to fixate randomization seed
 # rgnSeed = np.random.randint(900509)
 col = 'white'
-n_tones = 60 # 35 for iEEG
+n_tones = 65 # 35 for iEEG
 n_targets = 0
 
 # Set the frame rate of your screen. Not doing this may create timing issues
@@ -89,7 +89,8 @@ endText = visual.TextStim(win, text='That is the end of the task. \n'
                           wrapWidth=1.8, color = col)
 
 count_txt = ['Listen','Listen','Imagine','Imagine']
-durs = [600,550,600,550]
+#durs = [600,550,600,550]
+durs = [450,450,450,450]
 fixationCross = visual.TextStim(win, text='+', color=col, height=0.2)
 
 # create a silent sound to prevent buffer issues
