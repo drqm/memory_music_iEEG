@@ -81,7 +81,7 @@ instructions = visual.TextStim(win, text = "In the following, you will hear "
                                            "see the word IMAGINE on the screen. \n\n"
                                            "When this happens, please replay the sound "
                                            "very vividly in your mind. \n\n"
-                                           "Ready?",
+                                           "We will start in a moment.",
                                          wrapWidth=1.8, color = col)
                                          
 endText = visual.TextStim(win, text='That is the end of the task. \n'
@@ -90,7 +90,7 @@ endText = visual.TextStim(win, text='That is the end of the task. \n'
 
 count_txt = ['Listen','Listen','Imagine','Imagine']
 #durs = [550,600,550,600]
-durs = [450,450,450,450]
+durs = [400,400,400,400]
 fixationCross = visual.TextStim(win, text='+', color=col, height=0.2)
 
 # create a silent sound to prevent buffer issues

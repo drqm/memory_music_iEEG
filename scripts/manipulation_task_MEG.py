@@ -63,7 +63,7 @@ continue_texts = [["Those were all the example melodies. Now we are ready\n"
                    "to begin with the real experiment. The melodies will play \n"
                    "automatically. Trials will go faster than the examples.\n"
                    "Remember that you will have to answer: \n\n 1: same, 2: different\n\n"
-                   "Remember to replay the melody very vividly in your mind "
+                   "Try to replay the melody very vividly in your mind "
                    "exactly when the word 'IMAGINE' appears on the screen. \n"
                    "The experiment will start in a moment.\n"],
                   
@@ -71,7 +71,7 @@ continue_texts = [["Those were all the example melodies. Now we are ready\n"
                    "to begin with the real experiment. The melodies will play\n"
                    "automatically. Trials will go faster than the examples.\n"
                    "Remember that you will have to answer:\n\n 1: inverted, 2: other\n\n"
-                   "Remember to imagine the inverted melody very vividly in your mind "
+                   "Try to imagine the inverted melody very vividly in your mind "
                    "exactly when the word 'IMAGINE' appears on the screen. \n"
                    "The experiment will start in a moment.\n"]]
 
@@ -194,7 +194,7 @@ endText = visual.TextStim(win, text='The end\n\nThank you for your participation
 practice_txt = visual.TextStim(win, text = "Before doing the task, let's "
                                            "hear a couple of examples.\n\n"
                                            "Press a button to hear and memorize"
-                                           " a first melody.\n\n Ready?",
+                                           " a first melody.",
                                          wrapWidth=1.8, color = col)
 
 pause_txt = visual.TextStim(win, text = "Now it is time for a little pause\n\n"
