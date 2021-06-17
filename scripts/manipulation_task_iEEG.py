@@ -202,6 +202,14 @@ pause_txt = visual.TextStim(win, text = "Now it is time for a little pause\n\n"
                                         "Press a key when ready to continue",
                                          wrapWidth=1.8, color = col)
 
+vividness_txt = visual.TextStim(win, text = "In the previous block, how vivid "
+                                            "was your mental image of the sounds? \n\n"
+                                            "Please type one of the numbers in "
+                                            "the keyboard:\n\n "
+                                            " not vivid at all <  1  2  3  4  5  > "
+                                            "extremely vivid ",
+                                         wrapWidth=1.8, color = col)
+
 fixationCross = visual.TextStim(win, text='+', color=col, height=0.3)
 listen_txt =  visual.TextStim(win, text='Listen', color=col, height=0.2)
 imagine_txt = visual.TextStim(win, text='Imagine', color=col, height=0.2)
@@ -405,13 +413,15 @@ for bidx, b in enumerate(bnames): # loop over blocks
         core.wait(0.1)  # 100 ms after response, to start new trial
         
         # now we introduce a small pause in trial 30 so that participants can rest
-        if tidx == 29:
+        if tidx == 23:
             pause_txt.draw()
             win.flip()
             event.waitKeys()
-            
+    vividness_txt.draw()
+    win.flip()
+    event.waitKeys(keyList = ['1','2','3','4','5'])
     logfile.close() # save log file
-    
+
     blockendText.draw()
     win.flip()
     event.waitKeys()
