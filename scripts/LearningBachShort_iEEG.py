@@ -76,13 +76,13 @@ for file in sorted(os.listdir(pathwave)):
         wavenamesd.append(file)
         wavefilesd.append(sound.Sound(file))
 
-#reproducing several times (here 7 times) the 3 Old excerpts
-wnd = wavenamesd[21:] #extracting Old excerpts
-wnd = wnd * 7 #multiplying them by 7
-wfd = wavefilesd[21:]
-wfd = wfd * 7
-wavenames = wavenamesd[0:21] + wnd #getting the final list name
-wavefiles = wavefilesd[0:21] + wfd #getting the final list files
+#reproducing several times (here 8 times) the 3 Old excerpts
+wnd = wavenamesd[24:] #extracting Old excerpts
+wnd = wnd * 8 #multiplying them by 8
+wfd = wavefilesd[24:]
+wfd = wfd * 8
+wavenames = wavenamesd[0:24] + wnd #getting the final list name
+wavefiles = wavefilesd[0:24] + wfd #getting the final list files
 wavezip = list(zip(wavenames,wavefiles))
 shuffle(wavezip)
 
@@ -96,18 +96,23 @@ SPAAAAACE = 'space'
 #preparing window for the screen
 color_txt = 'white'
 win = visual.Window(fullscr = True, color = 'black')#[.9,.9,.9])
-pd = visual.TextStim(win,text = 'First, you will listen to a complete musical piece '
-                                '(Learning phase). \n\n Please try to remember it as ' 
-                                'much as possible. \n\n Second, you will listen to 42 '
-                                'short musical excerpts (Recognition phase). \n\n For '
-                                'each of them you will be asked to indicate whether '
-                                'they were extracted from the musical piece of the '
-                                'learning phase or not. \n\n Press space to continue',
+#pd = visual.TextStim(win,text = 'First, you will listen to a complete musical piece '
+#                                '(Learning phase). \n\n Please try to remember it as ' 
+#                                'much as possible. \n\n Second, you will listen to 42 '
+#                                'short musical excerpts (Recognition phase). \n\n For '
+#                                'each of them you will be asked to indicate whether '
+#                                'they were extracted from the musical piece of the '
+#                                'learning phase or not. \n\n Press space to continue',
+#                                 color = color_txt, height = 0.1)
+pd = visual.TextStim(win,text = 'You will listen to a complete musical piece repeated twice. '
+                                '\n\n Please try to remember it as ' 
+                                'much as possible. \n\n Later you will do a memory task based '
+                                'on this music.\n\n Press space to begin.',
                                 color = color_txt, height = 0.1)
-instr = visual.TextStim(win,text = 'Learning phase \n\n Now you are going to listen '
-                                   'to a complete musical piece \n\n Please try to '
-                                   'remember it as much as possible \n\n Press space '
-                                   'to continue',color = color_txt)
+#instr = visual.TextStim(win,text = 'Learning phase \n\n Now you are going to listen '
+#                                   'to a complete musical piece \n\n Please try to '
+#                                   'remember it as much as possible \n\n Press space '
+#                                  'to continue',color = color_txt)
 instrrec = visual.TextStim(win,text = 'recognition part..',color = color_txt)
 fix_c = visual.TextStim(win,text = '+', color = color_txt,height = 0.2)
 block_time.reset() #this should not be useful anymore..
@@ -116,9 +121,9 @@ block_time.reset() #this should not be useful anymore..
 pd.draw()
 win.flip()
 event.waitKeys(keyList = [SPAAAAACE])
-instr.draw()
-win.flip()
-event.waitKeys(keyList = [SPAAAAACE])
+#instr.draw()
+#win.flip()
+#event.waitKeys(keyList = [SPAAAAACE])
 ttime = block_time.getTime() #this should not be useful anymore..
 #playing the whole musical piece 2 times
 for ll in range(2):
@@ -135,10 +140,9 @@ for ll in range(2):
     core.wait(26) #open again this line later
 
 #actual experiment (recognition phase)
-playrec = visual.TextStim(win,text = 'Recognition phase \n\n Now you are going to '
-                                     'listen to 42 short musical excerpts. \n\n For '
-                                     'each of them please indicate with the keyboard '
-                                     'whether they were extracted from the musical '
+playrec = visual.TextStim(win,text = 'Now you will listen to 48 short musical excerpts. \n\n '
+                                     'For each of them please indicate with the keyboard '
+                                     'whether it was extracted from the musical '
                                      'piece that you have just listened to (press 1) '
                                      'or not (press 2). \n\n Press space to continue',
                                      color = color_txt)
@@ -169,7 +173,10 @@ for wavve in range(len(wavefiles)):
         elif RT.getTime() > 3: #3 seconds of maximum wait if subject does not reply
             resp = 0
             rt = RT.getTime()
-    core.wait(1)
+    if RT.getTime() > 1.8:
+        core.wait(1)
+    else:
+        core.wait(1+1.8-RT.getTime())
     #writing RT, trial ID, subject's response
     lrow = '{};{};{};{};{} \n'
     lrow = lrow.format(subID[0],wavezip[wavve][0], resp, round(rt*1000),str(ttime))

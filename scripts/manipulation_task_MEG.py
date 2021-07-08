@@ -249,7 +249,7 @@ for bidx, b in enumerate(bnames): # loop over blocks
         
     rehearse_txt = visual.TextStim(win, text = block['rehearse'][0],
                                 wrapWidth=1.8, color = col)
-   
+       
     #### initialize custom log file:
     filename = log_dir + '/' + sub_id[0] + '_' + b + '_MEG.csv'
     logfile = open(filename,'w')
