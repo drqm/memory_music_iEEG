@@ -29,6 +29,12 @@ from psychopy import visual, core, sound, event, gui, monitors, logging
 import itertools as it
 import os
 import numpy as np
+from triggers import setParallelData
+setParallelData(0)
+
+### Set the frame rate of your screen:
+frate = 60 #120
+prd = 1000/frate
 
 #monitor settings
 #mon = monitors.Monitor('SonyG55')#fetch the most recent calib for this monitor
@@ -54,7 +60,7 @@ subID = ID.show()
 #create csv file for log
 filename = logdir + '/' + subID[0] + '_learning_bach_iEEG_custom.csv'
 logfile = open(filename,'w')
-logfile.write("subj;trial;response;RT;time \n")
+logfile.write("subj;trial;trigger;response;RT;time \n")
 
 #create log file
 block_time = core.Clock()
@@ -135,9 +141,17 @@ for ll in range(2):
     fix_c.draw()
     win.flip()
     core.wait(0.5)
+    nextFlip = win.getFutureFlipTime(clock='ptb') 
+    win.callOnFlip(setParallelData, 103) #SENDING TRIGGER
     Bachminor.play() #open again this line later
+    for frs in range(int(np.round(50/prd))): # 6 frames = 50 ms 
+            fix_c.draw()
+            win.flip()  
+    win.callOnFlip(setParallelData, 0) #ENDING THE TRIGGER (TO MEG)
+    for frs in range(int(np.round(50/prd))): # 6 frames = 50 ms
+            win.flip()  
     event.clearEvents(eventType='keyboard')
-    core.wait(26) #open again this line later
+    core.wait(25.9) #open again this line later
 
 #actual experiment (recognition phase)
 playrec = visual.TextStim(win,text = 'Now you will listen to 48 short musical excerpts. \n\n '
@@ -160,26 +174,38 @@ for wavve in range(len(wavefiles)):
     fix_c.draw()
     win.flip()
     core.wait(0.5)
+    if 'old' in wavezip[wavve][0]:
+        trigval = 10
+    else:
+        trigval = 50
+    nextFlip = win.getFutureFlipTime(clock='ptb') 
+    win.callOnFlip(setParallelData, trigval) #SENDING TRIGGER 
     ttime = block_time.getTime() #this should not be useful anymore..
     wavezip[wavve][1].play()
     event.clearEvents(eventType='keyboard')
     RT.reset()
     resp = None
+    for frs in range(int(np.round(50/prd))): # 6 frames = 50 ms
+        fix_c.draw()
+        win.flip() 
+    win.callOnFlip(setParallelData, 0) #SENDING THE TRIGGER
+    for frs in range(int(np.round(50/prd))): # 6 frames = 50 ms
+        win.flip()
     while resp == None:
         key = event.getKeys(keyList = ['1','2'])
         if len(key) > 0:
             rt = RT.getTime()
             resp = key[0][0]
-        elif RT.getTime() > 3: #3 seconds of maximum wait if subject does not reply
+        elif RT.getTime() > 2.9: #3 seconds of maximum wait if subject does not reply
             resp = 0
             rt = RT.getTime()
-    if RT.getTime() > 1.8:
+    if RT.getTime() > 1.7:
         core.wait(1)
     else:
-        core.wait(1+1.8-RT.getTime())
+        core.wait(1+1.7-RT.getTime())
     #writing RT, trial ID, subject's response
-    lrow = '{};{};{};{};{} \n'
-    lrow = lrow.format(subID[0],wavezip[wavve][0], resp, round(rt*1000),str(ttime))
+    lrow = '{};{};{};{};{};{} \n'
+    lrow = lrow.format(subID[0],wavezip[wavve][0], trigval,resp, round(rt*1000),str(ttime))
     logfile.write(lrow)
 
 logging.flush()
