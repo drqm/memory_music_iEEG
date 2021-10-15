@@ -13,8 +13,8 @@ from psychopy import visual, core, sound, event, gui, logging
 import itertools as it
 import os
 import numpy as np
-#from triggers import setParallelData
-#setParallelData(0)
+from triggers import setParallelData
+setParallelData(0)
 
 # set your own project directory:
 os.chdir('C:/Users/au571303/Documents/projects/memory_music_iEEG')
@@ -174,12 +174,17 @@ event.globalKeys.add(key='escape', func=quit_and_save, name='shutdown')
 #### Collect participant identity:
 ID_box = gui.Dlg(title = 'Subject identity')
 ID_box.addField('ID: ')
-ID_box.addField('counterbalance (1 or 2): ')
+ID_box.addField('block order (random order: leave blank; maintenance first: 1; manipulation first: 2): ')
 sub_id = ID_box.show()
 
 block_order = [0,1]
+shuffle(block_order)
+
+if sub_id[1] == '1':
+   block_order = [0,1]
 if sub_id[1] == '2':
    block_order = [1,0]
+
 
 ##### create window to display text:
 win = visual.Window(fullscr=True, color='black')
@@ -350,14 +355,12 @@ for bidx, b in enumerate(bnames): # loop over blocks
         nextFlip = win.getFutureFlipTime(clock='ptb')
         for p,ps in enumerate(pmel):
             trigger = str(p + 1) + str(ps)
-#            win.callOnFlip(setParallelData, int(trigger))
-            win.callOnFlip(print, int(trigger))
+            win.callOnFlip(setParallelData, int(trigger))
             sounds[ps-1].play(when = nextFlip)
             for frs in range(int(np.round(50/prd))): # 6 frames = 50 ms
                 listen_txt.draw()
                 win.flip()
-#            win.callOnFlip(setParallelData, 0)
-            win.callOnFlip(print, 0)
+            win.callOnFlip(setParallelData, 0)
             for frs in range(int(np.round(450/prd))): # 30 frames = 450 ms
                 listen_txt.draw()
                 win.flip()
@@ -375,8 +378,7 @@ for bidx, b in enumerate(bnames): # loop over blocks
         #present target (loop over sounds)
         for midx, ts in enumerate(tmel):
             trigger = str(block['type'][tidx]) + str(midx + 1) + str(ts) 
-#            win.callOnFlip(setParallelData, int(trigger))           
-            win.callOnFlip(print, int(trigger))            
+            win.callOnFlip(setParallelData, int(trigger))           
             sounds[ts-1].play(when = nextFlip)
             #clear events and reset the clock for RT
             if midx == 0:
@@ -385,8 +387,7 @@ for bidx, b in enumerate(bnames): # loop over blocks
             for frs in range(int(np.round(50/prd))): # 6 frames = 50 ms
                 listen_txt.draw()
                 win.flip()  
-#            win.callOnFlip(setParallelData, 0)
-            win.callOnFlip(print, 0)
+            win.callOnFlip(setParallelData, 0)
             for frs in range(int(np.round(450/prd))): # 30 frames = 450 ms
                 listen_txt.draw()
                 win.flip()

@@ -873,3 +873,76 @@
 1842.5675 	DATA 	Keypress: 4
 1845.4979 	DATA 	Keypress: space
 1847.6118 	EXP 	window1: mouseVisible = True
+7.4742 	WARNING 	psychopy.parallel has been imported but no parallel port driver found. Install either inpout32, inpoutx64 or dlportio
+7.4747 	WARNING 	Could not initiate port: 'NoneType' object is not callable
+19.1266 	WARNING 	Monitor specification not found. Creating a temporary one...
+19.1463 	WARNING 	User requested fullscreen with size [800 600], but screen is actually [1920, 1080]. Using actual size
+21.5639 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='norm', win=Window(...), wrapWidth=1.8)
+21.6212 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='norm', win=Window(...), wrapWidth=1.8)
+21.6487 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='norm', win=Window(...), wrapWidth=1.8)
+21.6670 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='norm', win=Window(...), wrapWidth=1.8)
+50.9086 	DATA 	Keypress: space
+57.0520 	DATA 	Keypress: space
+57.0657 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='norm', win=Window(...), wrapWidth=1.8)
+57.0707 	EXP 	Sound  started
+58.0707 	EXP 	Sound  started
+58.5704 	EXP 	Sound  started
+59.0703 	EXP 	Sound  started
+74.8360 	DATA 	Keypress: space
+74.8411 	EXP 	Sound  started
+74.8412 	EXP 	Sound  started
+75.3413 	EXP 	Sound  started
+75.8409 	EXP 	Sound  started
+78.1410 	DATA 	Keypress: 2
+83.9959 	DATA 	Keypress: 2
+84.0139 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='norm', win=Window(...), wrapWidth=1.8)
+84.0191 	EXP 	Sound  started
+85.0195 	EXP 	Sound  started
+85.5194 	EXP 	Sound  started
+86.0193 	EXP 	Sound  started
+92.0039 	DATA 	Keypress: space
+92.0092 	EXP 	Sound  started
+92.0093 	EXP 	Sound  started
+92.5094 	EXP 	Sound  started
+93.0094 	EXP 	Sound  started
+104.4361 	DATA 	Keypress: space
+119.3318 	DATA 	Keypress: space
+119.3320 	EXP 	Sound  started
+119.8506 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Melodía 1 / 48', units='norm', win=Window(...), wrapWidth=1)
+122.3561 	EXP 	Sound  started
+122.8408 	EXP 	Sound  started
+123.3409 	EXP 	Sound  started
+126.3395 	EXP 	Sound  started
+126.8391 	EXP 	Sound  started
+127.3390 	EXP 	Sound  started
+128.2038 	DATA 	Keypress: 2
+128.3100 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Melodía 2 / 48', units='norm', win=Window(...), wrapWidth=1)
+130.8149 	EXP 	Sound  started
+131.3044 	EXP 	Sound  started
+131.8034 	EXP 	Sound  started
+134.8021 	EXP 	Sound  started
+135.3023 	EXP 	Sound  started
+135.8011 	EXP 	Sound  started
+136.4119 	DATA 	Keypress: 2
+136.5191 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Melodía 3 / 48', units='norm', win=Window(...), wrapWidth=1)
+139.0253 	EXP 	Sound  started
+139.5169 	EXP 	Sound  started
+140.0168 	EXP 	Sound  started
+143.0154 	EXP 	Sound  started
+143.5152 	EXP 	Sound  started
+144.0149 	EXP 	Sound  started
+144.2328 	DATA 	Keypress: 2
+144.6191 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Melodía 4 / 48', units='norm', win=Window(...), wrapWidth=1)
+147.1242 	EXP 	Sound  started
+147.6132 	EXP 	Sound  started
+148.1126 	EXP 	Sound  started
+151.1110 	EXP 	Sound  started
+151.6110 	EXP 	Sound  started
+152.1109 	EXP 	Sound  started
+152.4797 	DATA 	Mouse: Left button down, pos=(1219,273)
+152.5950 	DATA 	Mouse:  Left button up, pos=(1219,273)
+152.8519 	DATA 	Keypress: 2
+152.9591 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Melodía 5 / 48', units='norm', win=Window(...), wrapWidth=1)
+155.2662 	DATA 	Keypress: escape
+155.2664 	EXP 	Global key event: shutdown. Calling <function quit_and_save at 0x000001EB196D10D0>.
+155.3533 	EXP 	window1: mouseVisible = True

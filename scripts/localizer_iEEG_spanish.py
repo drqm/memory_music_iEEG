@@ -11,8 +11,8 @@ prefs.hardware['audioLib'] = ['PTB']
 from psychopy import visual, core, sound, event, gui, logging
 import os
 import numpy as np
-#from triggers import setParallelData
-#setParallelData(0)
+from triggers import setParallelData
+setParallelData(0)
 
 # set your own project directory:
 os.chdir('C:/Users/au571303/Documents/projects/memory_music_iEEG')
@@ -114,16 +114,15 @@ core.wait(0.5)
 nextFlip = win.getFutureFlipTime(clock='ptb')
 
 for s in seq:
-#   win.callOnFlip(setParallelData, int(s))
-    win.callOnFlip(print, int(s))
+    win.callOnFlip(setParallelData, int(s))
     sounds[int(s)-1].play(when = nextFlip)
     for cidx,cc in enumerate(count_txt):
         count_msg = visual.TextStim(win, text=cc, color = col, height = 0.2)
         for frs in range(int(np.round(50/prd))): # 6 frames = 50 ms
             count_msg.draw()
             win.flip()
-    #            win.callOnFlip(setParallelData, 0)
-        win.callOnFlip(print, 0)
+        if cidx == 0:
+            win.callOnFlip(setParallelData, 0)
         for frs in range(int(np.round(durs[cidx]/prd))): # 30 frames = 450 ms
             count_msg.draw()
             win.flip()
