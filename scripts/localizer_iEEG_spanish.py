@@ -14,8 +14,11 @@ import numpy as np
 from triggers import setParallelData
 setParallelData(0)
 
-# set your own project directory:
-os.chdir('C:/Users/au571303/Documents/projects/memory_music_iEEG')
+# set project directory:
+my_path = os.path.abspath(os.path.dirname(__file__))
+os.chdir(my_path)
+os.chdir('..')
+#os.chdir('C:/Users/au571303/Documents/projects/memory_music_iEEG')
 stim_dir = 'stimuli/manipulation_normalized'
 log_dir = 'logs'
 # uncomment to fixate randomization seed
@@ -23,10 +26,6 @@ log_dir = 'logs'
 col = 'white'
 n_tones = 45 # 40 trials per tone for iEEG
 n_targets = 0
-
-# Set the frame rate of your screen. Not doing this may create timing issues
-frate = 60 #120
-prd = 1000/frate
 
 ######################## create stimulus sequence ############################
 seq = np.zeros(n_tones*3 + n_targets)
@@ -72,6 +71,11 @@ ID_box.addField('ID: ')
 sub_id = ID_box.show()
 
 win = visual.Window(fullscr=True, color='black')
+
+# set frame rate
+frate = np.round(win.getActualFrameRate())
+prd = 1000 / frate
+print('screen fps = {} - cycle duration = {}'.format(frate, prd))
 
 ##### create text oBjects to display during the experiment:
 

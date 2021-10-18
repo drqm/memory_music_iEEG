@@ -15,11 +15,6 @@ leonardo.bonetti@clin.au.dk
 #Please note that the csv file with the crucial stimuli presentation IDs and 
 # behavioural responses is created within the log directory
  
-
-#################### YOUR DIRECTORY TO BE UPDATED BEFORE RUNNING THE SCRIPT ####################
-#THIS IS YOUR DIRECTORY WHERE YOU PUT THE PROVIDED FOLDERS, PLEASE UPDATE THIS, THANKS
-logdir = ('C:/Users/au571303/Documents/projects/memory_music_iEEG/logs') 
-stimdir = ('C:/Users/au571303/Documents/projects/memory_music_iEEG/stimuli')
 #################### Load libraries and set directories ####################
 from random import shuffle
 from psychopy import prefs
@@ -32,9 +27,17 @@ import numpy as np
 from triggers import setParallelData
 setParallelData(0)
 
-### Set the frame rate of your screen:
-frate = 60 #120
-prd = 1000/frate
+#################### YOUR DIRECTORY #############################################
+#THIS IS YOUR DIRECTORY WHERE YOU PUT THE PROVIDED FOLDERS, PLEASE UPDATE THIS IF NECESSARY
+my_path = os.path.abspath(os.path.dirname(__file__))
+os.chdir(my_path)
+os.chdir('..')
+cwd = os.getcwd()
+print('current working directory: ' + cwd)
+logdir = cwd + '/logs'
+stimdir = cwd + '/stimuli'
+#logdir = ('C:/Users/au571303/Documents/projects/memory_music_iEEG/logs') 
+#stimdir = ('C:/Users/au571303/Documents/projects/memory_music_iEEG/stimuli')
 
 #monitor settings
 #mon = monitors.Monitor('SonyG55')#fetch the most recent calib for this monitor
@@ -102,6 +105,12 @@ SPAAAAACE = 'space'
 #preparing window for the screen
 color_txt = 'white'
 win = visual.Window(fullscr = True, color = 'black')#[.9,.9,.9])
+
+# set frame rate
+frate = np.round(win.getActualFrameRate())
+prd = 1000 / frate
+print('screen fps = {} - cycle duration = {}'.format(frate, prd))
+
 #pd = visual.TextStim(win,text = 'First, you will listen to a complete musical piece '
 #                                '(Learning phase). \n\n Please try to remember it as ' 
 #                                'much as possible. \n\n Second, you will listen to 42 '

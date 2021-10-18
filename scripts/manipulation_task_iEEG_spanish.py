@@ -16,13 +16,14 @@ import numpy as np
 from triggers import setParallelData
 setParallelData(0)
 
-# set your own project directory:
-os.chdir('C:/Users/au571303/Documents/projects/memory_music_iEEG')
+# set project directory:
+my_path = os.path.abspath(os.path.dirname(__file__))
+os.chdir(my_path)
+os.chdir('..')
+#os.chdir('C:/Users/au571303/Documents/projects/memory_music_iEEG')
 stim_dir = 'stimuli/manipulation_normalized'
 log_dir = 'logs'
-# Set the frame rate of your screen. Not doing this may create timing issues
-frate = 60 #48 #60 #120 
-prd = 1000/frate # inter frame interval in ms
+
 # Uncomment this seed to reproduce the randomization:
 #rgnSeed = np.random.randint(900509) 
 col = 'white' # text color
@@ -188,6 +189,11 @@ if sub_id[1] == '2':
 
 ##### create window to display text:
 win = visual.Window(fullscr=True, color='black')
+
+#set frame rata
+frate = np.round(win.getActualFrameRate())
+prd = 1000 / frate
+print('screen fps = {} - cycle duration = {}'.format(frate, prd))
 
 ##### create other text ojects to display during the experiment:
     
