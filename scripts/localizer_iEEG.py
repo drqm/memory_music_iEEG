@@ -77,7 +77,7 @@ sub_id = ID_box.show()
 win = visual.Window(fullscr=True, color='black')
 frate = np.round(win.getActualFrameRate())
 prd = 1000 / frate
-print('screen fps = {} - cycle duration = {}'.format(frate, prd))
+print('screen fps = {} / cycle duration = {} ms'.format(frate, np.round(prd,2)))
 
 ##### create text oBjects to display during the experiment:
 
