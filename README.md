@@ -15,9 +15,9 @@ Implementations in English using Psychopy 3.1.2:
 
 - task 1 [scripts/LerningBach_iEEG_3.1.2.py](https://github.com/drqm/memory_music_iEEG/blob/master/scripts/LearningBachShort_iEEG_3.1.2.py)
 
-- task 2 [scripts/localizer_iEEG_3.1.2.py](https://github.com/drqm/memory_music_iEEG/blob/master/scripts/localizer_iEEG_3.1.2.py) (for iEEG)
+- task 2 [scripts/localizer_iEEG_3.1.2.py](https://github.com/drqm/memory_music_iEEG/blob/master/scripts/localizer_iEEG_3.1.2.py)
 
-- task 3 [scripts/manipulation_task_iEEG_3.1.2.py](https://github.com/drqm/memory_music_iEEG/blob/master/scripts/manipulation_task_iEEG_3.1.2.py) (for iEEG)
+- task 3 [scripts/manipulation_task_iEEG_3.1.2.py](https://github.com/drqm/memory_music_iEEG/blob/master/scripts/manipulation_task_iEEG_3.1.2.py)
 
 
 Implementations in English using Psychopy 2021.2.3
