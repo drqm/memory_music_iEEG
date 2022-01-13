@@ -24,6 +24,8 @@ from psychopy import visual, core, sound, event, gui, monitors, logging
 import itertools as it
 import os
 import numpy as np
+from sys import argv
+
 from triggers import setParallelData
 setParallelData(0)
 
@@ -56,8 +58,12 @@ def quitpd():
 event.globalKeys.add(key='escape',func=quitpd,name='shutdown')
 
 #GUI for subject ID
+csid = ''
+if len(argv)>1:
+    csid = argv[1]
+
 ID = gui.Dlg(title = 'subj ID')
-ID.addField('ID: ')
+ID.addField('ID (change if subject ID is incorrect): ',csid)
 subID = ID.show()
 
 #create csv file for log

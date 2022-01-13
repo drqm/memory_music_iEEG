@@ -11,6 +11,8 @@ prefs.hardware['audioLib'] = ['PTB']
 from psychopy import visual, core, sound, event, gui, logging
 import os
 import numpy as np
+from sys import argv
+
 from triggers import setParallelData
 setParallelData(0)
 
@@ -65,11 +67,14 @@ def quit_and_save():
     
 event.globalKeys.add(key='escape', func=quit_and_save, name='shutdown')
 
+csid = ''
+if len(argv)>1:
+    csid = argv[1]
+
 #### Collect participant identity:
 ID_box = gui.Dlg(title = 'Subject identity')
-ID_box.addField('ID: ')
+ID_box.addField('ID: ', csid)
 sub_id = ID_box.show()
-
 win = visual.Window(fullscr=True, color='black')
 
 # set frame rate

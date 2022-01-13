@@ -6,15 +6,15 @@ Created on Sat Aug 22 16:11:11 2020
 """
 from random import shuffle
 from psychopy import prefs
-prefs.hardware['audioLib'] = ['PTB']
+prefs.hardware['audioLib'] = ['sounddevice']
 #prefs.hardware['audioLib'] = ['pyo']
 from psychopy import visual, core, sound, event, gui, logging
 import os
 import numpy as np
 from sys import argv
 
-from triggers import setParallelData
-setParallelData(0)
+#from triggers import setParallelData
+#setParallelData(0)
 
 # set project directory:
 my_path = os.path.abspath(os.path.dirname(__file__))
@@ -50,10 +50,10 @@ for n in range(n_tones):
         shuffle(pattern)
         if pattern[0] != seq[start-1]:
             p = 0
-    seq[start:end] = pattern 
+    seq[start:end] = pattern
     if np.isin(n,tidx):
         seq[end] = 4
-        end = end + 1 
+        end = end + 1
 
 ###################### Prepare psychopy task #################################
 
@@ -61,14 +61,14 @@ for n in range(n_tones):
 sounds = [sound.Sound('{}/{}.wav'.format(stim_dir,int(s))) for s in np.unique(seq)]
 
 #### Prepare relevant keys:
-    
+
 #keyNext = 'space' # key to advance
 
 #### function to quit the experiment and save log file:
 def quit_and_save():
     logging.flush()
     core.quit()
-    
+
 event.globalKeys.add(key='escape', func=quit_and_save, name='shutdown')
 
 csid = ''
@@ -81,9 +81,9 @@ ID_box.addField('ID: ', csid)
 sub_id = ID_box.show()
 
 win = visual.Window(fullscr=True, color='black')
-frate = np.round(win.getActualFrameRate())
-prd = 1000 / frate
-print('screen fps = {} - cycle duration = {}'.format(frate, prd))
+#frate = np.round(win.getActualFrameRate())
+#prd = 1000 / frate
+#print('screen fps = {} - cycle duration = {}'.format(frate, prd))
 
 ##### create text oBjects to display during the experiment:
 
@@ -93,12 +93,13 @@ instructions = visual.TextStim(win, text = "In the following, you will hear "
                                            "see the word IMAGINE on the screen. \n\n"
                                            "When this happens, please replay the sound "
                                            "very vividly in your mind. \n\n"
-                                           "We will start in a moment.",
-                                         wrapWidth=1.8, color = col)
-                                         
-endText = visual.TextStim(win, text='That is the end of the task. \n'
-                                    'Press a key to finish',
-                          wrapWidth=1.8, color = col)
+                                           "Press a key to begin.",
+                                         alignHoriz = 'center',#wrapWidth=1.8,
+                                         color = col)
+
+endText = visual.TextStim(win, text='That is the end of the task. \n',
+                                        alignHoriz = 'center',#wrapWidth=1.8,
+                                         color = col)
 
 count_txt = ['Listen','Listen','Imagine','Imagine']
 #durs = [550,600,550,600]
@@ -123,26 +124,20 @@ fixationCross.draw()
 win.flip()
 silent.play()
 core.wait(0.5)
-nextFlip = win.getFutureFlipTime(clock='ptb')
+#nextFlip = win.getFutureFlipTime(clock='ptb')
 
 for s in seq:
-    win.callOnFlip(setParallelData, int(s))
-    sounds[int(s)-1].play(when = nextFlip)
+#    win.callOnFlip(setParallelData, int(s))
+    sounds[int(s)-1].play()
     for cidx,cc in enumerate(count_txt):
         count_msg = visual.TextStim(win, text=cc, color = col, height = 0.2)
-        for frs in range(int(np.round(50/prd))): # 6 frames = 50 ms
-            count_msg.draw()
-            win.flip()
-        if cidx == 0:
-            win.callOnFlip(setParallelData, 0)
-        for frs in range(int(np.round(durs[cidx]/prd))): # 30 frames = 450 ms
-            count_msg.draw()
-            win.flip()
-    nextFlip = win.getFutureFlipTime(clock='ptb')
+        count_msg.draw()
+        win.flip()
+        core.wait(durs[cidx]/1000 + 0.05)
     logging.flush()
 
 endText.draw()
 win.flip()
 event.waitKeys()
 win.close()
-core.quit() 
+core.quit()

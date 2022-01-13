@@ -13,6 +13,8 @@ from psychopy import visual, core, sound, event, gui, logging
 import itertools as it
 import os
 import numpy as np
+from sys import argv
+
 from triggers import setParallelData
 setParallelData(0)
 
@@ -172,8 +174,12 @@ def quit_and_save():
 event.globalKeys.add(key='escape', func=quit_and_save, name='shutdown')
 
 #### Collect participant identity:
+csid = ''
+if len(argv)>1:
+    csid = argv[1]
+
 ID_box = gui.Dlg(title = 'Subject identity')
-ID_box.addField('ID: ')
+ID_box.addField('ID: (change if subject ID is incorrect) ', csid)
 ID_box.addField('block order (random order: leave blank; maintenance first: 1; manipulation first: 2): ')
 sub_id = ID_box.show()
 
