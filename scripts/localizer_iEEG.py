@@ -29,10 +29,6 @@ col = 'white'
 n_tones = 45 # 40 trials per tone for iEEG
 n_targets = 0
 
-# Set the frame rate of your screen. Not doing this may create timing issues
-#frate = 60 #120
-#prd = 1000/frate
-
 ######################## create stimulus sequence ############################
 seq = np.zeros(n_tones*3 + n_targets)
 pattern = [1,2,3]
@@ -66,6 +62,7 @@ sounds = [sound.Sound('{}/{}.wav'.format(stim_dir,int(s))) for s in np.unique(se
 
 #### function to quit the experiment and save log file:
 def quit_and_save():
+    logfile.close()
     logging.flush()
     core.quit()
     
@@ -78,9 +75,13 @@ if len(argv)>1:
 #### Collect participant identity:
 ID_box = gui.Dlg(title = 'Subject identity')
 ID_box.addField('ID: ', csid)
+ID_box.addField('Photodiode? (yes/no): ', 'no')
 sub_id = ID_box.show()
 
+##### create window to display text:
 win = visual.Window(fullscr=True, color='black')
+
+# set frame rate
 frate = np.round(win.getActualFrameRate())
 prd = 1000 / frate
 print('screen fps = {} - cycle duration = {}'.format(frate, prd))
@@ -93,17 +94,24 @@ instructions = visual.TextStim(win, text = "In the following, you will hear "
                                            "see the word IMAGINE on the screen. \n\n"
                                            "When this happens, please replay the sound "
                                            "very vividly in your mind. \n\n"
-                                           "We will start in a moment.",
+                                           "Please DO NOT sing the the sound "
+                                           "with your mouth or move otherwise.\n\n"
+                                           "Press a key to begin.",
                                          wrapWidth=1.8, color = col)
                                          
 endText = visual.TextStim(win, text='That is the end of the task. \n'
                                     'Press a key to finish',
                           wrapWidth=1.8, color = col)
 
-count_txt = ['Listen','Listen','Imagine','Imagine']
+count_txt = ['Listen','Imagine']
 #durs = [550,600,550,600]
-durs = [400,400,400,400]
+durs = [900,900]
+trig_dur = 50
 fixationCross = visual.TextStim(win, text='+', color=col, height=0.2)
+pcolor = 'black'
+if sub_id[1] == 'yes':
+    pcolor = col
+pdiode = visual.Rect(win, size = (.3,.35), pos = (-1,-1),fillColor=pcolor)
 
 # create a silent sound to prevent buffer issues
 silentDur = .5
@@ -112,9 +120,26 @@ silent = sound.Sound('C', secs=silentDur, volume=0, sampleRate = 44100, stereo =
 # start log file:
 filename = log_dir + '/' + sub_id[0] + '_localizer_iEEG.log'
 lastLog = logging.LogFile(filename, level=logging.INFO, filemode='w')
+custom_logfname = log_dir + '/' + sub_id[0] + '_localizer_iEEG.csv'
+logfile = open(custom_logfname,'w')
+logfile.write("subject,time,soundID\n")
+
+# Set clock
+block_time = core.Clock()
+
 ##############################################################################
 
 ############################# Start the task #################################
+
+# Flicker to signal task start
+
+for i in range(5):
+    pdiode.draw()
+    win.flip()
+    core.wait(0.05)
+    win.flip()
+    core.wait(0.05)
+
 instructions.draw()
 win.flip()
 event.waitKeys()
@@ -130,19 +155,31 @@ for s in seq:
     sounds[int(s)-1].play(when = nextFlip)
     for cidx,cc in enumerate(count_txt):
         count_msg = visual.TextStim(win, text=cc, color = col, height = 0.2)
-        for frs in range(int(np.round(50/prd))): # 6 frames = 50 ms
+        for frs in range(int(np.round(trig_dur/prd))): # 6 frames = 50 ms
             count_msg.draw()
+            if cidx == 0:
+                pdiode.draw()
             win.flip()
+            if (frs == 0 and cidx == 0):
+                ttime = block_time.getTime()
         if cidx == 0:
             win.callOnFlip(setParallelData, 0)
-        for frs in range(int(np.round(durs[cidx]/prd))): # 30 frames = 450 ms
+        for frs in range(int(np.round((durs[cidx]-trig_dur)/prd))): # 30 frames = 450 ms
             count_msg.draw()
             win.flip()
+    logfile.write("{},{},{}\n".format(sub_id[0],ttime,s))
     nextFlip = win.getFutureFlipTime(clock='ptb')
     logging.flush()
 
+logfile.close()
 endText.draw()
 win.flip()
 event.waitKeys()
+for i in range(5):
+    pdiode.draw()
+    win.flip()
+    core.wait(0.05)
+    win.flip()
+    core.wait(0.05)
 win.close()
-core.quit() 
+core.quit()

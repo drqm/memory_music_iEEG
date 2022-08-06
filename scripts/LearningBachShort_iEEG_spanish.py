@@ -14,7 +14,7 @@ leonardo.bonetti@clin.au.dk
 #-define your log directory
 #Please note that the csv file with the crucial stimuli presentation IDs and 
 # behavioural responses is created within the log directory
- 
+
 #################### Load libraries and set directories ####################
 from random import shuffle
 from psychopy import prefs
@@ -29,7 +29,7 @@ from sys import argv
 from triggers import setParallelData
 setParallelData(0)
 
-#################### YOUR DIRECTORY #############################################
+#################### YOUR DIRECTORY ##########################################
 #THIS IS YOUR DIRECTORY WHERE YOU PUT THE PROVIDED FOLDERS, PLEASE UPDATE THIS IF NECESSARY
 my_path = os.path.abspath(os.path.dirname(__file__))
 os.chdir(my_path)
@@ -64,6 +64,7 @@ if len(argv)>1:
 
 ID = gui.Dlg(title = 'subj ID')
 ID.addField('ID (change if subject ID is incorrect): ',csid)
+ID.addField('Photodiode? (yes/no): ', 'yes')
 subID = ID.show()
 
 #create csv file for log
@@ -110,7 +111,7 @@ SPAAAAACE = 'space'
 
 #preparing window for the screen
 color_txt = 'white'
-win = visual.Window(fullscr = True, color = 'black')#[.9,.9,.9])
+win = visual.Window(fullscr = True, color = 'black')
 
 # set frame rate
 frate = np.round(win.getActualFrameRate())
@@ -137,6 +138,18 @@ pd = visual.TextStim(win,text = 'A continuación, usted escuchará una pieza mus
 instrrec = visual.TextStim(win,text = 'Reconocimiento..',color = color_txt)
 fix_c = visual.TextStim(win,text = '+', color = color_txt,height = 0.2)
 block_time.reset() #this should not be useful anymore..
+pcolor = 'black'
+if subID[1]=='yes':
+    pcolor = color_txt
+pdiode = visual.Rect(win, size = (.3,.35), pos = (-1,-1),fillColor=pcolor)
+
+#Flicker task start
+for i in range(5):
+    pdiode.draw()
+    win.flip()
+    core.wait(0.05)
+    win.flip()
+    core.wait(0.05)
 
 #actual experiment (learning phase)
 pd.draw()
@@ -146,6 +159,7 @@ event.waitKeys(keyList = [SPAAAAACE])
 #win.flip()
 #event.waitKeys(keyList = [SPAAAAACE])
 ttime = block_time.getTime() #this should not be useful anymore..
+
 #playing the whole musical piece 2 times
 for ll in range(2):
     dumm = 'Repetición ' + str(ll+1) + '\n Presione barra espaciadora para continuar.'
@@ -161,9 +175,11 @@ for ll in range(2):
     Bachminor.play() #open again this line later
     for frs in range(int(np.round(50/prd))): # 6 frames = 50 ms 
             fix_c.draw()
-            win.flip()  
+            pdiode.draw()
+            win.flip()
     win.callOnFlip(setParallelData, 0) #ENDING THE TRIGGER (TO MEG)
     for frs in range(int(np.round(50/prd))): # 6 frames = 50 ms
+            fix_c.draw()
             win.flip()  
     event.clearEvents(eventType='keyboard')
     core.wait(25.9) #open again this line later
@@ -202,9 +218,11 @@ for wavve in range(len(wavefiles)):
     resp = None
     for frs in range(int(np.round(50/prd))): # 6 frames = 50 ms
         fix_c.draw()
+        pdiode.draw()
         win.flip() 
     win.callOnFlip(setParallelData, 0) #SENDING THE TRIGGER
     for frs in range(int(np.round(50/prd))): # 6 frames = 50 ms
+        fix_c.draw()
         win.flip()
     while resp == None:
         key = event.getKeys(keyList = ['1','2'])
@@ -234,5 +252,11 @@ playlear = visual.TextStim(win,text = 'Eso es todo! \n'
 playlear.draw()
 win.flip()
 event.waitKeys(keyList = [SPAAAAACE])
-
+#Flicker task end
+for i in range(5):
+    pdiode.draw()
+    win.flip()
+    core.wait(0.05)
+    win.flip()
+    core.wait(0.05)
 ####################

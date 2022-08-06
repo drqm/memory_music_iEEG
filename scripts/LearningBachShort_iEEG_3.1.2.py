@@ -63,6 +63,7 @@ if len(argv)>1:
 
 ID = gui.Dlg(title = 'subj ID')
 ID.addField('ID (change if subject ID is incorrect): ',csid)
+ID.addField('Photodiode? (yes/no): ', 'yes')
 subID = ID.show()
 
 #create csv file for log
@@ -136,7 +137,19 @@ pd = visual.TextStim(win,text = 'You will listen to a complete musical piece rep
 instrrec = visual.TextStim(win,text = 'recognition part..',color = color_txt)
 fix_c = visual.TextStim(win,text = '+', color = color_txt,height = 0.2)
 block_time.reset() #this should not be useful anymore..
+pcolor = 'black'
+if subID[1]=='yes':
+    pcolor = color_txt
+pdiode = visual.Rect(win, size = (.3,.35), pos = (-1,-1),fillColor=pcolor)
 
+# Flicker to signal task start
+for i in range(5):
+    pdiode.draw()
+    win.flip()
+    core.wait(0.05)
+    win.flip()
+    core.wait(0.05)
+    
 #actual experiment (learning phase)
 pd.draw()
 win.flip()
@@ -145,6 +158,7 @@ event.waitKeys(keyList = [SPAAAAACE])
 #win.flip()
 #event.waitKeys(keyList = [SPAAAAACE])
 ttime = block_time.getTime() #this should not be useful anymore..
+
 #playing the whole musical piece 2 times
 for ll in range(2):
     dumm = 'Repetition ' + str(ll+1) + '\n Press space to continue'
@@ -158,9 +172,15 @@ for ll in range(2):
     #nextFlip = win.getFutureFlipTime(clock='ptb')
     #win.callOnFlip(setParallelData, 103) #SENDING TRIGGER
     Bachminor.play() #open again this line later
+
+    fix_c.draw()
+    pdiode.draw()
+    win.flip()
+    core.wait(0.05)
     fix_c.draw()
     win.flip()
-    core.wait(0.1)
+    core.wait(0.05)
+    
     event.clearEvents(eventType='keyboard')
     core.wait(25.9) #open again this line later
 
@@ -194,11 +214,15 @@ for wavve in range(len(wavefiles)):
     ttime = block_time.getTime() #this should not be useful anymore..
     wavezip[wavve][1].play()
     fix_c.draw()
+    pdiode.draw()
     win.flip()
     event.clearEvents(eventType='keyboard')
     RT.reset()
     resp = None
-    core.wait(0.1)
+    core.wait(0.05)
+    fix_c.draw()
+    win.flip()
+    core.wait(0.05)
     while resp == None:
         key = event.getKeys(keyList = ['1','2'])
         if len(key) > 0:
@@ -214,7 +238,7 @@ for wavve in range(len(wavefiles)):
     #writing RT, trial ID, subject's response
     lrow = '{};{};{};{};{};{} \n'
     lrow = lrow.format(subID[0],wavezip[wavve][0], trigval,resp, round(rt*1000),str(ttime))
-    logfile.write(lrow)
+    logfile.write(lrow) 
 
 logging.flush()
 logfile.close()
@@ -227,5 +251,11 @@ playlear = visual.TextStim(win,text = 'That was the end. \n'
 playlear.draw()
 win.flip()
 event.waitKeys(keyList = [SPAAAAACE])
-
+# Flicker task end
+for i in range(5):
+    pdiode.draw()
+    win.flip()
+    core.wait(0.05)
+    win.flip()
+    core.wait(0.05)
 ####################

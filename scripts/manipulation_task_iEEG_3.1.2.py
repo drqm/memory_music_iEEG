@@ -52,13 +52,16 @@ instructions = [['You will hear a melody.\n\n'
                  '1 = inverted, 2 = other\n\n']]
 
 rehearse_texts = [["IMAGINE \n\n"
-                   "Now take your time to imagine the original melody in your head.\n"
+                   "Now take your time to imagine the original melody in your head.\n\n"
+                   "Please DO NOT overtly sing or otherwise move while imagining.\n\n"
                    "When ready, press a key to hear the second melody and "
                    "provide an answer."],
 
                   ["IMAGINE \n\n"
                    "Now take your time to imagine how an INVERTED version of "
-                   "this melody would sound.\n\nRemember: A B C inverted "
+                   "this melody would sound.\n\n"
+                   "Please DO NOT overtly sing or otherwise move while imagining.\n\n"
+                   "Remember: A B C inverted "
                    "would become C B A.\n\nWhen ready, press a key to hear the "
                    "second melody and provide an answer."]]
 
@@ -181,6 +184,7 @@ if len(argv)>1:
 ID_box = gui.Dlg(title = 'Subject identity')
 ID_box.addField('ID: (change if subject ID is incorrect) ', csid)
 ID_box.addField('block order (random order: leave blank; maintenance first: 1; manipulation first: 2): ')
+ID_box.addField('Photodiode? (yes/no): ', 'yes')
 sub_id = ID_box.show()
 
 block_order = [0,1]
@@ -190,6 +194,8 @@ if sub_id[1] == '1':
    block_order = [0,1]
 if sub_id[1] == '2':
    block_order = [1,0]
+if sub_id[2] == 'yes':
+   pcolor = col
 
 ##### create window to display text:
 win = visual.Window(fullscr=True, color='black')
@@ -233,6 +239,7 @@ vividness_txt = visual.TextStim(win, text = "In the previous block, how vivid "
 fixationCross = visual.TextStim(win, text='+', color=col, height=0.3)
 listen_txt =  visual.TextStim(win, text='Listen', color=col, height=0.2)
 imagine_txt = visual.TextStim(win, text='Imagine', color=col, height=0.2)
+pdiode = visual.Rect(win, size = (.3,.35), pos = (-1,-1),fillColor=pcolor)
 
 # set default log file
 log_fn_def = log_dir + '/' + sub_id[0] +  '_iEEG_default.log'
@@ -290,6 +297,12 @@ for bidx, b in enumerate(bnames): # loop over blocks
 
     #################### Start experiment ####################################
     ## display instructions:
+    for i in range(5):
+        pdiode.draw()
+        win.flip()
+        core.wait(0.05)
+        win.flip()
+        core.wait(0.05)
     instr.draw()
     nextText.draw()
     win.flip()
@@ -369,12 +382,19 @@ for bidx, b in enumerate(bnames): # loop over blocks
         # present prime (loop over sounds):
         #nextFlip = win.getFutureFlipTime(clock='ptb')
         for p,ps in enumerate(pmel):
+            cwait = 0
             trigger = str(p + 1) + str(ps)
             #win.callOnFlip(setParallelData, int(trigger))
             sounds[ps-1].play()
             listen_txt.draw()
             win.flip()
-            core.wait(0.5)
+            if p == 0:
+                cwait = 0.05
+                pdiode.draw()
+                core.wait(cwait)
+                listen_txt.draw()
+                win.flip()
+            core.wait(0.5-cwait)
         core.wait(0.5)
         imagine_txt.draw()
         win.flip()
@@ -426,5 +446,12 @@ for bidx, b in enumerate(bnames): # loop over blocks
     blockendText.draw()
     win.flip()
     event.waitKeys()
+
 core.wait(2)
+for i in range(5):
+    pdiode.draw()
+    win.flip()
+    core.wait(0.05)
+    win.flip()
+    core.wait(0.05)
 core.quit()

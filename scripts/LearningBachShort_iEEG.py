@@ -64,6 +64,7 @@ if len(argv)>1:
 
 ID = gui.Dlg(title = 'subj ID')
 ID.addField('ID (change if subject ID is incorrect): ',csid)
+ID.addField('Photodiode? (yes/no): ', 'no')
 subID = ID.show()
 
 #create csv file for log
@@ -110,10 +111,12 @@ SPAAAAACE = 'space'
 
 #preparing window for the screen
 color_txt = 'white'
-win = visual.Window(fullscr = True, color = 'black')#[.9,.9,.9])
+win = visual.Window(fullscr=True, color='black')
+#win = visual.Window(fullscr=None, color='black', size = [2600,1600] )
 
-#Set frame rate
+# set frame rate
 frate = np.round(win.getActualFrameRate())
+#frate = 60
 prd = 1000 / frate
 print('screen fps = {} - cycle duration = {}'.format(frate, prd))
 
@@ -137,6 +140,18 @@ pd = visual.TextStim(win,text = 'You will listen to a complete musical piece rep
 instrrec = visual.TextStim(win,text = 'recognition part..',color = color_txt)
 fix_c = visual.TextStim(win,text = '+', color = color_txt,height = 0.2)
 block_time.reset() #this should not be useful anymore..
+pcolor = 'black'
+if subID[1]=='yes':
+    pcolor = color_txt
+pdiode = visual.Rect(win, size = (.3,.35), pos = (-1,-1),fillColor=pcolor)
+
+#Flicker task start
+for i in range(5):
+    pdiode.draw()
+    win.flip()
+    core.wait(0.05)
+    win.flip()
+    core.wait(0.05)
 
 #actual experiment (learning phase)
 pd.draw()
@@ -146,6 +161,7 @@ event.waitKeys(keyList = [SPAAAAACE])
 #win.flip()
 #event.waitKeys(keyList = [SPAAAAACE])
 ttime = block_time.getTime() #this should not be useful anymore..
+
 #playing the whole musical piece 2 times
 for ll in range(2):
     dumm = 'Repetition ' + str(ll+1) + '\n Press space to continue'
@@ -161,10 +177,12 @@ for ll in range(2):
     Bachminor.play() #open again this line later
     for frs in range(int(np.round(50/prd))): # 6 frames = 50 ms 
             fix_c.draw()
-            win.flip()  
+            pdiode.draw()
+            win.flip()
     win.callOnFlip(setParallelData, 0) #ENDING THE TRIGGER (TO MEG)
     for frs in range(int(np.round(50/prd))): # 6 frames = 50 ms
-            win.flip()  
+            fix_c.draw()
+            win.flip()
     event.clearEvents(eventType='keyboard')
     core.wait(25.9) #open again this line later
 
@@ -202,9 +220,11 @@ for wavve in range(len(wavefiles)):
     resp = None
     for frs in range(int(np.round(50/prd))): # 6 frames = 50 ms
         fix_c.draw()
-        win.flip() 
+        pdiode.draw()
+        win.flip()
     win.callOnFlip(setParallelData, 0) #SENDING THE TRIGGER
     for frs in range(int(np.round(50/prd))): # 6 frames = 50 ms
+        fix_c.draw()
         win.flip()
     while resp == None:
         key = event.getKeys(keyList = ['1','2'])
@@ -234,5 +254,11 @@ playlear = visual.TextStim(win,text = 'That was the end. \n'
 playlear.draw()
 win.flip()
 event.waitKeys(keyList = [SPAAAAACE])
-
+#Flicker task end
+for i in range(5):
+    pdiode.draw()
+    win.flip()
+    core.wait(0.05)
+    win.flip()
+    core.wait(0.05)
 ####################
