@@ -115,7 +115,7 @@ pdiode = visual.Rect(win, size = (.3,.35), pos = (-1,-1),fillColor=pcolor)
 
 # create a silent sound to prevent buffer issues
 silentDur = .5
-silent = sound.Sound('C', secs=silentDur, volume=0, sampleRate = 44100, stereo = False)
+silent = sound.Sound('C', secs=silentDur, volume=0,stereo = False)
 
 # start log file:
 filename = log_dir + '/' + sub_id[0] + '_localizer_iEEG.log'
