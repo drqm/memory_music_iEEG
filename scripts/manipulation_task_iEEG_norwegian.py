@@ -33,71 +33,66 @@ col = 'white' # text color
 
 ######### Prepare block-specific texts to display in the experiment ##########
 
-instructions = [['You will hear a melody.\n\n'
-                 'After it finishes, you will see the word "IMAGINE" on the screen. \n'
-                 'When this happens, please replay very vividly the SAME melody '
-                 'in your mind. \n\n'
-                 'After some time, you will hear a second melody. Please '
-                 'indicate whether the second melody is EXACTLY THE SAME as the '
-                 'first melody or not by pressing the keys as follows:\n\n'
-                 '1 = same, 2 = different\n\n'],
+instructions = [['Du skal nå høre en melodi.\n\n'
+                 'Når den er ferdig vil du se ordene “IMAGINE” (FORESTILL DEG) på skjermen. \n'
+                 'Når dette skjer, prøv å forestille deg melodien i hodet ditt så livlig som du kan.\n\n'
+                 'Etter litt tid vil du høre en annen melodi. Indiker om den andre '
+                 'melodien er NØYAKTIG DEN SAMME som den første melodien, '
+                 'eller ikke, ved å trykke på knappene:\n\n'
+                 '1: samme, 2: forskjellig\n\n'],
 
-                ['You will hear a melody.\n\n'
-                 'After it finishes, you will see the word "IMAGINE" on the screen. \n'
-                 'When this happens, please replay very vividly an INVERTED version '
-                 'of the melody in your mind (for example: C B A is an inversion of A B C). \n\n'
-                 'After some time, you will hear a second melody. Please indicate '
-                 'whether the second melody is an INVERTED version of the '
-                 'first melody or not by pressing the keys as follows:\n\n'
-                 '1 = inverted, 2 = other\n\n']]
-
+                ['Du skal nå høre en melodi.\n\n'
+                 'Når den er ferdig vil du se ordene “IMAGINE” (FORESTILL DEG) på skjermen. \n'
+                 'Når dette skjer, prøv å forestille deg en OMVENDT versjon så livlig som mulig i '
+                 'hodet ditt. For eksempel, C B A er det omvendte av A B C. \n\n'
+                 'Etter litt vil du høre en annen melodi. Venligst indiker om den andre '
+                 'melodien er en OMVENDT versjon av den første melodien, '
+                 'eller ikke, ved å trykke:\n\n'
+                 '1: omvendt, 2: annet\n\n']]
 
 rehearse_texts = [["IMAGINE \n\n"
-                   "Now take your time to imagine the original melody in your head.\n\n"
-                   "Please DO NOT overtly sing or otherwise move while imagining.\n\n"
-                   "When ready, press a key to hear the second melody and "
-                   "provide an answer."],
+                   "Ta den tiden du trenger for å forestille deg den originale melodien i hode ditt.\n\n"
+                   "Vennligst IKKE lag selve lyden eller beveg munnen din imens du forestiller deg melodien.\n\n"
+                   "Når du er klar, trykk på en knapp for å høre den andre melodien "
+                   "og gi et svar."],
 
                   ["IMAGINE \n\n"
-                   "Now take your time to imagine how an INVERTED version of "
-                   "this melody would sound.\n\n"
-                   "Please DO NOT overtly sing or otherwise move while imagining.\n\n"
-                   "Remember: A B C inverted "
-                   "would become C B A.\n\nWhen ready, press a key to hear the "
-                   "second melody and provide an answer."]]
+                   "Ta deg tid til å forestille deg hvordan en OMVENDT versjon av denne melodien lyder. \n\n"
+                   "Vennligst IKKE lag selve lyden eller beveg munnen din imens du forestiller deg melodien.\n\n"
+                   "Husk: A B C omvendt blir C B A. \n\n"
+                   "Når du er klar, trykk en knapp for å høre den andre melodien, "
+                   "og avgi et svar."]]
 
-continue_texts = [["Those were all the example melodies. Now we are ready\n"
-                   "to begin with the real experiment. The melodies will play \n"
-                   "automatically. Trials will go faster than the examples.\n"
-                   "Remember that you will have to answer: \n\n 1: same, 2: different\n\n"
-                   "Try to replay the melody very vividly in your mind "
-                   "exactly when the word 'IMAGINE' appears on the screen. \n"
-                   "Press a key to start the experiment.\n"],
+continue_texts = [["Det var alle melodieksemplene.Vi er nå klar for å begynne det ordentlige forsøket. "
+                  "Melodiene vil spilles av automatisk. Hver runde vil gå rsakere enn i eksempelene. "
+                   "Husk at du må svare: \n\n 1: samme, 2: forskjellig\n\n"
+                   "Prøv å forestille deg melodien så livlig som mulig i hodet ditt, "
+                   "nøyaktig når ordene “IMAGINE” (FORESTILL DEG) vises på skjermen.\n"
+                   "Trykk en tast for å starte forsøket.\n"],
                   
-                  ["Those were all the example melodies. Now we are ready\n"
-                   "to begin with the real experiment. The melodies will play\n"
-                   "automatically. Trials will go faster than the examples.\n"
-                   "Remember that you will have to answer:\n\n 1: inverted, 2: other\n\n"
-                   "Try to imagine the inverted melody very vividly in your mind "
-                   "exactly when the word 'IMAGINE' appears on the screen. \n"
-                   "Press a key to start the experiment.\n"]]
+                  ["Det var alle melodieksemplene.Vi er nå klar for å begynne det ordentlige forsøket. "
+                  "Melodiene vil spilles av automatisk. Hver runde vil gå raskere enn i eksempelmelodiene. "
+                  "Husk at du må svare: \n\n 1: omvendt, 2: annet\n\n"
+                  "Prøv å forestille den omvendte melodien så livlig som mulig "
+                  "i hodet ditt, nøyaktig når ordene “IMAGINE” (FORESTILL DEG) vises på skjermen.\n"
+                  "Trykk en tast for å starte forsøket.\n"]]
 
-feedback_same_texts = [["Did you answer correctly?\n\n"
-                        "The second melody was EXACTLY THE SAME as the first melody.\n"
-                        "Now press a button to hear another example."],
-                       
-                       ["Did you answer correctly?\n\n"
-                        "The second melody was an INVERTED version of the first melody.\n"
-                        "Now press a button to hear another example."]]
+feedback_same_texts = [["Svarte du riktig?\n\n"
+                        "Den andre melodien var NØYAKTIG DEN SAMME som den første melodien.\n"
+                        "Trykk en knapp for å høre et annet eksempel."],
 
-feedback_diff_texts = [["Did you answer correctly?\n\n"
-                        "The second melody was totally different from the first melody.\n"
-                        "Now press a button to continue."],
+                       ["Svarte du riktig?\n\n"
+                        "Den andre melodien var en OMVENDT versjon av den første melodien. \n"
+                        "Trykk en knapp for å høre et annet eksempel."]]
+
+feedback_diff_texts = [["Svarte du riktig?\n\n"
+                        "Den andre melodien var helt forskjellige fra den første melodien.\n"
+                        "Trykk en knapp for å fortsette."],
                        
-                       ["Did you answer correctly?\n\n"
-                        "Be careful! This melody sounded similar to the first but\n"
-                        "it is NOT an inverted version of it. Therefore, the correct\n" 
-                        "answer would be 2 in this case.\n Now press a button to continue."]]
+                       ["Svarte du riktig?\n\n"
+                        "Forsiktig! Denne melodien hørtes lignende ut som den første, "
+                        "men den er IKKE en omvendt versjon. Derfor vil det riktige svaret være 2, i dette tilfellet.\n"
+                        "Trykk en knapp for å fortsette."]]
 
 orders_same = [[0,1,2],[2,1,0]] # for practice trials
 orders_diff = [[0,2,1],[0,1,2]] # for practice trials
@@ -191,8 +186,8 @@ sub_id = ID_box.show()
 
 block_order = [0,1]
 shuffle(block_order)
-pcolor = 'black'
 
+pcolor = 'black'
 if sub_id[1] == '1':
    block_order = [0,1]
 if sub_id[1] == '2':
@@ -210,29 +205,26 @@ print('screen fps = {} - cycle duration = {}'.format(frate, prd))
 
 ##### create other text ojects to display during the experiment:
     
-nextText = visual.TextStim(win, text='(press a key to continue)',
+nextText = visual.TextStim(win, text='(Trykk en tast for å fortsette.)',
                            color=col, pos=(0, -0.8))
 
-endText = visual.TextStim(win, text='The end\n\nThank you for your participation!',
+endText = visual.TextStim(win, text='Det var slutten på forsøket.\n\nTakk for at du deltok!',
                           color=col, height=0.2, wrapWidth=2)
 
-practice_txt = visual.TextStim(win, text = "Before doing the task, let's "
-                                           "hear a couple of examples.\n\n"
-                                           "Press a key to hear and memorize"
-                                           " a first melody.\n\n Ready?",
+practice_txt = visual.TextStim(win, text = "Før du gjør oppgaven skal vi høre noen eksempler.\n\n"
+                                           "Trykk en tast for å høre og prøv å huske den første melodien.\n\n Klar?",
                                          wrapWidth=1.8, color = col)
 
-pause_txt = visual.TextStim(win, text = "Now it is time for a little pause\n\n"
-                                        "Please rest as much as you need.\n "
-                                        "Press a key when ready to continue",
+pause_txt = visual.TextStim(win, text = "Tid for en litt pause.\n\n"
+                                        "Ta den tiden du trenger.\n"
+                                        "Trykk en tast for å fortsette.",
                                          wrapWidth=1.8, color = col)
 
-vividness_txt = visual.TextStim(win, text = "In the previous block, how vivid "
-                                            "was your mental image of the sounds? \n\n"
-                                            "Please type one of the numbers in "
-                                            "the keyboard:\n\n "
-                                            " not vivid at all <  1  2  3  4  5  > "
-                                            "extremely vivid ",
+vividness_txt = visual.TextStim(win, text = "I den forrige delen, hvor livlig "
+                                            "klarte du å forestille deg lydene? \n\n"
+                                            "Trykk en av disse nummerene på tastaturet:\n\n "
+                                            "Ikke livlig i det hele tatt  <  1  2  3  4  5  > "
+                                            "Ekstremt livlig",
                                          wrapWidth=1.8, color = col)
 
 fixationCross = visual.TextStim(win, text='+', color=col, height=0.3)
@@ -241,7 +233,7 @@ imagine_txt = visual.TextStim(win, text='Imagine', color=col, height=0.2)
 pdiode = visual.Rect(win, size = (.3,.35), pos = (-1,-1),fillColor=pcolor)
 
 # set default log file
-log_fn_def = log_dir + '/' + sub_id[0] +  '_iEEG_default.log'
+log_fn_def = log_dir + '/' + sub_id[0] +  '_iEEG_default_norwegian.log'
 lastLog = logging.LogFile(log_fn_def, level=logging.INFO, filemode='a')
 
 ## create a silent sound to prevent buffer issues
@@ -266,13 +258,13 @@ for bidx, b in enumerate(bnames): # loop over blocks
     ################### prepare block-specific variables #####################
     block = blocks[b]
     if bidx == (len(bnames) - 1):
-        blockendText = visual.TextStim(win, text= "This is the end of the task.\n\n "
-                                                "Press a key to end this part of the experiment.",
+        blockendText = visual.TextStim(win, text= "Det var slutten på oppgaven. \n\n"
+                                                "Trykk en tast for å avslutte denne delen av forsøket.",
                                color=col, wrapWidth=1.8)
     else:
-        blockendText = visual.TextStim(win, text= "This is the end of the block.\n "
-                                                  "Now take a little break.\n\n"
-                                                  "Press a key to continue when ready. \n",
+        blockendText = visual.TextStim(win, text= "Det var slutten på denne delen.\n "
+                                                  "Nå kan du ta en liten pause.\n\n"
+                                                  "Trykk en tast for å fortsette, når du er klar.\n",
                                color=col,wrapWidth=1.8)
         
     instr = visual.TextStim(win, text=block['instructions'][0],
@@ -285,7 +277,7 @@ for bidx, b in enumerate(bnames): # loop over blocks
                                 wrapWidth=1.8, color = col)
    
     #### initialize custom log file:
-    filename = log_dir + '/' + sub_id[0] + '_' + b + '_iEEG.csv'
+    filename = log_dir + '/' + sub_id[0] + '_' + b + '_iEEG_norwegian.csv'
     logfile = open(filename,'w')
     logfile.write("subject,block,time,melID,trialID,prime,"
                   "target,type,response,rt\n")
@@ -370,7 +362,7 @@ for bidx, b in enumerate(bnames): # loop over blocks
     core.wait(silentDur)
 
     for tidx, t in enumerate(block['primes']):     # loop over trials:
-        trialtxt = visual.TextStim(win, text='Trial {} / 48'.format(tidx + 1),
+        trialtxt = visual.TextStim(win, text='Runde {} / 48'.format(tidx + 1),
                                    color=col, height = 0.2)
         trialtxt.draw()
         win.flip()

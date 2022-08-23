@@ -189,6 +189,7 @@ sub_id = ID_box.show()
 
 block_order = [0,1]
 shuffle(block_order)
+pcolor = 'black'
 
 if sub_id[1] == '1':
    block_order = [0,1]
