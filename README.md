@@ -22,6 +22,14 @@ Implementations in English using Psychopy 3.1.2:
 
 Implementations in English using Psychopy 2021.2.3
 
+- task 1 [scripts/LerningBach_iEEG.py](https://github.com/drqm/memory_music_iEEG/blob/master/scripts/LearningBachShort_iEEG.py)
+
+- task 2 [scripts/localizer_iEEG.py](https://github.com/drqm/memory_music_iEEG/blob/master/scripts/localizer_iEEG.py)
+
+- task 3 [scripts/manipulation_task_iEEG.py](https://github.com/drqm/memory_music_iEEG/blob/master/scripts/manipulation_task_iEEG.py)
+
+Implementations in Spanish using Psychopy 2021.2.3
+
 - task 1 [scripts/LerningBach_iEEG_spanish.py](https://github.com/drqm/memory_music_iEEG/blob/master/scripts/LearningBachShort_iEEG.py)
 
 - task 2 [scripts/localizer_iEEG_spanish.py](https://github.com/drqm/memory_music_iEEG/blob/master/scripts/localizer_iEEG.py) (for iEEG) and [scripts/localizer_MEG.py](https://github.com/drqm/memory_music_iEEG/blob/master/scripts/localizer_MEG.py) (for MEG)
@@ -29,13 +37,13 @@ Implementations in English using Psychopy 2021.2.3
 - task 3 [scripts/manipulation_task_iEEG_spanish.py](https://github.com/drqm/memory_music_iEEG/blob/master/scripts/manipulation_task_iEEG.py) (for iEEG) and [scripts/manipulation_task_MEG.py](https://github.com/drqm/memory_music_iEEG/blob/master/scripts/localizer_MEG.py) (for MEG)
 
 
-Implementations in Spanish using Psychopy 2021.2.3
+Implementations in Norwegian using Psychopy 2021.2.3
 
-- task 1 [scripts/LerningBach_iEEG.py](https://github.com/drqm/memory_music_iEEG/blob/master/scripts/LearningBachShort_iEEG.py)
+- task 1 [scripts/LerningBach_iEEG_norwegian.py](https://github.com/drqm/memory_music_iEEG/blob/master/scripts/LearningBachShort_iEEG_norwegian.py)
 
-- task 2 [scripts/localizer_iEEG.py](https://github.com/drqm/memory_music_iEEG/blob/master/scripts/localizer_iEEG.py)
+- task 2 [scripts/localizer_iEEG_norwegian.py](https://github.com/drqm/memory_music_iEEG/blob/master/scripts/localizer_iEEG_norwegian.py)
 
-- task 3 [scripts/manipulation_task_iEEG.py](https://github.com/drqm/memory_music_iEEG/blob/master/scripts/manipulation_task_iEEG.py)
+- task 3 [scripts/manipulation_task_iEEG_norwegian.py](https://github.com/drqm/memory_music_iEEG/blob/master/scripts/manipulation_task_iEEG_norwegian.py)
 
 
 The three tasks should be presented in this order: 1, 2, 3 or this order: 2, 3, 1; so that the localizer always preceds the maintenance/manipulation task. These two orders may be counterbalanced across participants.
@@ -56,12 +64,15 @@ Task run in Spanish using psychopy 2021.2.3
 
 [scripts/task_run_iEEG_spanish.py](https://github.com/drqm/memory_music_iEEG/blob/master/scripts/task_run_iEEG_spanish.py)
 
+Task run in Norwegian using psychopy 2021.2.3
+
+[scripts/task_run_iEEG_norwegian.py](https://github.com/drqm/memory_music_iEEG/blob/master/scripts/task_run_iEEG_spanish.py)
 
 These are the approximate durations and number of trials in each task:
 
 For iEEG
 
-- Task 1: 42 trials (21 old, 21 new) (5 minutes)
+- Task 1: 48 trials (24 old, 24 new) (5 minutes)
 
 - task 2: 120 trials (40 for each tone) (5 minutes)
 
@@ -74,5 +85,7 @@ for MEG:
 - task 3: 120 trials (60 maintenance: 30 same, 30 different; 60 manipulation: 30 inverted, 30 not inverted/other) (21 minutes)
 
 Stimuli found under the "stimuli" folder. Log files stored in the "logs" folder.
+
+See task instructions for implementation details
 
 
