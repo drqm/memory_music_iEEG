@@ -39,8 +39,8 @@ for tsk_ix, tsk in enumerate(task_order):
     system('python ' + tasks[tsk-1] + ' ' + sub_id[0])
     if tsk_ix < len(task_order) - 1:
         win0 = visual.Window(fullscr=True, color='black')
-        wait_scr = visual.TextStim(win0, text = "Now take a little break and rest as much as you need.\n"
-                                                "Press a key to continue with the next task when ready.",
+        wait_scr = visual.TextStim(win0, text = "Ahora haga una pausa y descanse cuanto necesite.\n"
+                                                "Presione una tecla para continuar.",
                                                 wrapWidth=1.8, color = 'white')
         wait_scr.draw()
         win0.flip()
