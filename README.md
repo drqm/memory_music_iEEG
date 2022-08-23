@@ -13,7 +13,7 @@ For tasks 2 and 3 we have both MEG and iEEG versions. These are the correspoindi
 
 Implementations in English using Psychopy 3.1.2:
 
-- task 1 [scripts/LerningBach_iEEG_3.1.2.py](https://github.com/drqm/memory_music_iEEG/blob/master/scripts/LearningBachShort_iEEG_3.1.2.py)
+- task 1 [scripts/LerningBachShort_iEEG_3.1.2.py](https://github.com/drqm/memory_music_iEEG/blob/master/scripts/LearningBachShort_iEEG_3.1.2.py)
 
 - task 2 [scripts/localizer_iEEG_3.1.2.py](https://github.com/drqm/memory_music_iEEG/blob/master/scripts/localizer_iEEG_3.1.2.py)
 
@@ -22,7 +22,7 @@ Implementations in English using Psychopy 3.1.2:
 
 Implementations in English using Psychopy 2021.2.3
 
-- task 1 [scripts/LerningBach_iEEG.py](https://github.com/drqm/memory_music_iEEG/blob/master/scripts/LearningBachShort_iEEG.py)
+- task 1 [scripts/LerningBachShort_iEEG.py](https://github.com/drqm/memory_music_iEEG/blob/master/scripts/LearningBachShort_iEEG.py)
 
 - task 2 [scripts/localizer_iEEG.py](https://github.com/drqm/memory_music_iEEG/blob/master/scripts/localizer_iEEG.py)
 
@@ -30,7 +30,7 @@ Implementations in English using Psychopy 2021.2.3
 
 Implementations in Spanish using Psychopy 2021.2.3
 
-- task 1 [scripts/LerningBach_iEEG_spanish.py](https://github.com/drqm/memory_music_iEEG/blob/master/scripts/LearningBachShort_iEEG.py)
+- task 1 [scripts/LerningBachShort_iEEG_spanish.py](https://github.com/drqm/memory_music_iEEG/blob/master/scripts/LearningBachShort_iEEG.py)
 
 - task 2 [scripts/localizer_iEEG_spanish.py](https://github.com/drqm/memory_music_iEEG/blob/master/scripts/localizer_iEEG.py) (for iEEG) and [scripts/localizer_MEG.py](https://github.com/drqm/memory_music_iEEG/blob/master/scripts/localizer_MEG.py) (for MEG)
 
@@ -39,7 +39,7 @@ Implementations in Spanish using Psychopy 2021.2.3
 
 Implementations in Norwegian using Psychopy 2021.2.3
 
-- task 1 [scripts/LerningBach_iEEG_norwegian.py](https://github.com/drqm/memory_music_iEEG/blob/master/scripts/LearningBachShort_iEEG_norwegian.py)
+- task 1 [scripts/lerningBachShort_iEEG_norwegian.py](https://github.com/drqm/memory_music_iEEG/blob/master/scripts/learningBachShort_iEEG_norwegian.py)
 
 - task 2 [scripts/localizer_iEEG_norwegian.py](https://github.com/drqm/memory_music_iEEG/blob/master/scripts/localizer_iEEG_norwegian.py)
 
