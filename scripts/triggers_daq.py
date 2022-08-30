@@ -17,7 +17,7 @@ except NotImplementedError:
     port_type = 'parallel'
 except NotImplementedError:
     ## Change address to corresponding folder
-    os.chdir('~/LinuxDrivers/USB/python')
+    #os.chdir('~/LinuxDrivers/USB/python')
     from usb_1208FS import *
     usb1208FS = usb_1208FS()
     port_type = 'daq'
@@ -37,7 +37,7 @@ elif port_type == 'serial':
 elif port_type == 'daq':
     def setParallelData(code=1):
         value = int(code,16)
-      	usb1208FS.AOut(0,value)
+        usb1208FS.AOut(0,value)
         print('trigger sent {}'.format(code))
 else:
     def setParallelData(code=1):
