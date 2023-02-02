@@ -12,9 +12,9 @@ leonardo.bonetti@clin.au.dk
 #-place the provided stimuli folders in your favorite directory
 #-assign to the variable 'stimidr' (few lines below) such directory
 #-define your log directory
-#Please note that the csv file with the crucial stimuli presentation IDs and 
+#Please note that the csv file with the crucial stimuli presentation IDs and
 # behavioural responses is created within the log directory
- 
+
 #################### Load libraries and set directories ####################
 from random import shuffle
 from psychopy import prefs
@@ -38,7 +38,7 @@ cwd = os.getcwd()
 print('current working directory: ' + cwd)
 logdir = cwd + '/logs'
 stimdir = cwd + '/stimuli'
-#logdir = ('C:/Users/au571303/Documents/projects/memory_music_iEEG/logs') 
+#logdir = ('C:/Users/au571303/Documents/projects/memory_music_iEEG/logs')
 #stimdir = ('C:/Users/au571303/Documents/projects/memory_music_iEEG/stimuli')
 
 #monitor settings
@@ -121,7 +121,7 @@ prd = 1000 / frate
 print('screen fps = {} - cycle duration = {}'.format(frate, prd))
 
 #pd = visual.TextStim(win,text = 'First, you will listen to a complete musical piece '
-#                                '(Learning phase). \n\n Please try to remember it as ' 
+#                                '(Learning phase). \n\n Please try to remember it as '
 #                                'much as possible. \n\n Second, you will listen to 42 '
 #                                'short musical excerpts (Recognition phase). \n\n For '
 #                                'each of them you will be asked to indicate whether '
@@ -129,7 +129,7 @@ print('screen fps = {} - cycle duration = {}'.format(frate, prd))
 #                                'learning phase or not. \n\n Press space to continue',
 #                                 color = color_txt, height = 0.1)
 pd = visual.TextStim(win,text = 'You will listen to a complete musical piece repeated twice. '
-                                '\n\n Please try to remember it as ' 
+                                '\n\n Please try to remember it as '
                                 'much as possible. \n\n Later you will do a memory task based '
                                 'on this music.\n\n Press space to begin.',
                                 color = color_txt, height = 0.1)
@@ -172,10 +172,10 @@ for ll in range(2):
     fix_c.draw()
     win.flip()
     core.wait(0.5)
-    nextFlip = win.getFutureFlipTime(clock='ptb') 
+    nextFlip = win.getFutureFlipTime(clock='ptb')
     win.callOnFlip(setParallelData, 103) #SENDING TRIGGER
     Bachminor.play() #open again this line later
-    for frs in range(int(np.round(50/prd))): # 6 frames = 50 ms 
+    for frs in range(int(np.round(50/prd))): # 6 frames = 50 ms
             fix_c.draw()
             pdiode.draw()
             win.flip()
@@ -211,8 +211,8 @@ for wavve in range(len(wavefiles)):
         trigval = 10
     else:
         trigval = 50
-    nextFlip = win.getFutureFlipTime(clock='ptb') 
-    win.callOnFlip(setParallelData, trigval) #SENDING TRIGGER 
+    nextFlip = win.getFutureFlipTime(clock='ptb')
+    win.callOnFlip(setParallelData, trigval) #SENDING TRIGGER
     ttime = block_time.getTime() #this should not be useful anymore..
     wavezip[wavve][1].play()
     event.clearEvents(eventType='keyboard')
@@ -231,7 +231,7 @@ for wavve in range(len(wavefiles)):
         if len(key) > 0:
             rt = RT.getTime()
             resp = key[0][0]
-        elif RT.getTime() > 2.9: #3 seconds of maximum wait if subject does not reply
+        elif RT.getTime() > 4.9: #3 seconds of maximum wait if subject does not reply
             resp = 0
             rt = RT.getTime()
     if RT.getTime() > 1.7:

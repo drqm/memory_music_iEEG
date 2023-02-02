@@ -12,21 +12,21 @@ leonardo.bonetti@clin.au.dk
 #-place the provided stimuli folders in your favorite directory
 #-assign to the variable 'stimidr' (few lines below) such directory
 #-define your log directory
-#Please note that the csv file with the crucial stimuli presentation IDs and
+#Please note that the csv file with the crucial stimuli presentation IDs and 
 # behavioural responses is created within the log directory
 
 #################### Load libraries and set directories ####################
 from random import shuffle
 from psychopy import prefs
 #prefs.hardware['audioLib'] = ['pyo']
-prefs.hardware['audioLib'] = ['sounddevice']
+prefs.hardware['audioLib'] = ['sounddevice']#['PTB']
 from psychopy import visual, core, sound, event, gui, monitors, logging
 import itertools as it
 import os
 import numpy as np
 from sys import argv
-# from triggers import setParallelData
-# setParallelData(0)
+#from triggers import setParallelData
+#setParallelData(0)
 
 #################### YOUR DIRECTORY ##########################################
 #THIS IS YOUR DIRECTORY WHERE YOU PUT THE PROVIDED FOLDERS, PLEASE UPDATE THIS IF NECESSARY
@@ -37,7 +37,7 @@ cwd = os.getcwd()
 print('current working directory: ' + cwd)
 logdir = cwd + '/logs'
 stimdir = cwd + '/stimuli'
-#logdir = ('C:/Users/au571303/Documents/projects/memory_music_iEEG/logs')
+#logdir = ('C:/Users/au571303/Documents/projects/memory_music_iEEG/logs') 
 #stimdir = ('C:/Users/au571303/Documents/projects/memory_music_iEEG/stimuli')
 
 #monitor settings
@@ -67,14 +67,14 @@ ID.addField('Photodiode? (yes/no): ', 'yes')
 subID = ID.show()
 
 #create csv file for log
-filename = logdir + '/' + subID[0] + '_learning_bach_iEEG_custom.csv'
+filename = logdir + '/' + subID[0] + '_learning_bach_iEEG_custom_spanish.csv'
 logfile = open(filename,'w')
 logfile.write("subj;trial;trigger;response;RT;time \n")
 
 #create log file
 block_time = core.Clock()
 logging.setDefaultClock(block_time)
-filename2 = logdir + '/' + subID[0] + '_learning_bach_iEEG_default.log'
+filename2 = logdir + '/' + subID[0] + '_learning_bach_iEEG_default_spanish.log'
 lastLog = logging.LogFile(filename2, level=logging.INFO, filemode='a')
 
 #getting file for learning phase
@@ -110,31 +110,31 @@ SPAAAAACE = 'space'
 
 #preparing window for the screen
 color_txt = 'white'
-win = visual.Window(fullscr = True, color = 'black')#[.9,.9,.9])
+win = visual.Window(fullscr = True, color = 'black')
 
-#Set frame rate
-# frate = np.round(win.getActualFrameRate())
-# prd = 1000 / frate
-# print('screen fps = {} - cycle duration = {}'.format(frate, prd))
+# set frame rate
+#frate = np.round(win.getActualFrameRate())
+#prd = 1000 / frate
+#print('screen fps = {} - cycle duration = {}'.format(frate, prd))
 
 #pd = visual.TextStim(win,text = 'First, you will listen to a complete musical piece '
-#                                '(Learning phase). \n\n Please try to remember it as '
+#                                '(Learning phase). \n\n Please try to remember it as ' 
 #                                'much as possible. \n\n Second, you will listen to 42 '
 #                                'short musical excerpts (Recognition phase). \n\n For '
 #                                'each of them you will be asked to indicate whether '
 #                                'they were extracted from the musical piece of the '
 #                                'learning phase or not. \n\n Press space to continue',
 #                                 color = color_txt, height = 0.1)
-pd = visual.TextStim(win,text = 'You will listen to a complete musical piece repeated twice. '
-                                '\n\n Please try to remember it as '
-                                'much as possible. \n\n Later you will do a memory task based '
-                                'on this music.\n\n Press space to begin.',
+pd = visual.TextStim(win,text = 'A continuación, usted escuchará una pieza musical completa repetida dos veces. '
+                                '\n\n Por favor, trate de memorizarla tanto como ' 
+                                'sea posible. \n\n Luego, usted realizará una prueba de memoria '
+                                'basada en esta música.\n\n Presione la barra espaciadora para empezar.',
                                 color = color_txt, height = 0.1)
 #instr = visual.TextStim(win,text = 'Learning phase \n\n Now you are going to listen '
 #                                   'to a complete musical piece \n\n Please try to '
 #                                   'remember it as much as possible \n\n Press space '
 #                                  'to continue',color = color_txt)
-instrrec = visual.TextStim(win,text = 'recognition part..',color = color_txt)
+instrrec = visual.TextStim(win,text = 'Reconocimiento..',color = color_txt)
 fix_c = visual.TextStim(win,text = '+', color = color_txt,height = 0.2)
 block_time.reset() #this should not be useful anymore..
 pcolor = 'black'
@@ -142,14 +142,14 @@ if subID[1]=='yes':
     pcolor = color_txt
 pdiode = visual.Rect(win, size = (.3,.35), pos = (-1,-1),fillColor=pcolor)
 
-# Flicker to signal task start
+#Flicker task start
 for i in range(5):
     pdiode.draw()
     win.flip()
     core.wait(0.05)
     win.flip()
     core.wait(0.05)
-    
+
 #actual experiment (learning phase)
 pd.draw()
 win.flip()
@@ -161,7 +161,7 @@ ttime = block_time.getTime() #this should not be useful anymore..
 
 #playing the whole musical piece 2 times
 for ll in range(2):
-    dumm = 'Repetition ' + str(ll+1) + '\n Press space to continue'
+    dumm = 'Repetición ' + str(ll+1) + '\n Presione barra espaciadora para continuar.'
     playlear = visual.TextStim(win,text = dumm, color = color_txt)
     playlear.draw()
     win.flip()
@@ -169,10 +169,10 @@ for ll in range(2):
     fix_c.draw()
     win.flip()
     core.wait(0.5)
-    #nextFlip = win.getFutureFlipTime(clock='ptb')
-    #win.callOnFlip(setParallelData, 103) #SENDING TRIGGER
+#    nextFlip = win.getFutureFlipTime(clock='ptb') 
+#    win.callOnFlip(setParallelData, 103) #SENDING TRIGGER
     Bachminor.play() #open again this line later
-
+    
     fix_c.draw()
     pdiode.draw()
     win.flip()
@@ -185,11 +185,11 @@ for ll in range(2):
     core.wait(25.9) #open again this line later
 
 #actual experiment (recognition phase)
-playrec = visual.TextStim(win,text = 'Now you will listen to 48 short musical excerpts. \n\n '
-                                     'For each of them please indicate with the keyboard '
-                                     'whether it was extracted from the musical '
-                                     'piece that you have just listened to (press 1) '
-                                     'or not (press 2). \n\n Press space to continue',
+playrec = visual.TextStim(win,text = 'Ahora usted escuchará 48 melodías cortas. \n\n '
+                                     'Para cada una de ellas, por favor indique con el teclado '
+                                     'si la memlodía se encontraba en la pieza musical '
+                                     'que usted acaba de oir (presione 1) '
+                                     'o no (presione 2). \n\n  Presione barra espaciadora para continuar.',
                                      color = color_txt)
 playrec.draw()
 win.flip()
@@ -197,7 +197,7 @@ event.waitKeys(keyList = [SPAAAAACE])
 #over musical excerpts (trials)
 for wavve in range(len(wavefiles)):
     #displaying the progressive trial number for participants' comfort
-    jes = 'trial number ' + str((wavve + 1)) + ' / ' + str(len(wavefiles))
+    jes = 'melodía número ' + str((wavve + 1)) + ' / ' + str(len(wavefiles))
     instrrectr = visual.TextStim(win,text = jes,color = color_txt)
     instrrectr.draw()
     win.flip()
@@ -209,8 +209,8 @@ for wavve in range(len(wavefiles)):
         trigval = 10
     else:
         trigval = 50
-    #nextFlip = win.getFutureFlipTime(clock='ptb')
-    #win.callOnFlip(setParallelData, trigval) #SENDING TRIGGER
+#    nextFlip = win.getFutureFlipTime(clock='ptb') 
+#    win.callOnFlip(setParallelData, trigval) #SENDING TRIGGER 
     ttime = block_time.getTime() #this should not be useful anymore..
     wavezip[wavve][1].play()
     fix_c.draw()
@@ -238,20 +238,20 @@ for wavve in range(len(wavefiles)):
     #writing RT, trial ID, subject's response
     lrow = '{};{};{};{};{};{} \n'
     lrow = lrow.format(subID[0],wavezip[wavve][0], trigval,resp, round(rt*1000),str(ttime))
-    logfile.write(lrow) 
+    logfile.write(lrow)
 
 logging.flush()
 logfile.close()
 
 #final message
-playlear = visual.TextStim(win,text = 'That was the end. \n'
-                                      'Thank you very much! \n\n '
-                                      'Press space to end this part of the experiment',
+playlear = visual.TextStim(win,text = 'Eso es todo! \n'
+                                      'Muchas gracias! \n\n '
+                                      'Presione barra espaciadora para finalizar esta parte del experimento.',
                             color = color_txt)
 playlear.draw()
 win.flip()
 event.waitKeys(keyList = [SPAAAAACE])
-# Flicker task end
+#Flicker task end
 for i in range(5):
     pdiode.draw()
     win.flip()

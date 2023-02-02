@@ -46,10 +46,10 @@ for n in range(n_tones):
         shuffle(pattern)
         if pattern[0] != seq[start-1]:
             p = 0
-    seq[start:end] = pattern
+    seq[start:end] = pattern 
     if np.isin(n,tidx):
         seq[end] = 4
-        end = end + 1
+        end = end + 1 
 
 ###################### Prepare psychopy task #################################
 
@@ -57,7 +57,7 @@ for n in range(n_tones):
 sounds = [sound.Sound('{}/{}.wav'.format(stim_dir,int(s))) for s in np.unique(seq)]
 
 #### Prepare relevant keys:
-
+    
 #keyNext = 'space' # key to advance
 
 #### function to quit the experiment and save log file:
@@ -65,7 +65,7 @@ def quit_and_save():
     logfile.close()
     logging.flush()
     core.quit()
-
+    
 event.globalKeys.add(key='escape', func=quit_and_save, name='shutdown')
 
 csid = ''
@@ -85,22 +85,22 @@ win = visual.Window(fullscr=True, color='black')
 
 ##### create text oBjects to display during the experiment:
 
-instructions = visual.TextStim(win, text = "In the following, you will hear "
-                                           "a series of sounds. \n\n"
-                                           "After each sound finishes, you will "
-                                           "see the word IMAGINE on the screen. \n\n"
-                                           "When this happens, please replay the sound "
-                                           "very vividly in your mind. \n\n"
-                                           "Please DO NOT sing the the sound "
-                                           "with your mouth or move otherwise.\n\n"
-                                           "Press a key to begin.",
+instructions = visual.TextStim(win, text = "A continuación usted va a escuchar "
+                                           "una serie de sonidos. \n\n"
+                                           "Luego de que cada sonido termine, usted verá "
+                                           "la palabra 'IMAGINE' en la pantalla. \n\n"
+                                           "Cuando esto suceda, por favor reproduzca en su mente "
+                                           "e imagine vívidamente el sonido escuchado. \n\n"
+                                           "Por favor NO CANTE el sonido "
+                                           "con su boca o produzca otros movimeintos.\n\n"
+                                           "Presione la barra espaciadora para empezar.",
                                          wrapWidth=1.8, color = col)
+                                         
+endText = visual.TextStim(win, text='Este es el final de la prueba. \n'
+                                    'Presione una tecla para terminar.',
+                          wrapWidth=1.8, color = col)
 
-endText = visual.TextStim(win, text='That is the end of the task. \n',
-                                        alignHoriz = 'center',#wrapWidth=1.8,
-                                         color = col)
-
-count_txt = ['Listen','Imagine']
+count_txt = ['Escuche','Imagine']
 #durs = [550,600,550,600]
 durs = [900,900]
 trig_dur = 50
@@ -115,9 +115,9 @@ silentDur = .5
 silent = sound.Sound('C', secs=silentDur, volume=0, sampleRate = 44100, stereo = False)
 
 # start log file:
-filename = log_dir + '/' + sub_id[0] + '_localizer_iEEG.log'
+filename = log_dir + '/' + sub_id[0] + '_localizer_iEEG_spanish.log'
 lastLog = logging.LogFile(filename, level=logging.INFO, filemode='w')
-custom_logfname = log_dir + '/' + sub_id[0] + '_localizer_iEEG.csv'
+custom_logfname = log_dir + '/' + sub_id[0] + '_localizer_iEEG_spanish.csv'
 logfile = open(custom_logfname,'w')
 logfile.write("subject,time,soundID\n")
 
@@ -157,7 +157,7 @@ for s in seq:
         count_msg.draw()
         win.flip()
         core.wait((durs[cidx]-trig_dur)/1000)
-    logfile.write('{},{},{}\n'.format(sub_id[0],ttime,s))
+    logfile.write("{},{},{}\n".format(sub_id[0],ttime,s))
     logging.flush()
 
 logfile.close()

@@ -27,7 +27,7 @@ stim_dir = 'stimuli/manipulation_normalized'
 log_dir = 'logs'
 
 # Uncomment this seed to reproduce the randomization:
-#rgnSeed = np.random.randint(900509) 
+#rgnSeed = np.random.randint(900509)
 col = 'white' # text color
 ###############################################################################
 
@@ -69,7 +69,7 @@ continue_texts = [["Det var alle melodieksemplene.Vi er nå klar for å begynne 
                    "Prøv å forestille deg melodien så livlig som mulig i hodet ditt, "
                    "nøyaktig når ordene “IMAGINE” (FORESTILL DEG) vises på skjermen.\n"
                    "Trykk en tast for å starte forsøket.\n"],
-                  
+
                   ["Det var alle melodieksemplene.Vi er nå klar for å begynne det ordentlige forsøket. "
                   "Melodiene vil spilles av automatisk. Hver runde vil gå raskere enn i eksempelmelodiene. "
                   "Husk at du må svare: \n\n 1: omvendt, 2: annet\n\n"
@@ -88,7 +88,7 @@ feedback_same_texts = [["Svarte du riktig?\n\n"
 feedback_diff_texts = [["Svarte du riktig?\n\n"
                         "Den andre melodien var helt forskjellige fra den første melodien.\n"
                         "Trykk en knapp for å fortsette."],
-                       
+
                        ["Svarte du riktig?\n\n"
                         "Forsiktig! Denne melodien hørtes lignende ut som den første, "
                         "men den er IKKE en omvendt versjon. Derfor vil det riktige svaret være 2, i dette tilfellet.\n"
@@ -111,7 +111,7 @@ for bidx,b in enumerate(blocknames):
 
     # create prime melodies (12 repetitions of the two melodies)
     primes = [[1,2,3],[3,2,1]]*12 # 48 melodies per block
-    
+
     # create targets:
     if b == 'recognize':
        same = primes.copy()
@@ -124,15 +124,15 @@ for bidx,b in enumerate(blocknames):
        diff1 = [[l[a] for a in [2,0,1]] for l in primes[0:12]]
        diff2 = [[l[a] for a in [0,1,2]] for l in primes[12:25]]
        diff = list(it.chain(diff1,diff2))
-    
+
     # lists of trial information
     primes = list(it.chain(primes,primes))
-    targets = list(it.chain(same,diff))    
+    targets = list(it.chain(same,diff))
     trialID = list(range(len(primes)))   # trial number (before scrambling)
 
     # random trial order
     rand = trialID.copy()
-    shuffle(rand)   
+    shuffle(rand)
 
     trialID = [id + 1 for id in trialID] # record trial identity
     melID = list(range(2))*24
@@ -153,13 +153,13 @@ for bidx,b in enumerate(blocknames):
     blocks[b]['feedback_diff'] = feedback_diff_texts[bidx]
     blocks[b]['order_same'] = orders_same[bidx]
     blocks[b]['order_diff'] = orders_diff[bidx]
-    
+
 ##############################################################################
 
 ####################### prepare Psychopy task ################################
 
 #### Prepare relevant keys:
-    
+
 #keyNext = 'space' # key to advance
 
 #### function to quit the experiment and save log file:
@@ -169,7 +169,7 @@ def quit_and_save():
        logfile.close()
     logging.flush()
     core.quit()
-    
+
 event.globalKeys.add(key='escape', func=quit_and_save, name='shutdown')
 
 #### Collect participant identity:
@@ -204,7 +204,7 @@ prd = 1000 / frate
 print('screen fps = {} - cycle duration = {}'.format(frate, prd))
 
 ##### create other text ojects to display during the experiment:
-    
+
 nextText = visual.TextStim(win, text='(Trykk en tast for å fortsette.)',
                            color=col, pos=(0, -0.8))
 
@@ -248,13 +248,13 @@ block_time = core.Clock()
 
 ############## Now run the experimental blocks ###############################
 
-#### select blocks to include:         
-           
+#### select blocks to include:
+
 bnames = ['recognize','invert'] # block names to loop over
 bnames = [bnames[b] for b in block_order] # counterbalance
 
 for bidx, b in enumerate(bnames): # loop over blocks
-    
+
     ################### prepare block-specific variables #####################
     block = blocks[b]
     if bidx == (len(bnames) - 1):
@@ -266,25 +266,25 @@ for bidx, b in enumerate(bnames): # loop over blocks
                                                   "Nå kan du ta en liten pause.\n\n"
                                                   "Trykk en tast for å fortsette, når du er klar.\n",
                                color=col,wrapWidth=1.8)
-        
+
     instr = visual.TextStim(win, text=block['instructions'][0],
                             color=col, wrapWidth=1.8)
- 
+
     continue_txt = visual.TextStim(win, text = block['continue'][0],
                                    wrapWidth=1.8, color = col)
-        
+
     rehearse_txt = visual.TextStim(win, text = block['rehearse'][0],
                                 wrapWidth=1.8, color = col)
-   
+
     #### initialize custom log file:
     filename = log_dir + '/' + sub_id[0] + '_' + b + '_iEEG_norwegian.csv'
     logfile = open(filename,'w')
     logfile.write("subject,block,time,melID,trialID,prime,"
                   "target,type,response,rt\n")
-    
+
     #### preload sounds:
     sounds = []
-    sounds = [sound.Sound('{}'.format(bb)) for bb in block['stim']]       
+    sounds = [sound.Sound('{}'.format(bb)) for bb in block['stim']]
 
     #################### Start experiment ####################################
     ## display instructions:
@@ -299,65 +299,65 @@ for bidx, b in enumerate(bnames): # loop over blocks
     nextText.draw()
     win.flip()
     event.waitKeys()
-    
+
     ##################### Run example trials #################################
 
     practice_txt.draw()
     nextText.draw()
     win.flip()
     event.waitKeys()
-    
+
     # We will present a "same" (or "invert") and a "different" (or "other") trial.
-    cases = ['same','diff'] 
-    
+    cases = ['same','diff']
+
     for tt in cases:
-        
+
         ########## Prepare condition-specific variables #######################
         feedback_txt = visual.TextStim(win, text = block['feedback_' + tt][0],
                                                wrapWidth=1.8, color = col)
         order = block['order_' + tt]
-                       
+
         ################### begin stimulus presentation #######################
-        
+
         #prime melody:
-            
+
         listen_txt.draw(win)
         win.flip()
         silent.play()  # to prevent omission/cut of the first stimulus
         core.wait(1)
-        for s in [0,1,2]:  
+        for s in [0,1,2]:
             sounds[s].play()
-            core.wait(0.5)     
-                          
+            core.wait(0.5)
+
         rehearse_txt.draw(win)
-        nextText.draw()    
+        nextText.draw()
         win.flip()
         event.waitKeys()
-        
+
         # target melody:
-            
+
         listen_txt.draw(win)
         win.flip()
         silent.play()  # to prevent omission/cut of the first stimulus
-                   
-        for s in order:  
+
+        for s in order:
             sounds[s].play()
-            core.wait(0.5)    
-            
-        core.wait(2)       
+            core.wait(0.5)
+
+        core.wait(2)
         feedback_txt.draw()
-        nextText.draw()    
+        nextText.draw()
         win.flip()
         event.waitKeys()
-        
+
     continue_txt.draw()
     win.flip()
     event.waitKeys()
-        
+
     ###################### Now we begin the real task ########################
-    
+
     block_time.reset()
-    
+
     silent.play()  # to prevent omission/cut of the first stimulus
     core.wait(silentDur)
 
@@ -388,20 +388,20 @@ for bidx, b in enumerate(bnames): # loop over blocks
                 listen_txt.draw()
                 win.flip()
             nextFlip = win.getFutureFlipTime(clock='ptb')
-        
+
         for frs in range(int(np.round(500/prd))): # 30 frames = 450 ms
             listen_txt.draw()
             win.flip()
-            
+
         #delay period:
         for frs in range(int(np.round(2000/prd))): # 30 frames = 450 ms
             imagine_txt.draw()
             win.flip()
-       
+
         #present target (loop over sounds)
         for midx, ts in enumerate(tmel):
-            trigger = str(block['type'][tidx]) + str(midx + 1) + str(ts) 
-            win.callOnFlip(setParallelData, int(trigger))           
+            trigger = str(block['type'][tidx]) + str(midx + 1) + str(ts)
+            win.callOnFlip(setParallelData, int(trigger))
             sounds[ts-1].play(when = nextFlip)
             #clear events and reset the clock for RT
             if midx == 0:
@@ -409,22 +409,22 @@ for bidx, b in enumerate(bnames): # loop over blocks
                 RT.reset()
             for frs in range(int(np.round(50/prd))): # 6 frames = 50 ms
                 listen_txt.draw()
-                win.flip()  
+                win.flip()
             win.callOnFlip(setParallelData, 0)
             for frs in range(int(np.round(450/prd))): # 30 frames = 450 ms
                 listen_txt.draw()
                 win.flip()
             nextFlip = win.getFutureFlipTime(clock='ptb')
-        
+
         # if there is a response record keys and RT. Else record 0 and time limit:
-           
-        resp = None 
-        while resp == None: 
+
+        resp = None
+        while resp == None:
            key = event.getKeys(timeStamped = RT)
            if len(key) > 0:
-                resp = key[0][0] 
+                resp = key[0][0]
                 rt = key[0][1]
-           elif RT.getTime() > 3.5:
+           elif RT.getTime() > 5:
                 resp = 0
                 rt = RT.getTime()
 
@@ -433,9 +433,9 @@ for bidx, b in enumerate(bnames): # loop over blocks
         lrow = lrow.format(sub_id[0],b,ttime,block['melID'][tidx],block['trialID'][tidx],
                            pmel[0],pmel[1],pmel[2], tmel[0],tmel[1],tmel[2],
                            block['type'][tidx], resp,rt*1000)
-        logfile.write(lrow)            
+        logfile.write(lrow)
         core.wait(0.1)  # 100 ms after response, to start new trial
-        
+
         # now we introduce a small pause in trial 30 so that participants can rest
         if tidx == 23:
             pause_txt.draw()

@@ -20,9 +20,9 @@ ID_box.addField('tasks to include, separated by commas:\n'
 
 sub_id = ID_box.show()
 
-tasks = ["learningBachShort_iEEG_spanish.py",
-         "localizer_iEEG_spanish.py",
-         "manipulation_task_iEEG_spanish.py"]
+tasks = ["learningBachShort_iEEG_spanish_3.1.2.py",
+         "localizer_iEEG_spanish_3.1.2.py",
+         "manipulation_task_iEEG_spanish_3.1.2.py"]
 
 task_order = [[1],[2,3]]
 shuffle(task_order)
