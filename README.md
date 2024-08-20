@@ -8,6 +8,9 @@ In this repository you will find the implementation of experimental paradigms in
 
 3- A working memory and imagery task (maintenance) in which participants are presented with a short three-note melody, then are asked to imagine it vividly on cue, and finally are required to decide if the second melody is the same or different from the first. In this task, there is a second block (manipulation) in which participants need to mentally invert the melody in their minds (e.g. ABC becomes CBA) and judge whether the second melody is an inverted version of the first or not. The two blocks (maintenance and manipulation) are counterbalanced across subjects.
 
+The MEG version of task 3 was used in the following publication:
+
+Quiroga-Martinez, D. R., Rubio, G. F., Bonetti, L., Achyutuni, K. G., Tzovara, A., Knight, R. T., & Vuust, P. (2023). Decoding reveals the neural representation of held and manipulated musical thoughts (p. 2023.08.15.553456). bioRxiv. [https://doi.org/10.1101/2023.08.15.553456](https://doi.org/10.1101/2023.08.15.553456)
 
 For tasks 2 and 3 we have both MEG and iEEG versions. These are the correspoinding implementations of each task, for different Psychopy versions and different languages: 
 
@@ -24,18 +27,17 @@ Implementations in English using Psychopy 2021.2.3
 
 - task 1 [scripts/LerningBachShort_iEEG.py](https://github.com/drqm/memory_music_iEEG/blob/master/scripts/LearningBachShort_iEEG.py)
 
-- task 2 [scripts/localizer_iEEG.py](https://github.com/drqm/memory_music_iEEG/blob/master/scripts/localizer_iEEG.py)
+- task 2 [scripts/localizer_iEEG.py](https://github.com/drqm/memory_music_iEEG/blob/master/scripts/localizer_iEEG.py) and [scripts/localizer_MEG.py](https://github.com/drqm/memory_music_iEEG/blob/master/scripts/localizer_MEG.py) (for MEG)
 
-- task 3 [scripts/manipulation_task_iEEG.py](https://github.com/drqm/memory_music_iEEG/blob/master/scripts/manipulation_task_iEEG.py)
+- task 3 [scripts/manipulation_task_iEEG.py](https://github.com/drqm/memory_music_iEEG/blob/master/scripts/manipulation_task_iEEG.py) and [scripts/manipulation_task_MEG.py](https://github.com/drqm/memory_music_iEEG/blob/master/scripts/manipulation_task_MEG.py) (for MEG)
 
 Implementations in Spanish using Psychopy 2021.2.3
 
 - task 1 [scripts/LerningBachShort_iEEG_spanish.py](https://github.com/drqm/memory_music_iEEG/blob/master/scripts/LearningBachShort_iEEG_spanish.py)
 
-- task 2 [scripts/localizer_iEEG_spanish.py](https://github.com/drqm/memory_music_iEEG/blob/master/scripts/localizer_iEEG_spanish.py) (for iEEG) and [scripts/localizer_MEG.py](https://github.com/drqm/memory_music_iEEG/blob/master/scripts/localizer_MEG.py) (for MEG)
+- task 2 [scripts/localizer_iEEG_spanish.py](https://github.com/drqm/memory_music_iEEG/blob/master/scripts/localizer_iEEG_spanish.py) (for iEEG)
 
-- task 3 [scripts/manipulation_task_iEEG_spanish.py](https://github.com/drqm/memory_music_iEEG/blob/master/scripts/manipulation_task_iEEG_spanish.py) (for iEEG) and [scripts/manipulation_task_MEG.py](https://github.com/drqm/memory_music_iEEG/blob/master/scripts/localizer_MEG.py) (for MEG)
-
+- task 3 [scripts/manipulation_task_iEEG_spanish.py](https://github.com/drqm/memory_music_iEEG/blob/master/scripts/manipulation_task_iEEG_spanish.py)
 
 Implementations in Norwegian using Psychopy 2021.2.3
 
