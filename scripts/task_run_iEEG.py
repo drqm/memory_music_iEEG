@@ -22,7 +22,7 @@ sub_id = ID_box.show()
 
 tasks = ["learningBachShort_iEEG.py",
          "localizer_iEEG.py",
-         "manipulation_task_iEEG.py"]
+         "manipulation_task_iEEG_improved.py"]
 
 task_order = [[1],[2,3]]
 shuffle(task_order)

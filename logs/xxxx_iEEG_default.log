@@ -1,0 +1,1709 @@
+2.9128 	WARNING 	psychopy.parallel has been imported but no parallel port driver found. Install either inpout32, inpoutx64 or dlportio
+16.8797 	WARNING 	Monitor specification not found. Creating a temporary one...
+16.8910 	WARNING 	User requested fullscreen with size [800 600], but screen is actually [1920, 1200]. Using actual size
+18.2761 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='norm', win=Window(...), wrapWidth=1.8)
+18.2988 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='norm', win=Window(...), wrapWidth=1.8)
+18.3151 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='norm', win=Window(...), wrapWidth=1.8)
+18.3285 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='norm', win=Window(...), wrapWidth=1.8)
+18.3397 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='norm', win=Window(...), wrapWidth=1.8)
+20.8847 	DATA 	Keypress: space
+22.1088 	DATA 	Keypress: space
+22.1162 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='norm', win=Window(...), wrapWidth=1.8)
+22.1181 	EXP 	Sound  reached end of file
+22.1182 	EXP 	Sound  started
+23.1200 	EXP 	Sound  reached end of file
+23.1201 	EXP 	Sound  started
+23.6222 	EXP 	Sound  reached end of file
+23.6223 	EXP 	Sound  started
+24.1230 	EXP 	Sound  reached end of file
+24.1231 	EXP 	Sound  started
+30.7408 	DATA 	Keypress: space
+30.7432 	EXP 	Sound  reached end of file
+30.7432 	EXP 	Sound  started
+30.7432 	EXP 	Sound  reached end of file
+30.7433 	EXP 	Sound  started
+31.2436 	EXP 	Sound  reached end of file
+31.2437 	EXP 	Sound  started
+31.7440 	EXP 	Sound  reached end of file
+31.7440 	EXP 	Sound  started
+32.3808 	DATA 	Keypress: 2
+39.7567 	DATA 	Keypress: space
+39.7629 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='norm', win=Window(...), wrapWidth=1.8)
+39.7647 	EXP 	Sound  reached end of file
+39.7648 	EXP 	Sound  started
+40.7656 	EXP 	Sound  reached end of file
+40.7656 	EXP 	Sound  started
+41.2675 	EXP 	Sound  reached end of file
+41.2675 	EXP 	Sound  started
+41.7679 	EXP 	Sound  reached end of file
+41.7680 	EXP 	Sound  started
+54.4206 	DATA 	Keypress: space
+54.4225 	EXP 	Sound  reached end of file
+54.4226 	EXP 	Sound  started
+54.4226 	EXP 	Sound  reached end of file
+54.4226 	EXP 	Sound  started
+54.9234 	EXP 	Sound  reached end of file
+54.9235 	EXP 	Sound  started
+55.4245 	EXP 	Sound  reached end of file
+55.4245 	EXP 	Sound  started
+56.1486 	DATA 	Keypress: 2
+60.1007 	DATA 	Keypress: space
+60.1076 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='norm', win=Window(...), wrapWidth=1.8)
+60.1088 	EXP 	Sound  reached end of file
+60.1089 	EXP 	Sound  started
+61.1097 	EXP 	Sound  reached end of file
+61.1097 	EXP 	Sound  started
+61.6106 	EXP 	Sound  reached end of file
+61.6106 	EXP 	Sound  started
+62.1116 	EXP 	Sound  reached end of file
+62.1116 	EXP 	Sound  started
+70.3646 	DATA 	Keypress: space
+70.3663 	EXP 	Sound  reached end of file
+70.3664 	EXP 	Sound  started
+70.3664 	EXP 	Sound  reached end of file
+70.3664 	EXP 	Sound  started
+70.8667 	EXP 	Sound  reached end of file
+70.8667 	EXP 	Sound  started
+71.3688 	EXP 	Sound  reached end of file
+71.3688 	EXP 	Sound  started
+72.6045 	DATA 	Keypress: 2
+75.5326 	DATA 	Keypress: space
+75.5382 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='norm', win=Window(...), wrapWidth=1.8)
+75.5397 	EXP 	Sound  reached end of file
+75.5398 	EXP 	Sound  started
+76.5401 	EXP 	Sound  reached end of file
+76.5402 	EXP 	Sound  started
+77.0408 	EXP 	Sound  reached end of file
+77.0408 	EXP 	Sound  started
+77.5411 	EXP 	Sound  reached end of file
+77.5412 	EXP 	Sound  started
+79.3246 	DATA 	Keypress: 2
+79.3264 	EXP 	Sound  reached end of file
+79.3264 	EXP 	Sound  started
+79.3265 	EXP 	Sound  reached end of file
+79.3265 	EXP 	Sound  started
+79.8268 	EXP 	Sound  reached end of file
+79.8269 	EXP 	Sound  started
+80.3280 	EXP 	Sound  reached end of file
+80.3281 	EXP 	Sound  started
+83.5565 	DATA 	Keypress: 2
+87.8605 	DATA 	Keypress: space
+87.8678 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='norm', win=Window(...), wrapWidth=1.8)
+87.8693 	EXP 	Sound  reached end of file
+87.8693 	EXP 	Sound  started
+88.8699 	EXP 	Sound  reached end of file
+88.8700 	EXP 	Sound  started
+89.3706 	EXP 	Sound  reached end of file
+89.3707 	EXP 	Sound  started
+89.8712 	EXP 	Sound  reached end of file
+89.8712 	EXP 	Sound  started
+92.8365 	DATA 	Keypress: space
+92.8384 	EXP 	Sound  reached end of file
+92.8384 	EXP 	Sound  started
+92.8385 	EXP 	Sound  reached end of file
+92.8385 	EXP 	Sound  started
+93.3392 	EXP 	Sound  reached end of file
+93.3392 	EXP 	Sound  started
+93.8394 	EXP 	Sound  reached end of file
+93.8395 	EXP 	Sound  started
+95.3566 	DATA 	Keypress: 1
+98.8446 	DATA 	Keypress: space
+98.8514 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='norm', win=Window(...), wrapWidth=1.8)
+98.8531 	EXP 	Sound  reached end of file
+98.8532 	EXP 	Sound  started
+99.8541 	EXP 	Sound  reached end of file
+99.8542 	EXP 	Sound  started
+100.3551 	EXP 	Sound  reached end of file
+100.3552 	EXP 	Sound  started
+100.8564 	EXP 	Sound  reached end of file
+100.8565 	EXP 	Sound  started
+103.6766 	DATA 	Keypress: space
+103.6787 	EXP 	Sound  reached end of file
+103.6787 	EXP 	Sound  started
+103.6787 	EXP 	Sound  reached end of file
+103.6787 	EXP 	Sound  started
+104.1807 	EXP 	Sound  reached end of file
+104.1808 	EXP 	Sound  started
+104.6813 	EXP 	Sound  reached end of file
+104.6813 	EXP 	Sound  started
+107.8634 	DATA 	Keypress: 2
+111.0684 	DATA 	Keypress: space
+111.0753 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='norm', win=Window(...), wrapWidth=1.8)
+111.0769 	EXP 	Sound  reached end of file
+111.0769 	EXP 	Sound  started
+112.0777 	EXP 	Sound  reached end of file
+112.0777 	EXP 	Sound  started
+112.5796 	EXP 	Sound  reached end of file
+112.5797 	EXP 	Sound  started
+113.0807 	EXP 	Sound  reached end of file
+113.0807 	EXP 	Sound  started
+116.7883 	DATA 	Keypress: space
+116.7898 	EXP 	Sound  reached end of file
+116.7899 	EXP 	Sound  started
+116.7899 	EXP 	Sound  reached end of file
+116.7899 	EXP 	Sound  started
+117.2909 	EXP 	Sound  reached end of file
+117.2910 	EXP 	Sound  started
+117.7917 	EXP 	Sound  reached end of file
+117.7917 	EXP 	Sound  started
+119.4124 	DATA 	Keypress: 1
+122.4924 	DATA 	Keypress: space
+122.5000 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='norm', win=Window(...), wrapWidth=1.8)
+122.5016 	EXP 	Sound  reached end of file
+122.5016 	EXP 	Sound  started
+123.5018 	EXP 	Sound  reached end of file
+123.5018 	EXP 	Sound  started
+124.0022 	EXP 	Sound  reached end of file
+124.0022 	EXP 	Sound  started
+124.5026 	EXP 	Sound  reached end of file
+124.5027 	EXP 	Sound  started
+127.8127 	DATA 	Keypress: space
+127.8156 	EXP 	Sound  reached end of file
+127.8156 	EXP 	Sound  started
+127.8156 	EXP 	Sound  reached end of file
+127.8156 	EXP 	Sound  started
+128.3174 	EXP 	Sound  reached end of file
+128.3174 	EXP 	Sound  started
+128.8191 	EXP 	Sound  reached end of file
+128.8192 	EXP 	Sound  started
+130.5005 	DATA 	Keypress: 2
+133.3323 	DATA 	Keypress: space
+146.8203 	DATA 	Keypress: space
+146.8205 	EXP 	Sound  reached end of file
+146.8205 	EXP 	Sound  started
+147.3413 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 1 / 48', units='norm', win=Window(...), wrapWidth=1)
+149.8440 	EXP 	Sound  reached end of file
+149.8441 	EXP 	Sound  started
+150.3196 	EXP 	Sound  reached end of file
+150.3197 	EXP 	Sound  started
+150.8194 	EXP 	Sound  reached end of file
+150.8195 	EXP 	Sound  started
+153.8184 	EXP 	Sound  reached end of file
+153.8185 	EXP 	Sound  started
+154.3183 	EXP 	Sound  reached end of file
+154.3183 	EXP 	Sound  started
+154.8182 	EXP 	Sound  reached end of file
+154.8183 	EXP 	Sound  started
+155.6365 	DATA 	Keypress: 2
+157.6602 	DATA 	Keypress: space
+157.6654 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 2 / 48', units='norm', win=Window(...), wrapWidth=1)
+160.1676 	EXP 	Sound  reached end of file
+160.1677 	EXP 	Sound  started
+160.6490 	EXP 	Sound  reached end of file
+160.6491 	EXP 	Sound  started
+161.1479 	EXP 	Sound  reached end of file
+161.1480 	EXP 	Sound  started
+164.1474 	EXP 	Sound  reached end of file
+164.1475 	EXP 	Sound  started
+164.6470 	EXP 	Sound  reached end of file
+164.6470 	EXP 	Sound  started
+165.1470 	EXP 	Sound  reached end of file
+165.1471 	EXP 	Sound  started
+165.8922 	DATA 	Keypress: 1
+167.5482 	DATA 	Keypress: space
+167.5527 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 3 / 48', units='norm', win=Window(...), wrapWidth=1)
+170.0552 	EXP 	Sound  reached end of file
+170.0552 	EXP 	Sound  started
+170.5275 	EXP 	Sound  reached end of file
+170.5275 	EXP 	Sound  started
+171.0270 	EXP 	Sound  reached end of file
+171.0271 	EXP 	Sound  started
+174.0263 	EXP 	Sound  reached end of file
+174.0264 	EXP 	Sound  started
+174.5254 	EXP 	Sound  reached end of file
+174.5255 	EXP 	Sound  started
+175.0257 	EXP 	Sound  reached end of file
+175.0258 	EXP 	Sound  started
+175.8681 	DATA 	Keypress: 2
+180.8040 	DATA 	Keypress: space
+180.8068 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 4 / 48', units='norm', win=Window(...), wrapWidth=1)
+183.3096 	EXP 	Sound  reached end of file
+183.3097 	EXP 	Sound  started
+183.7886 	EXP 	Sound  reached end of file
+183.7887 	EXP 	Sound  started
+184.2886 	EXP 	Sound  reached end of file
+184.2887 	EXP 	Sound  started
+187.2878 	EXP 	Sound  reached end of file
+187.2880 	EXP 	Sound  started
+187.7879 	EXP 	Sound  reached end of file
+187.7880 	EXP 	Sound  started
+188.2867 	EXP 	Sound  reached end of file
+188.2867 	EXP 	Sound  started
+189.0600 	DATA 	Keypress: 2
+192.2600 	DATA 	Keypress: space
+192.2647 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 5 / 48', units='norm', win=Window(...), wrapWidth=1)
+194.7675 	EXP 	Sound  reached end of file
+194.7676 	EXP 	Sound  started
+195.2504 	EXP 	Sound  reached end of file
+195.2505 	EXP 	Sound  started
+195.7505 	EXP 	Sound  reached end of file
+195.7506 	EXP 	Sound  started
+198.7491 	EXP 	Sound  reached end of file
+198.7492 	EXP 	Sound  started
+199.2486 	EXP 	Sound  reached end of file
+199.2486 	EXP 	Sound  started
+199.7485 	EXP 	Sound  reached end of file
+199.7486 	EXP 	Sound  started
+200.4360 	DATA 	Keypress: 1
+201.5720 	DATA 	Keypress: space
+201.5767 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 6 / 48', units='norm', win=Window(...), wrapWidth=1)
+204.0801 	EXP 	Sound  reached end of file
+204.0801 	EXP 	Sound  started
+204.5631 	EXP 	Sound  reached end of file
+204.5632 	EXP 	Sound  started
+205.0628 	EXP 	Sound  reached end of file
+205.0629 	EXP 	Sound  started
+208.0608 	EXP 	Sound  reached end of file
+208.0609 	EXP 	Sound  started
+208.5613 	EXP 	Sound  reached end of file
+208.5614 	EXP 	Sound  started
+209.0610 	EXP 	Sound  reached end of file
+209.0611 	EXP 	Sound  started
+209.8767 	DATA 	Keypress: 2
+210.9725 	DATA 	Keypress: space
+210.9781 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 7 / 48', units='norm', win=Window(...), wrapWidth=1)
+213.4809 	EXP 	Sound  reached end of file
+213.4809 	EXP 	Sound  started
+213.9588 	EXP 	Sound  reached end of file
+213.9589 	EXP 	Sound  started
+214.4588 	EXP 	Sound  reached end of file
+214.4589 	EXP 	Sound  started
+217.4565 	EXP 	Sound  reached end of file
+217.4565 	EXP 	Sound  started
+217.9573 	EXP 	Sound  reached end of file
+217.9576 	EXP 	Sound  started
+218.4574 	EXP 	Sound  reached end of file
+218.4576 	EXP 	Sound  started
+219.0919 	DATA 	Keypress: 1
+222.4439 	DATA 	Keypress: space
+222.4468 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 8 / 48', units='norm', win=Window(...), wrapWidth=1)
+224.9502 	EXP 	Sound  reached end of file
+224.9502 	EXP 	Sound  started
+225.4367 	EXP 	Sound  reached end of file
+225.4368 	EXP 	Sound  started
+225.9364 	EXP 	Sound  reached end of file
+225.9364 	EXP 	Sound  started
+228.9351 	EXP 	Sound  reached end of file
+228.9352 	EXP 	Sound  started
+229.4349 	EXP 	Sound  reached end of file
+229.4349 	EXP 	Sound  started
+229.9347 	EXP 	Sound  reached end of file
+229.9347 	EXP 	Sound  started
+230.3026 	DATA 	Keypress: 1
+231.2279 	DATA 	Keypress: space
+231.2330 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 9 / 48', units='norm', win=Window(...), wrapWidth=1)
+233.7367 	EXP 	Sound  reached end of file
+233.7367 	EXP 	Sound  started
+234.2168 	EXP 	Sound  reached end of file
+234.2169 	EXP 	Sound  started
+234.7165 	EXP 	Sound  reached end of file
+234.7166 	EXP 	Sound  started
+237.7146 	EXP 	Sound  reached end of file
+237.7147 	EXP 	Sound  started
+238.2151 	EXP 	Sound  reached end of file
+238.2153 	EXP 	Sound  started
+238.7148 	EXP 	Sound  reached end of file
+238.7149 	EXP 	Sound  started
+239.0828 	DATA 	Keypress: 2
+240.0917 	DATA 	Keypress: space
+240.0970 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 10 / 48', units='norm', win=Window(...), wrapWidth=1)
+242.5993 	EXP 	Sound  reached end of file
+242.5993 	EXP 	Sound  started
+243.0789 	EXP 	Sound  reached end of file
+243.0791 	EXP 	Sound  started
+243.5787 	EXP 	Sound  reached end of file
+243.5788 	EXP 	Sound  started
+246.5776 	EXP 	Sound  reached end of file
+246.5777 	EXP 	Sound  started
+247.0780 	EXP 	Sound  reached end of file
+247.0780 	EXP 	Sound  started
+247.5771 	EXP 	Sound  reached end of file
+247.5771 	EXP 	Sound  started
+248.2046 	DATA 	Keypress: 1
+249.2200 	DATA 	Keypress: space
+249.2236 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 11 / 48', units='norm', win=Window(...), wrapWidth=1)
+251.7258 	EXP 	Sound  reached end of file
+251.7259 	EXP 	Sound  started
+252.2086 	EXP 	Sound  reached end of file
+252.2086 	EXP 	Sound  started
+252.7088 	EXP 	Sound  reached end of file
+252.7088 	EXP 	Sound  started
+255.7077 	EXP 	Sound  reached end of file
+255.7079 	EXP 	Sound  started
+256.2078 	EXP 	Sound  reached end of file
+256.2080 	EXP 	Sound  started
+256.7072 	EXP 	Sound  reached end of file
+256.7075 	EXP 	Sound  started
+258.0918 	DATA 	Keypress: 1
+260.0122 	DATA 	Keypress: space
+260.0160 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 12 / 48', units='norm', win=Window(...), wrapWidth=1)
+262.5190 	EXP 	Sound  reached end of file
+262.5191 	EXP 	Sound  started
+263.0040 	EXP 	Sound  reached end of file
+263.0040 	EXP 	Sound  started
+263.5031 	EXP 	Sound  reached end of file
+263.5032 	EXP 	Sound  started
+266.5027 	EXP 	Sound  reached end of file
+266.5028 	EXP 	Sound  started
+267.0030 	EXP 	Sound  reached end of file
+267.0030 	EXP 	Sound  started
+267.5016 	EXP 	Sound  reached end of file
+267.5017 	EXP 	Sound  started
+267.9035 	DATA 	Keypress: 2
+268.8441 	DATA 	Keypress: space
+268.8487 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 13 / 48', units='norm', win=Window(...), wrapWidth=1)
+271.3513 	EXP 	Sound  reached end of file
+271.3514 	EXP 	Sound  started
+271.8340 	EXP 	Sound  reached end of file
+271.8341 	EXP 	Sound  started
+272.3341 	EXP 	Sound  reached end of file
+272.3342 	EXP 	Sound  started
+275.3317 	EXP 	Sound  reached end of file
+275.3317 	EXP 	Sound  started
+275.8324 	EXP 	Sound  reached end of file
+275.8326 	EXP 	Sound  started
+276.3310 	EXP 	Sound  reached end of file
+276.3311 	EXP 	Sound  started
+276.7699 	DATA 	Keypress: 1
+277.6596 	DATA 	Keypress: space
+277.6626 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 14 / 48', units='norm', win=Window(...), wrapWidth=1)
+280.1660 	EXP 	Sound  reached end of file
+280.1661 	EXP 	Sound  started
+280.6462 	EXP 	Sound  reached end of file
+280.6463 	EXP 	Sound  started
+281.1462 	EXP 	Sound  reached end of file
+281.1463 	EXP 	Sound  started
+284.1450 	EXP 	Sound  reached end of file
+284.1452 	EXP 	Sound  started
+284.6449 	EXP 	Sound  reached end of file
+284.6450 	EXP 	Sound  started
+285.1446 	EXP 	Sound  reached end of file
+285.1447 	EXP 	Sound  started
+285.5949 	DATA 	Keypress: 1
+291.7397 	DATA 	Keypress: space
+291.7444 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 15 / 48', units='norm', win=Window(...), wrapWidth=1)
+294.2489 	EXP 	Sound  reached end of file
+294.2490 	EXP 	Sound  started
+294.7242 	EXP 	Sound  reached end of file
+294.7243 	EXP 	Sound  started
+295.2237 	EXP 	Sound  reached end of file
+295.2239 	EXP 	Sound  started
+298.2220 	EXP 	Sound  reached end of file
+298.2221 	EXP 	Sound  started
+298.7224 	EXP 	Sound  reached end of file
+298.7225 	EXP 	Sound  started
+299.2214 	EXP 	Sound  reached end of file
+299.2214 	EXP 	Sound  started
+299.5056 	DATA 	Keypress: 2
+300.5795 	DATA 	Keypress: space
+300.5826 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 16 / 48', units='norm', win=Window(...), wrapWidth=1)
+303.0858 	EXP 	Sound  reached end of file
+303.0858 	EXP 	Sound  started
+303.5692 	EXP 	Sound  reached end of file
+303.5692 	EXP 	Sound  started
+304.0696 	EXP 	Sound  reached end of file
+304.0697 	EXP 	Sound  started
+307.0681 	EXP 	Sound  reached end of file
+307.0682 	EXP 	Sound  started
+307.5674 	EXP 	Sound  reached end of file
+307.5675 	EXP 	Sound  started
+308.0677 	EXP 	Sound  reached end of file
+308.0677 	EXP 	Sound  started
+308.4851 	DATA 	Keypress: 1
+314.5241 	DATA 	Keypress: space
+314.5315 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 17 / 48', units='norm', win=Window(...), wrapWidth=1)
+317.0349 	EXP 	Sound  reached end of file
+317.0350 	EXP 	Sound  started
+317.5133 	EXP 	Sound  reached end of file
+317.5133 	EXP 	Sound  started
+318.0139 	EXP 	Sound  reached end of file
+318.0141 	EXP 	Sound  started
+321.0120 	EXP 	Sound  reached end of file
+321.0120 	EXP 	Sound  started
+321.5115 	EXP 	Sound  reached end of file
+321.5116 	EXP 	Sound  started
+322.0122 	EXP 	Sound  reached end of file
+322.0123 	EXP 	Sound  started
+323.2996 	DATA 	Keypress: 1
+324.8035 	DATA 	Keypress: space
+324.8078 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 18 / 48', units='norm', win=Window(...), wrapWidth=1)
+327.3100 	EXP 	Sound  reached end of file
+327.3100 	EXP 	Sound  started
+327.7928 	EXP 	Sound  reached end of file
+327.7929 	EXP 	Sound  started
+328.2921 	EXP 	Sound  reached end of file
+328.2921 	EXP 	Sound  started
+331.2914 	EXP 	Sound  reached end of file
+331.2916 	EXP 	Sound  started
+331.7910 	EXP 	Sound  reached end of file
+331.7911 	EXP 	Sound  started
+332.2903 	EXP 	Sound  reached end of file
+332.2904 	EXP 	Sound  started
+332.7954 	DATA 	Keypress: 2
+334.4515 	DATA 	Keypress: space
+334.4550 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 19 / 48', units='norm', win=Window(...), wrapWidth=1)
+336.9588 	EXP 	Sound  reached end of file
+336.9589 	EXP 	Sound  started
+337.4379 	EXP 	Sound  reached end of file
+337.4379 	EXP 	Sound  started
+337.9376 	EXP 	Sound  reached end of file
+337.9377 	EXP 	Sound  started
+340.9373 	EXP 	Sound  reached end of file
+340.9375 	EXP 	Sound  started
+341.4362 	EXP 	Sound  reached end of file
+341.4363 	EXP 	Sound  started
+341.9357 	EXP 	Sound  reached end of file
+341.9357 	EXP 	Sound  started
+342.6194 	DATA 	Keypress: 1
+343.3955 	DATA 	Keypress: space
+343.3993 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 20 / 48', units='norm', win=Window(...), wrapWidth=1)
+345.9026 	EXP 	Sound  reached end of file
+345.9027 	EXP 	Sound  started
+346.3838 	EXP 	Sound  reached end of file
+346.3839 	EXP 	Sound  started
+346.8840 	EXP 	Sound  reached end of file
+346.8841 	EXP 	Sound  started
+349.8822 	EXP 	Sound  reached end of file
+349.8823 	EXP 	Sound  started
+350.3829 	EXP 	Sound  reached end of file
+350.3830 	EXP 	Sound  started
+350.8831 	EXP 	Sound  reached end of file
+350.8834 	EXP 	Sound  started
+351.4033 	DATA 	Keypress: 2
+353.0753 	DATA 	Keypress: space
+353.0781 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 21 / 48', units='norm', win=Window(...), wrapWidth=1)
+355.5817 	EXP 	Sound  reached end of file
+355.5818 	EXP 	Sound  started
+356.0630 	EXP 	Sound  reached end of file
+356.0630 	EXP 	Sound  started
+356.5634 	EXP 	Sound  reached end of file
+356.5634 	EXP 	Sound  started
+359.5618 	EXP 	Sound  reached end of file
+359.5619 	EXP 	Sound  started
+360.0612 	EXP 	Sound  reached end of file
+360.0613 	EXP 	Sound  started
+360.5609 	EXP 	Sound  reached end of file
+360.5610 	EXP 	Sound  started
+361.0116 	DATA 	Keypress: 1
+361.7073 	DATA 	Keypress: space
+361.7102 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 22 / 48', units='norm', win=Window(...), wrapWidth=1)
+364.2151 	EXP 	Sound  reached end of file
+364.2151 	EXP 	Sound  started
+364.6937 	EXP 	Sound  reached end of file
+364.6939 	EXP 	Sound  started
+365.1926 	EXP 	Sound  reached end of file
+365.1927 	EXP 	Sound  started
+368.1910 	EXP 	Sound  reached end of file
+368.1910 	EXP 	Sound  started
+368.6918 	EXP 	Sound  reached end of file
+368.6920 	EXP 	Sound  started
+369.1912 	EXP 	Sound  reached end of file
+369.1913 	EXP 	Sound  started
+369.5418 	DATA 	Keypress: 1
+370.4916 	DATA 	Keypress: space
+370.4947 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 23 / 48', units='norm', win=Window(...), wrapWidth=1)
+372.9974 	EXP 	Sound  reached end of file
+372.9974 	EXP 	Sound  started
+373.4733 	EXP 	Sound  reached end of file
+373.4736 	EXP 	Sound  started
+373.9730 	EXP 	Sound  reached end of file
+373.9731 	EXP 	Sound  started
+376.9705 	EXP 	Sound  reached end of file
+376.9705 	EXP 	Sound  started
+377.4706 	EXP 	Sound  reached end of file
+377.4707 	EXP 	Sound  started
+377.9715 	EXP 	Sound  reached end of file
+377.9716 	EXP 	Sound  started
+379.1392 	DATA 	Keypress: 2
+379.8360 	DATA 	Keypress: space
+379.8391 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 24 / 48', units='norm', win=Window(...), wrapWidth=1)
+382.3425 	EXP 	Sound  reached end of file
+382.3425 	EXP 	Sound  started
+382.8181 	EXP 	Sound  reached end of file
+382.8181 	EXP 	Sound  started
+383.3188 	EXP 	Sound  reached end of file
+383.3189 	EXP 	Sound  started
+386.3172 	EXP 	Sound  reached end of file
+386.3172 	EXP 	Sound  started
+386.8164 	EXP 	Sound  reached end of file
+386.8165 	EXP 	Sound  started
+387.3162 	EXP 	Sound  reached end of file
+387.3163 	EXP 	Sound  started
+388.6912 	DATA 	Keypress: 2
+390.0113 	DATA 	Keypress: space
+396.3393 	DATA 	Keypress: f1
+396.3427 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 25 / 48', units='norm', win=Window(...), wrapWidth=1)
+398.8479 	EXP 	Sound  reached end of file
+398.8479 	EXP 	Sound  started
+399.3280 	EXP 	Sound  reached end of file
+399.3281 	EXP 	Sound  started
+399.8283 	EXP 	Sound  reached end of file
+399.8284 	EXP 	Sound  started
+402.8270 	EXP 	Sound  reached end of file
+402.8272 	EXP 	Sound  started
+403.3259 	EXP 	Sound  reached end of file
+403.3260 	EXP 	Sound  started
+403.8265 	EXP 	Sound  reached end of file
+403.8267 	EXP 	Sound  started
+404.5073 	DATA 	Keypress: 2
+405.5231 	DATA 	Keypress: space
+405.5265 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 26 / 48', units='norm', win=Window(...), wrapWidth=1)
+408.0309 	EXP 	Sound  reached end of file
+408.0309 	EXP 	Sound  started
+408.5069 	EXP 	Sound  reached end of file
+408.5069 	EXP 	Sound  started
+409.0067 	EXP 	Sound  reached end of file
+409.0068 	EXP 	Sound  started
+412.0052 	EXP 	Sound  reached end of file
+412.0053 	EXP 	Sound  started
+412.5054 	EXP 	Sound  reached end of file
+412.5054 	EXP 	Sound  started
+413.0055 	EXP 	Sound  reached end of file
+413.0055 	EXP 	Sound  started
+413.4223 	DATA 	Keypress: 1
+414.2911 	DATA 	Keypress: space
+414.2946 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 27 / 48', units='norm', win=Window(...), wrapWidth=1)
+416.7973 	EXP 	Sound  reached end of file
+416.7973 	EXP 	Sound  started
+417.2698 	EXP 	Sound  reached end of file
+417.2699 	EXP 	Sound  started
+417.7703 	EXP 	Sound  reached end of file
+417.7704 	EXP 	Sound  started
+420.7690 	EXP 	Sound  reached end of file
+420.7691 	EXP 	Sound  started
+421.2680 	EXP 	Sound  reached end of file
+421.2681 	EXP 	Sound  started
+421.7686 	EXP 	Sound  reached end of file
+421.7688 	EXP 	Sound  started
+422.4190 	DATA 	Keypress: 1
+423.6193 	DATA 	Keypress: space
+423.6231 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 28 / 48', units='norm', win=Window(...), wrapWidth=1)
+426.1277 	EXP 	Sound  reached end of file
+426.1277 	EXP 	Sound  started
+426.5993 	EXP 	Sound  reached end of file
+426.5993 	EXP 	Sound  started
+427.0989 	EXP 	Sound  reached end of file
+427.0989 	EXP 	Sound  started
+430.0981 	EXP 	Sound  reached end of file
+430.0982 	EXP 	Sound  started
+430.5984 	EXP 	Sound  reached end of file
+430.5985 	EXP 	Sound  started
+431.0973 	EXP 	Sound  reached end of file
+431.0973 	EXP 	Sound  started
+431.7070 	DATA 	Keypress: 1
+435.5635 	DATA 	Keypress: space
+435.5669 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 29 / 48', units='norm', win=Window(...), wrapWidth=1)
+438.0700 	EXP 	Sound  reached end of file
+438.0700 	EXP 	Sound  started
+438.5451 	EXP 	Sound  reached end of file
+438.5452 	EXP 	Sound  started
+439.0446 	EXP 	Sound  reached end of file
+439.0447 	EXP 	Sound  started
+442.0425 	EXP 	Sound  reached end of file
+442.0426 	EXP 	Sound  started
+442.5425 	EXP 	Sound  reached end of file
+442.5425 	EXP 	Sound  started
+443.0427 	EXP 	Sound  reached end of file
+443.0427 	EXP 	Sound  started
+443.5549 	DATA 	Keypress: 1
+444.3072 	DATA 	Keypress: space
+444.3103 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 30 / 48', units='norm', win=Window(...), wrapWidth=1)
+446.8141 	EXP 	Sound  reached end of file
+446.8141 	EXP 	Sound  started
+447.2901 	EXP 	Sound  reached end of file
+447.2902 	EXP 	Sound  started
+447.7902 	EXP 	Sound  reached end of file
+447.7902 	EXP 	Sound  started
+450.7882 	EXP 	Sound  reached end of file
+450.7882 	EXP 	Sound  started
+451.2881 	EXP 	Sound  reached end of file
+451.2882 	EXP 	Sound  started
+451.7883 	EXP 	Sound  reached end of file
+451.7883 	EXP 	Sound  started
+452.2891 	DATA 	Keypress: 2
+453.0192 	DATA 	Keypress: space
+453.0232 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 31 / 48', units='norm', win=Window(...), wrapWidth=1)
+455.5263 	EXP 	Sound  reached end of file
+455.5264 	EXP 	Sound  started
+456.0033 	EXP 	Sound  reached end of file
+456.0034 	EXP 	Sound  started
+456.5033 	EXP 	Sound  reached end of file
+456.5036 	EXP 	Sound  started
+459.5017 	EXP 	Sound  reached end of file
+459.5018 	EXP 	Sound  started
+460.0011 	EXP 	Sound  reached end of file
+460.0012 	EXP 	Sound  started
+460.5009 	EXP 	Sound  reached end of file
+460.5009 	EXP 	Sound  started
+461.0269 	DATA 	Keypress: 1
+461.8029 	DATA 	Keypress: space
+461.8058 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 32 / 48', units='norm', win=Window(...), wrapWidth=1)
+464.3093 	EXP 	Sound  reached end of file
+464.3093 	EXP 	Sound  started
+464.7832 	EXP 	Sound  reached end of file
+464.7833 	EXP 	Sound  started
+465.2822 	EXP 	Sound  reached end of file
+465.2822 	EXP 	Sound  started
+468.2814 	EXP 	Sound  reached end of file
+468.2815 	EXP 	Sound  started
+468.7817 	EXP 	Sound  reached end of file
+468.7818 	EXP 	Sound  started
+469.2804 	EXP 	Sound  reached end of file
+469.2805 	EXP 	Sound  started
+469.7149 	DATA 	Keypress: 1
+470.4348 	DATA 	Keypress: space
+470.4377 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 33 / 48', units='norm', win=Window(...), wrapWidth=1)
+472.9412 	EXP 	Sound  reached end of file
+472.9413 	EXP 	Sound  started
+473.4119 	EXP 	Sound  reached end of file
+473.4120 	EXP 	Sound  started
+473.9115 	EXP 	Sound  reached end of file
+473.9116 	EXP 	Sound  started
+476.9110 	EXP 	Sound  reached end of file
+476.9111 	EXP 	Sound  started
+477.4102 	EXP 	Sound  reached end of file
+477.4103 	EXP 	Sound  started
+477.9107 	EXP 	Sound  reached end of file
+477.9108 	EXP 	Sound  started
+478.5869 	DATA 	Keypress: 1
+479.4028 	DATA 	Keypress: space
+479.4058 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 34 / 48', units='norm', win=Window(...), wrapWidth=1)
+481.9103 	EXP 	Sound  reached end of file
+481.9104 	EXP 	Sound  started
+482.3914 	EXP 	Sound  reached end of file
+482.3914 	EXP 	Sound  started
+482.8916 	EXP 	Sound  reached end of file
+482.8917 	EXP 	Sound  started
+485.8896 	EXP 	Sound  reached end of file
+485.8897 	EXP 	Sound  started
+486.3907 	EXP 	Sound  reached end of file
+486.3908 	EXP 	Sound  started
+486.8897 	EXP 	Sound  reached end of file
+486.8898 	EXP 	Sound  started
+487.4508 	DATA 	Keypress: 1
+489.6108 	DATA 	Keypress: space
+489.6139 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 35 / 48', units='norm', win=Window(...), wrapWidth=1)
+492.1183 	EXP 	Sound  reached end of file
+492.1183 	EXP 	Sound  started
+492.6042 	EXP 	Sound  reached end of file
+492.6043 	EXP 	Sound  started
+493.1036 	EXP 	Sound  reached end of file
+493.1037 	EXP 	Sound  started
+496.1037 	EXP 	Sound  reached end of file
+496.1038 	EXP 	Sound  started
+496.6030 	EXP 	Sound  reached end of file
+496.6032 	EXP 	Sound  started
+497.1026 	EXP 	Sound  reached end of file
+497.1027 	EXP 	Sound  started
+497.7067 	DATA 	Keypress: 1
+498.5387 	DATA 	Keypress: space
+498.5422 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 36 / 48', units='norm', win=Window(...), wrapWidth=1)
+501.0450 	EXP 	Sound  reached end of file
+501.0450 	EXP 	Sound  started
+501.5162 	EXP 	Sound  reached end of file
+501.5163 	EXP 	Sound  started
+502.0162 	EXP 	Sound  reached end of file
+502.0162 	EXP 	Sound  started
+505.0159 	EXP 	Sound  reached end of file
+505.0160 	EXP 	Sound  started
+505.5149 	EXP 	Sound  reached end of file
+505.5150 	EXP 	Sound  started
+506.0148 	EXP 	Sound  reached end of file
+506.0148 	EXP 	Sound  started
+506.7946 	DATA 	Keypress: 2
+507.4346 	DATA 	Keypress: space
+507.4379 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 37 / 48', units='norm', win=Window(...), wrapWidth=1)
+509.9405 	EXP 	Sound  reached end of file
+509.9406 	EXP 	Sound  started
+510.4122 	EXP 	Sound  reached end of file
+510.4123 	EXP 	Sound  started
+510.9132 	EXP 	Sound  reached end of file
+510.9133 	EXP 	Sound  started
+513.9109 	EXP 	Sound  reached end of file
+513.9110 	EXP 	Sound  started
+514.4105 	EXP 	Sound  reached end of file
+514.4105 	EXP 	Sound  started
+514.9117 	EXP 	Sound  reached end of file
+514.9117 	EXP 	Sound  started
+515.4143 	DATA 	Keypress: 2
+516.1546 	DATA 	Keypress: space
+516.1587 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 38 / 48', units='norm', win=Window(...), wrapWidth=1)
+518.6609 	EXP 	Sound  reached end of file
+518.6609 	EXP 	Sound  started
+519.1427 	EXP 	Sound  reached end of file
+519.1427 	EXP 	Sound  started
+519.6431 	EXP 	Sound  reached end of file
+519.6431 	EXP 	Sound  started
+522.6403 	EXP 	Sound  reached end of file
+522.6404 	EXP 	Sound  started
+523.1407 	EXP 	Sound  reached end of file
+523.1408 	EXP 	Sound  started
+523.6402 	EXP 	Sound  reached end of file
+523.6402 	EXP 	Sound  started
+524.1869 	DATA 	Keypress: 1
+525.6105 	DATA 	Keypress: space
+525.6136 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 39 / 48', units='norm', win=Window(...), wrapWidth=1)
+528.1163 	EXP 	Sound  reached end of file
+528.1164 	EXP 	Sound  started
+528.5879 	EXP 	Sound  reached end of file
+528.5880 	EXP 	Sound  started
+529.0888 	EXP 	Sound  reached end of file
+529.0888 	EXP 	Sound  started
+532.0871 	EXP 	Sound  reached end of file
+532.0872 	EXP 	Sound  started
+532.5861 	EXP 	Sound  reached end of file
+532.5861 	EXP 	Sound  started
+533.0866 	EXP 	Sound  reached end of file
+533.0867 	EXP 	Sound  started
+533.5886 	DATA 	Keypress: 2
+534.5385 	DATA 	Keypress: space
+534.5416 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 40 / 48', units='norm', win=Window(...), wrapWidth=1)
+537.0442 	EXP 	Sound  reached end of file
+537.0442 	EXP 	Sound  started
+537.5175 	EXP 	Sound  reached end of file
+537.5176 	EXP 	Sound  started
+538.0180 	EXP 	Sound  reached end of file
+538.0180 	EXP 	Sound  started
+541.0166 	EXP 	Sound  reached end of file
+541.0168 	EXP 	Sound  started
+541.5157 	EXP 	Sound  reached end of file
+541.5159 	EXP 	Sound  started
+542.0159 	EXP 	Sound  reached end of file
+542.0161 	EXP 	Sound  started
+542.4168 	DATA 	Keypress: 2
+543.2905 	DATA 	Keypress: space
+543.2941 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 41 / 48', units='norm', win=Window(...), wrapWidth=1)
+545.7966 	EXP 	Sound  reached end of file
+545.7967 	EXP 	Sound  started
+546.2808 	EXP 	Sound  reached end of file
+546.2809 	EXP 	Sound  started
+546.7804 	EXP 	Sound  reached end of file
+546.7805 	EXP 	Sound  started
+549.7795 	EXP 	Sound  reached end of file
+549.7795 	EXP 	Sound  started
+550.2784 	EXP 	Sound  reached end of file
+550.2785 	EXP 	Sound  started
+550.7792 	EXP 	Sound  reached end of file
+550.7792 	EXP 	Sound  started
+551.8664 	DATA 	Keypress: 2
+552.7224 	DATA 	Keypress: space
+552.7252 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 42 / 48', units='norm', win=Window(...), wrapWidth=1)
+555.2279 	EXP 	Sound  reached end of file
+555.2280 	EXP 	Sound  started
+555.7099 	EXP 	Sound  reached end of file
+555.7100 	EXP 	Sound  started
+556.2100 	EXP 	Sound  reached end of file
+556.2101 	EXP 	Sound  started
+559.2085 	EXP 	Sound  reached end of file
+559.2085 	EXP 	Sound  started
+559.7084 	EXP 	Sound  reached end of file
+559.7086 	EXP 	Sound  started
+560.2075 	EXP 	Sound  reached end of file
+560.2076 	EXP 	Sound  started
+560.9867 	DATA 	Keypress: space
+563.5465 	DATA 	Keypress: space
+563.5497 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 43 / 48', units='norm', win=Window(...), wrapWidth=1)
+566.0523 	EXP 	Sound  reached end of file
+566.0523 	EXP 	Sound  started
+566.5387 	EXP 	Sound  reached end of file
+566.5387 	EXP 	Sound  started
+567.0379 	EXP 	Sound  reached end of file
+567.0380 	EXP 	Sound  started
+570.0364 	EXP 	Sound  reached end of file
+570.0364 	EXP 	Sound  started
+570.5375 	EXP 	Sound  reached end of file
+570.5376 	EXP 	Sound  started
+571.0369 	EXP 	Sound  reached end of file
+571.0370 	EXP 	Sound  started
+571.6109 	DATA 	Keypress: 2
+572.5384 	DATA 	Keypress: space
+572.5418 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 44 / 48', units='norm', win=Window(...), wrapWidth=1)
+575.0460 	EXP 	Sound  reached end of file
+575.0460 	EXP 	Sound  started
+575.5178 	EXP 	Sound  reached end of file
+575.5179 	EXP 	Sound  started
+576.0182 	EXP 	Sound  reached end of file
+576.0183 	EXP 	Sound  started
+579.0167 	EXP 	Sound  reached end of file
+579.0169 	EXP 	Sound  started
+579.5168 	EXP 	Sound  reached end of file
+579.5170 	EXP 	Sound  started
+580.0164 	EXP 	Sound  reached end of file
+580.0164 	EXP 	Sound  started
+580.4494 	DATA 	Keypress: 2
+581.4103 	DATA 	Keypress: space
+581.4141 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 45 / 48', units='norm', win=Window(...), wrapWidth=1)
+583.9170 	EXP 	Sound  reached end of file
+583.9171 	EXP 	Sound  started
+584.3969 	EXP 	Sound  reached end of file
+584.3969 	EXP 	Sound  started
+584.8969 	EXP 	Sound  reached end of file
+584.8969 	EXP 	Sound  started
+587.8953 	EXP 	Sound  reached end of file
+587.8954 	EXP 	Sound  started
+588.3951 	EXP 	Sound  reached end of file
+588.3951 	EXP 	Sound  started
+588.8953 	EXP 	Sound  reached end of file
+588.8954 	EXP 	Sound  started
+589.6024 	DATA 	Keypress: 1
+590.3147 	DATA 	Keypress: space
+590.3183 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 46 / 48', units='norm', win=Window(...), wrapWidth=1)
+592.8214 	EXP 	Sound  reached end of file
+592.8214 	EXP 	Sound  started
+593.2943 	EXP 	Sound  reached end of file
+593.2944 	EXP 	Sound  started
+593.7928 	EXP 	Sound  reached end of file
+593.7928 	EXP 	Sound  started
+596.7928 	EXP 	Sound  reached end of file
+596.7929 	EXP 	Sound  started
+597.2919 	EXP 	Sound  reached end of file
+597.2920 	EXP 	Sound  started
+597.7917 	EXP 	Sound  reached end of file
+597.7920 	EXP 	Sound  started
+598.3944 	DATA 	Keypress: 1
+599.1862 	DATA 	Keypress: space
+599.1897 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 47 / 48', units='norm', win=Window(...), wrapWidth=1)
+601.6925 	EXP 	Sound  reached end of file
+601.6925 	EXP 	Sound  started
+602.1732 	EXP 	Sound  reached end of file
+602.1732 	EXP 	Sound  started
+602.6723 	EXP 	Sound  reached end of file
+602.6723 	EXP 	Sound  started
+605.6715 	EXP 	Sound  reached end of file
+605.6716 	EXP 	Sound  started
+606.1714 	EXP 	Sound  reached end of file
+606.1715 	EXP 	Sound  started
+606.6714 	EXP 	Sound  reached end of file
+606.6715 	EXP 	Sound  started
+607.1703 	DATA 	Keypress: 1
+607.9146 	DATA 	Keypress: space
+607.9180 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 48 / 48', units='norm', win=Window(...), wrapWidth=1)
+610.4207 	EXP 	Sound  reached end of file
+610.4208 	EXP 	Sound  started
+610.9024 	EXP 	Sound  reached end of file
+610.9025 	EXP 	Sound  started
+611.4019 	EXP 	Sound  reached end of file
+611.4019 	EXP 	Sound  started
+614.4005 	EXP 	Sound  reached end of file
+614.4006 	EXP 	Sound  started
+614.9014 	EXP 	Sound  reached end of file
+614.9014 	EXP 	Sound  started
+615.4002 	EXP 	Sound  reached end of file
+615.4003 	EXP 	Sound  started
+615.8846 	DATA 	Keypress: 1
+617.2026 	DATA 	Keypress: space
+625.8902 	DATA 	Keypress: 4
+628.1222 	DATA 	Keypress: space
+628.1265 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='norm', win=Window(...), wrapWidth=1.8)
+628.1855 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='norm', win=Window(...), wrapWidth=1.8)
+628.1995 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='norm', win=Window(...), wrapWidth=1.8)
+628.2120 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='norm', win=Window(...), wrapWidth=1.8)
+628.2162 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='norm', win=Window(...), wrapWidth=1.8)
+650.5705 	DATA 	Keypress: space
+655.4583 	DATA 	Keypress: space
+655.4670 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='norm', win=Window(...), wrapWidth=1.8)
+655.4684 	EXP 	Sound  reached end of file
+655.4684 	EXP 	Sound  started
+656.4689 	EXP 	Sound  reached end of file
+656.4690 	EXP 	Sound  started
+656.9704 	EXP 	Sound  reached end of file
+656.9705 	EXP 	Sound  started
+657.4708 	EXP 	Sound  reached end of file
+657.4708 	EXP 	Sound  started
+668.8020 	DATA 	Keypress: space
+668.8043 	EXP 	Sound  reached end of file
+668.8043 	EXP 	Sound  started
+668.8044 	EXP 	Sound  reached end of file
+668.8044 	EXP 	Sound  started
+669.3046 	EXP 	Sound  reached end of file
+669.3047 	EXP 	Sound  started
+669.8054 	EXP 	Sound  reached end of file
+669.8055 	EXP 	Sound  started
+673.1061 	DATA 	Keypress: 1
+678.2579 	DATA 	Keypress: space
+678.2669 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='norm', win=Window(...), wrapWidth=1.8)
+678.2683 	EXP 	Sound  reached end of file
+678.2683 	EXP 	Sound  started
+679.2687 	EXP 	Sound  reached end of file
+679.2687 	EXP 	Sound  started
+679.7691 	EXP 	Sound  reached end of file
+679.7691 	EXP 	Sound  started
+680.2694 	EXP 	Sound  reached end of file
+680.2694 	EXP 	Sound  started
+689.0099 	DATA 	Keypress: space
+689.0114 	EXP 	Sound  reached end of file
+689.0115 	EXP 	Sound  started
+689.0115 	EXP 	Sound  reached end of file
+689.0115 	EXP 	Sound  started
+689.5134 	EXP 	Sound  reached end of file
+689.5135 	EXP 	Sound  started
+690.0150 	EXP 	Sound  reached end of file
+690.0150 	EXP 	Sound  started
+691.2898 	DATA 	Keypress: 1
+699.9621 	DATA 	Keypress: space
+699.9687 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='norm', win=Window(...), wrapWidth=1.8)
+699.9701 	EXP 	Sound  reached end of file
+699.9701 	EXP 	Sound  started
+700.9710 	EXP 	Sound  reached end of file
+700.9710 	EXP 	Sound  started
+701.4729 	EXP 	Sound  reached end of file
+701.4730 	EXP 	Sound  started
+701.9736 	EXP 	Sound  reached end of file
+701.9737 	EXP 	Sound  started
+709.3619 	DATA 	Keypress: space
+709.3639 	EXP 	Sound  reached end of file
+709.3639 	EXP 	Sound  started
+709.3640 	EXP 	Sound  reached end of file
+709.3640 	EXP 	Sound  started
+709.8661 	EXP 	Sound  reached end of file
+709.8661 	EXP 	Sound  started
+710.3666 	EXP 	Sound  reached end of file
+710.3666 	EXP 	Sound  started
+712.0018 	DATA 	Keypress: 1
+716.6977 	DATA 	Keypress: space
+716.7055 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='norm', win=Window(...), wrapWidth=1.8)
+716.7068 	EXP 	Sound  reached end of file
+716.7068 	EXP 	Sound  started
+717.7071 	EXP 	Sound  reached end of file
+717.7071 	EXP 	Sound  started
+718.2073 	EXP 	Sound  reached end of file
+718.2074 	EXP 	Sound  started
+718.7078 	EXP 	Sound  reached end of file
+718.7079 	EXP 	Sound  started
+722.2104 	DATA 	Keypress: space
+722.2123 	EXP 	Sound  reached end of file
+722.2123 	EXP 	Sound  started
+722.2123 	EXP 	Sound  reached end of file
+722.2123 	EXP 	Sound  started
+722.7131 	EXP 	Sound  reached end of file
+722.7132 	EXP 	Sound  started
+723.2135 	EXP 	Sound  reached end of file
+723.2136 	EXP 	Sound  started
+726.6663 	DATA 	Keypress: 2
+733.1538 	DATA 	Keypress: space
+740.1457 	DATA 	Keypress: space
+740.1462 	EXP 	Sound  reached end of file
+740.1463 	EXP 	Sound  started
+740.6512 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 1 / 48', units='norm', win=Window(...), wrapWidth=1)
+743.1549 	EXP 	Sound  reached end of file
+743.1549 	EXP 	Sound  started
+743.6277 	EXP 	Sound  reached end of file
+743.6278 	EXP 	Sound  started
+744.1277 	EXP 	Sound  reached end of file
+744.1278 	EXP 	Sound  started
+747.1267 	EXP 	Sound  reached end of file
+747.1267 	EXP 	Sound  started
+747.6260 	EXP 	Sound  reached end of file
+747.6261 	EXP 	Sound  started
+748.1260 	EXP 	Sound  reached end of file
+748.1260 	EXP 	Sound  started
+749.0256 	DATA 	Keypress: 1
+749.9472 	DATA 	Keypress: space
+749.9502 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 2 / 48', units='norm', win=Window(...), wrapWidth=1)
+752.4538 	EXP 	Sound  reached end of file
+752.4539 	EXP 	Sound  started
+752.9240 	EXP 	Sound  reached end of file
+752.9240 	EXP 	Sound  started
+753.4235 	EXP 	Sound  reached end of file
+753.4236 	EXP 	Sound  started
+756.4219 	EXP 	Sound  reached end of file
+756.4220 	EXP 	Sound  started
+756.9222 	EXP 	Sound  reached end of file
+756.9223 	EXP 	Sound  started
+757.4216 	EXP 	Sound  reached end of file
+757.4217 	EXP 	Sound  started
+758.1616 	DATA 	Keypress: 2
+759.0976 	DATA 	Keypress: space
+759.1010 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 3 / 48', units='norm', win=Window(...), wrapWidth=1)
+761.6038 	EXP 	Sound  reached end of file
+761.6038 	EXP 	Sound  started
+762.0866 	EXP 	Sound  reached end of file
+762.0866 	EXP 	Sound  started
+762.5861 	EXP 	Sound  reached end of file
+762.5861 	EXP 	Sound  started
+765.5851 	EXP 	Sound  reached end of file
+765.5852 	EXP 	Sound  started
+766.0854 	EXP 	Sound  reached end of file
+766.0854 	EXP 	Sound  started
+766.5851 	EXP 	Sound  reached end of file
+766.5852 	EXP 	Sound  started
+766.9849 	DATA 	Keypress: 1
+768.1454 	DATA 	Keypress: space
+768.1485 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 4 / 48', units='norm', win=Window(...), wrapWidth=1)
+770.6514 	EXP 	Sound  reached end of file
+770.6514 	EXP 	Sound  started
+771.1336 	EXP 	Sound  reached end of file
+771.1338 	EXP 	Sound  started
+771.6327 	EXP 	Sound  reached end of file
+771.6328 	EXP 	Sound  started
+774.6310 	EXP 	Sound  reached end of file
+774.6310 	EXP 	Sound  started
+775.1312 	EXP 	Sound  reached end of file
+775.1312 	EXP 	Sound  started
+775.6306 	EXP 	Sound  reached end of file
+775.6307 	EXP 	Sound  started
+776.1855 	DATA 	Keypress: 1
+776.8415 	DATA 	Keypress: space
+776.8446 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 5 / 48', units='norm', win=Window(...), wrapWidth=1)
+779.3479 	EXP 	Sound  reached end of file
+779.3480 	EXP 	Sound  started
+779.8291 	EXP 	Sound  reached end of file
+779.8292 	EXP 	Sound  started
+780.3290 	EXP 	Sound  reached end of file
+780.3290 	EXP 	Sound  started
+783.3267 	EXP 	Sound  reached end of file
+783.3268 	EXP 	Sound  started
+783.8267 	EXP 	Sound  reached end of file
+783.8268 	EXP 	Sound  started
+784.3269 	EXP 	Sound  reached end of file
+784.3270 	EXP 	Sound  started
+784.8415 	DATA 	Keypress: 1
+785.5774 	DATA 	Keypress: space
+785.5814 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 6 / 48', units='norm', win=Window(...), wrapWidth=1)
+788.0841 	EXP 	Sound  reached end of file
+788.0842 	EXP 	Sound  started
+788.5586 	EXP 	Sound  reached end of file
+788.5587 	EXP 	Sound  started
+789.0579 	EXP 	Sound  reached end of file
+789.0579 	EXP 	Sound  started
+792.0570 	EXP 	Sound  reached end of file
+792.0572 	EXP 	Sound  started
+792.5566 	EXP 	Sound  reached end of file
+792.5567 	EXP 	Sound  started
+793.0560 	EXP 	Sound  reached end of file
+793.0560 	EXP 	Sound  started
+793.5410 	DATA 	Keypress: 2
+794.4734 	DATA 	Keypress: space
+794.4772 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 7 / 48', units='norm', win=Window(...), wrapWidth=1)
+796.9825 	EXP 	Sound  reached end of file
+796.9826 	EXP 	Sound  started
+797.4543 	EXP 	Sound  reached end of file
+797.4543 	EXP 	Sound  started
+797.9541 	EXP 	Sound  reached end of file
+797.9542 	EXP 	Sound  started
+800.9539 	EXP 	Sound  reached end of file
+800.9541 	EXP 	Sound  started
+801.4529 	EXP 	Sound  reached end of file
+801.4531 	EXP 	Sound  started
+801.9520 	EXP 	Sound  reached end of file
+801.9521 	EXP 	Sound  started
+802.4196 	DATA 	Keypress: 1
+804.0894 	DATA 	Keypress: space
+804.0924 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 8 / 48', units='norm', win=Window(...), wrapWidth=1)
+806.5957 	EXP 	Sound  reached end of file
+806.5958 	EXP 	Sound  started
+807.0674 	EXP 	Sound  reached end of file
+807.0676 	EXP 	Sound  started
+807.5661 	EXP 	Sound  reached end of file
+807.5661 	EXP 	Sound  started
+810.5656 	EXP 	Sound  reached end of file
+810.5657 	EXP 	Sound  started
+811.0650 	EXP 	Sound  reached end of file
+811.0651 	EXP 	Sound  started
+811.5650 	EXP 	Sound  reached end of file
+811.5651 	EXP 	Sound  started
+812.2173 	DATA 	Keypress: 2
+813.2013 	DATA 	Keypress: space
+813.2042 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 9 / 48', units='norm', win=Window(...), wrapWidth=1)
+815.7070 	EXP 	Sound  reached end of file
+815.7070 	EXP 	Sound  started
+816.1794 	EXP 	Sound  reached end of file
+816.1794 	EXP 	Sound  started
+816.6796 	EXP 	Sound  reached end of file
+816.6796 	EXP 	Sound  started
+819.6786 	EXP 	Sound  reached end of file
+819.6787 	EXP 	Sound  started
+820.1775 	EXP 	Sound  reached end of file
+820.1776 	EXP 	Sound  started
+820.6785 	EXP 	Sound  reached end of file
+820.6785 	EXP 	Sound  started
+821.2013 	DATA 	Keypress: 1
+821.9457 	DATA 	Keypress: space
+821.9495 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 10 / 48', units='norm', win=Window(...), wrapWidth=1)
+824.4526 	EXP 	Sound  reached end of file
+824.4526 	EXP 	Sound  started
+824.9262 	EXP 	Sound  reached end of file
+824.9263 	EXP 	Sound  started
+825.4255 	EXP 	Sound  reached end of file
+825.4255 	EXP 	Sound  started
+828.4238 	EXP 	Sound  reached end of file
+828.4239 	EXP 	Sound  started
+828.9236 	EXP 	Sound  reached end of file
+828.9236 	EXP 	Sound  started
+829.4242 	EXP 	Sound  reached end of file
+829.4242 	EXP 	Sound  started
+829.8408 	DATA 	Keypress: 2
+830.5773 	DATA 	Keypress: space
+830.5821 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 11 / 48', units='norm', win=Window(...), wrapWidth=1)
+833.0861 	EXP 	Sound  reached end of file
+833.0862 	EXP 	Sound  started
+833.5721 	EXP 	Sound  reached end of file
+833.5722 	EXP 	Sound  started
+834.0716 	EXP 	Sound  reached end of file
+834.0717 	EXP 	Sound  started
+837.0702 	EXP 	Sound  reached end of file
+837.0703 	EXP 	Sound  started
+837.5700 	EXP 	Sound  reached end of file
+837.5701 	EXP 	Sound  started
+838.0709 	EXP 	Sound  reached end of file
+838.0710 	EXP 	Sound  started
+839.6253 	DATA 	Keypress: 2
+841.3293 	DATA 	Keypress: space
+841.3324 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 12 / 48', units='norm', win=Window(...), wrapWidth=1)
+843.8360 	EXP 	Sound  reached end of file
+843.8360 	EXP 	Sound  started
+844.3170 	EXP 	Sound  reached end of file
+844.3171 	EXP 	Sound  started
+844.8167 	EXP 	Sound  reached end of file
+844.8168 	EXP 	Sound  started
+847.8161 	EXP 	Sound  reached end of file
+847.8162 	EXP 	Sound  started
+848.3159 	EXP 	Sound  reached end of file
+848.3160 	EXP 	Sound  started
+848.8150 	EXP 	Sound  reached end of file
+848.8151 	EXP 	Sound  started
+849.2489 	DATA 	Keypress: 2
+850.1772 	DATA 	Keypress: space
+850.1801 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 13 / 48', units='norm', win=Window(...), wrapWidth=1)
+852.6828 	EXP 	Sound  reached end of file
+852.6828 	EXP 	Sound  started
+853.1632 	EXP 	Sound  reached end of file
+853.1633 	EXP 	Sound  started
+853.6631 	EXP 	Sound  reached end of file
+853.6631 	EXP 	Sound  started
+856.6624 	EXP 	Sound  reached end of file
+856.6624 	EXP 	Sound  started
+857.1615 	EXP 	Sound  reached end of file
+857.1616 	EXP 	Sound  started
+857.6618 	EXP 	Sound  reached end of file
+857.6618 	EXP 	Sound  started
+858.2973 	DATA 	Keypress: 1
+858.9774 	DATA 	Keypress: space
+858.9800 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 14 / 48', units='norm', win=Window(...), wrapWidth=1)
+861.4836 	EXP 	Sound  reached end of file
+861.4837 	EXP 	Sound  started
+861.9594 	EXP 	Sound  reached end of file
+861.9595 	EXP 	Sound  started
+862.4599 	EXP 	Sound  reached end of file
+862.4600 	EXP 	Sound  started
+865.4580 	EXP 	Sound  reached end of file
+865.4581 	EXP 	Sound  started
+865.9587 	EXP 	Sound  reached end of file
+865.9591 	EXP 	Sound  started
+866.4583 	EXP 	Sound  reached end of file
+866.4585 	EXP 	Sound  started
+866.9693 	DATA 	Keypress: 2
+867.4891 	DATA 	Keypress: space
+867.4922 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 15 / 48', units='norm', win=Window(...), wrapWidth=1)
+869.9955 	EXP 	Sound  reached end of file
+869.9955 	EXP 	Sound  started
+870.4729 	EXP 	Sound  reached end of file
+870.4730 	EXP 	Sound  started
+870.9721 	EXP 	Sound  reached end of file
+870.9721 	EXP 	Sound  started
+873.9711 	EXP 	Sound  reached end of file
+873.9712 	EXP 	Sound  started
+874.4715 	EXP 	Sound  reached end of file
+874.4716 	EXP 	Sound  started
+874.9703 	EXP 	Sound  reached end of file
+874.9704 	EXP 	Sound  started
+875.4970 	DATA 	Keypress: 1
+876.0810 	DATA 	Keypress: space
+876.0840 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 16 / 48', units='norm', win=Window(...), wrapWidth=1)
+878.5868 	EXP 	Sound  reached end of file
+878.5869 	EXP 	Sound  started
+879.0685 	EXP 	Sound  reached end of file
+879.0685 	EXP 	Sound  started
+879.5683 	EXP 	Sound  reached end of file
+879.5684 	EXP 	Sound  started
+882.5677 	EXP 	Sound  reached end of file
+882.5678 	EXP 	Sound  started
+883.0670 	EXP 	Sound  reached end of file
+883.0671 	EXP 	Sound  started
+883.5672 	EXP 	Sound  reached end of file
+883.5672 	EXP 	Sound  started
+884.0811 	DATA 	Keypress: 1
+884.6491 	DATA 	Keypress: space
+884.6523 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 17 / 48', units='norm', win=Window(...), wrapWidth=1)
+887.1563 	EXP 	Sound  reached end of file
+887.1563 	EXP 	Sound  started
+887.6326 	EXP 	Sound  reached end of file
+887.6327 	EXP 	Sound  started
+888.1311 	EXP 	Sound  reached end of file
+888.1312 	EXP 	Sound  started
+891.1298 	EXP 	Sound  reached end of file
+891.1299 	EXP 	Sound  started
+891.6295 	EXP 	Sound  reached end of file
+891.6296 	EXP 	Sound  started
+892.1302 	EXP 	Sound  reached end of file
+892.1303 	EXP 	Sound  started
+892.5670 	DATA 	Keypress: 2
+893.4251 	DATA 	Keypress: space
+893.4290 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 18 / 48', units='norm', win=Window(...), wrapWidth=1)
+895.9327 	EXP 	Sound  reached end of file
+895.9328 	EXP 	Sound  started
+896.4114 	EXP 	Sound  reached end of file
+896.4115 	EXP 	Sound  started
+896.9117 	EXP 	Sound  reached end of file
+896.9118 	EXP 	Sound  started
+899.9102 	EXP 	Sound  reached end of file
+899.9105 	EXP 	Sound  started
+900.4099 	EXP 	Sound  reached end of file
+900.4100 	EXP 	Sound  started
+900.9093 	EXP 	Sound  reached end of file
+900.9094 	EXP 	Sound  started
+901.7624 	DATA 	Keypress: 1
+904.1930 	DATA 	Keypress: space
+904.1957 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 19 / 48', units='norm', win=Window(...), wrapWidth=1)
+906.6984 	EXP 	Sound  reached end of file
+906.6985 	EXP 	Sound  started
+907.1745 	EXP 	Sound  reached end of file
+907.1748 	EXP 	Sound  started
+907.6728 	EXP 	Sound  reached end of file
+907.6728 	EXP 	Sound  started
+910.6720 	EXP 	Sound  reached end of file
+910.6720 	EXP 	Sound  started
+911.1717 	EXP 	Sound  reached end of file
+911.1718 	EXP 	Sound  started
+911.6710 	EXP 	Sound  reached end of file
+911.6710 	EXP 	Sound  started
+912.0753 	DATA 	Keypress: 2
+912.8171 	DATA 	Keypress: space
+912.8211 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 20 / 48', units='norm', win=Window(...), wrapWidth=1)
+915.3235 	EXP 	Sound  reached end of file
+915.3235 	EXP 	Sound  started
+915.8029 	EXP 	Sound  reached end of file
+915.8029 	EXP 	Sound  started
+916.3031 	EXP 	Sound  reached end of file
+916.3032 	EXP 	Sound  started
+919.3013 	EXP 	Sound  reached end of file
+919.3014 	EXP 	Sound  started
+919.8007 	EXP 	Sound  reached end of file
+919.8008 	EXP 	Sound  started
+920.3011 	EXP 	Sound  reached end of file
+920.3011 	EXP 	Sound  started
+920.7203 	DATA 	Keypress: 2
+921.3132 	DATA 	Keypress: space
+921.3164 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 21 / 48', units='norm', win=Window(...), wrapWidth=1)
+923.8193 	EXP 	Sound  reached end of file
+923.8193 	EXP 	Sound  started
+924.2994 	EXP 	Sound  reached end of file
+924.2995 	EXP 	Sound  started
+924.7991 	EXP 	Sound  reached end of file
+924.7992 	EXP 	Sound  started
+927.7980 	EXP 	Sound  reached end of file
+927.7981 	EXP 	Sound  started
+928.2982 	EXP 	Sound  reached end of file
+928.2983 	EXP 	Sound  started
+928.7979 	EXP 	Sound  reached end of file
+928.7980 	EXP 	Sound  started
+929.3448 	DATA 	Keypress: 1
+929.7769 	DATA 	Keypress: space
+929.7799 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 22 / 48', units='norm', win=Window(...), wrapWidth=1)
+932.2834 	EXP 	Sound  reached end of file
+932.2834 	EXP 	Sound  started
+932.7627 	EXP 	Sound  reached end of file
+932.7628 	EXP 	Sound  started
+933.2618 	EXP 	Sound  reached end of file
+933.2619 	EXP 	Sound  started
+936.2608 	EXP 	Sound  reached end of file
+936.2609 	EXP 	Sound  started
+936.7612 	EXP 	Sound  reached end of file
+936.7617 	EXP 	Sound  started
+937.2608 	EXP 	Sound  reached end of file
+937.2609 	EXP 	Sound  started
+937.7852 	DATA 	Keypress: 1
+938.5287 	DATA 	Keypress: space
+938.5316 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 23 / 48', units='norm', win=Window(...), wrapWidth=1)
+941.0354 	EXP 	Sound  reached end of file
+941.0355 	EXP 	Sound  started
+941.5081 	EXP 	Sound  reached end of file
+941.5082 	EXP 	Sound  started
+942.0082 	EXP 	Sound  reached end of file
+942.0083 	EXP 	Sound  started
+945.0069 	EXP 	Sound  reached end of file
+945.0070 	EXP 	Sound  started
+945.5063 	EXP 	Sound  reached end of file
+945.5064 	EXP 	Sound  started
+946.0065 	EXP 	Sound  reached end of file
+946.0066 	EXP 	Sound  started
+946.8007 	DATA 	Keypress: 1
+947.5448 	DATA 	Keypress: space
+947.5482 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 24 / 48', units='norm', win=Window(...), wrapWidth=1)
+950.0515 	EXP 	Sound  reached end of file
+950.0515 	EXP 	Sound  started
+950.5376 	EXP 	Sound  reached end of file
+950.5377 	EXP 	Sound  started
+951.0374 	EXP 	Sound  reached end of file
+951.0374 	EXP 	Sound  started
+954.0370 	EXP 	Sound  reached end of file
+954.0373 	EXP 	Sound  started
+954.5363 	EXP 	Sound  reached end of file
+954.5364 	EXP 	Sound  started
+955.0361 	EXP 	Sound  reached end of file
+955.0362 	EXP 	Sound  started
+955.4896 	DATA 	Keypress: 2
+956.5287 	DATA 	Keypress: space
+964.1447 	DATA 	Keypress: space
+964.1495 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 25 / 48', units='norm', win=Window(...), wrapWidth=1)
+966.6527 	EXP 	Sound  reached end of file
+966.6527 	EXP 	Sound  started
+967.1304 	EXP 	Sound  reached end of file
+967.1305 	EXP 	Sound  started
+967.6302 	EXP 	Sound  reached end of file
+967.6303 	EXP 	Sound  started
+970.6289 	EXP 	Sound  reached end of file
+970.6290 	EXP 	Sound  started
+971.1289 	EXP 	Sound  reached end of file
+971.1290 	EXP 	Sound  started
+971.6282 	EXP 	Sound  reached end of file
+971.6283 	EXP 	Sound  started
+971.9618 	DATA 	Keypress: 2
+972.9368 	DATA 	Keypress: space
+972.9409 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 26 / 48', units='norm', win=Window(...), wrapWidth=1)
+975.4449 	EXP 	Sound  reached end of file
+975.4449 	EXP 	Sound  started
+975.9269 	EXP 	Sound  reached end of file
+975.9270 	EXP 	Sound  started
+976.4267 	EXP 	Sound  reached end of file
+976.4270 	EXP 	Sound  started
+979.4252 	EXP 	Sound  reached end of file
+979.4253 	EXP 	Sound  started
+979.9248 	EXP 	Sound  reached end of file
+979.9248 	EXP 	Sound  started
+980.4253 	EXP 	Sound  reached end of file
+980.4253 	EXP 	Sound  started
+980.9085 	DATA 	Keypress: 1
+981.5287 	DATA 	Keypress: space
+981.5320 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 27 / 48', units='norm', win=Window(...), wrapWidth=1)
+984.0349 	EXP 	Sound  reached end of file
+984.0349 	EXP 	Sound  started
+984.5066 	EXP 	Sound  reached end of file
+984.5067 	EXP 	Sound  started
+985.0066 	EXP 	Sound  reached end of file
+985.0067 	EXP 	Sound  started
+988.0049 	EXP 	Sound  reached end of file
+988.0049 	EXP 	Sound  started
+988.5042 	EXP 	Sound  reached end of file
+988.5042 	EXP 	Sound  started
+989.0047 	EXP 	Sound  reached end of file
+989.0048 	EXP 	Sound  started
+989.7046 	DATA 	Keypress: 2
+990.3366 	DATA 	Keypress: space
+990.3396 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 28 / 48', units='norm', win=Window(...), wrapWidth=1)
+992.8423 	EXP 	Sound  reached end of file
+992.8423 	EXP 	Sound  started
+993.3196 	EXP 	Sound  reached end of file
+993.3196 	EXP 	Sound  started
+993.8186 	EXP 	Sound  reached end of file
+993.8186 	EXP 	Sound  started
+996.8175 	EXP 	Sound  reached end of file
+996.8176 	EXP 	Sound  started
+997.3176 	EXP 	Sound  reached end of file
+997.3177 	EXP 	Sound  started
+997.8168 	EXP 	Sound  reached end of file
+997.8168 	EXP 	Sound  started
+998.3607 	DATA 	Keypress: 1
+998.9606 	DATA 	Keypress: space
+998.9646 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 29 / 48', units='norm', win=Window(...), wrapWidth=1)
+1001.4688 	EXP 	Sound  reached end of file
+1001.4689 	EXP 	Sound  started
+1001.9484 	EXP 	Sound  reached end of file
+1001.9484 	EXP 	Sound  started
+1002.4487 	EXP 	Sound  reached end of file
+1002.4487 	EXP 	Sound  started
+1005.4477 	EXP 	Sound  reached end of file
+1005.4478 	EXP 	Sound  started
+1005.9472 	EXP 	Sound  reached end of file
+1005.9473 	EXP 	Sound  started
+1006.4463 	EXP 	Sound  reached end of file
+1006.4464 	EXP 	Sound  started
+1007.2005 	DATA 	Keypress: 1
+1007.7446 	DATA 	Keypress: space
+1007.7480 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 30 / 48', units='norm', win=Window(...), wrapWidth=1)
+1010.2530 	EXP 	Sound  reached end of file
+1010.2530 	EXP 	Sound  started
+1010.7278 	EXP 	Sound  reached end of file
+1010.7279 	EXP 	Sound  started
+1011.2283 	EXP 	Sound  reached end of file
+1011.2284 	EXP 	Sound  started
+1014.2269 	EXP 	Sound  reached end of file
+1014.2269 	EXP 	Sound  started
+1014.7267 	EXP 	Sound  reached end of file
+1014.7268 	EXP 	Sound  started
+1015.2265 	EXP 	Sound  reached end of file
+1015.2266 	EXP 	Sound  started
+1015.7846 	DATA 	Keypress: 2
+1016.3289 	DATA 	Keypress: space
+1016.3326 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 31 / 48', units='norm', win=Window(...), wrapWidth=1)
+1018.8349 	EXP 	Sound  reached end of file
+1018.8350 	EXP 	Sound  started
+1019.3085 	EXP 	Sound  reached end of file
+1019.3085 	EXP 	Sound  started
+1019.8072 	EXP 	Sound  reached end of file
+1019.8073 	EXP 	Sound  started
+1022.8061 	EXP 	Sound  reached end of file
+1022.8062 	EXP 	Sound  started
+1023.3060 	EXP 	Sound  reached end of file
+1023.3060 	EXP 	Sound  started
+1023.8053 	EXP 	Sound  reached end of file
+1023.8054 	EXP 	Sound  started
+1024.4484 	DATA 	Keypress: 2
+1025.0404 	DATA 	Keypress: space
+1025.0441 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 32 / 48', units='norm', win=Window(...), wrapWidth=1)
+1027.5466 	EXP 	Sound  reached end of file
+1027.5466 	EXP 	Sound  started
+1028.0206 	EXP 	Sound  reached end of file
+1028.0207 	EXP 	Sound  started
+1028.5202 	EXP 	Sound  reached end of file
+1028.5202 	EXP 	Sound  started
+1031.5191 	EXP 	Sound  reached end of file
+1031.5191 	EXP 	Sound  started
+1032.0187 	EXP 	Sound  reached end of file
+1032.0187 	EXP 	Sound  started
+1032.5191 	EXP 	Sound  reached end of file
+1032.5194 	EXP 	Sound  started
+1033.8327 	DATA 	Keypress: 2
+1035.2564 	DATA 	Keypress: space
+1035.2598 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 33 / 48', units='norm', win=Window(...), wrapWidth=1)
+1037.7642 	EXP 	Sound  reached end of file
+1037.7643 	EXP 	Sound  started
+1038.2495 	EXP 	Sound  reached end of file
+1038.2496 	EXP 	Sound  started
+1038.7497 	EXP 	Sound  reached end of file
+1038.7497 	EXP 	Sound  started
+1041.7482 	EXP 	Sound  reached end of file
+1041.7483 	EXP 	Sound  started
+1042.2484 	EXP 	Sound  reached end of file
+1042.2484 	EXP 	Sound  started
+1042.7476 	EXP 	Sound  reached end of file
+1042.7476 	EXP 	Sound  started
+1043.1822 	DATA 	Keypress: 2
+1043.7605 	DATA 	Keypress: space
+1043.7635 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 34 / 48', units='norm', win=Window(...), wrapWidth=1)
+1046.2659 	EXP 	Sound  reached end of file
+1046.2660 	EXP 	Sound  started
+1046.7464 	EXP 	Sound  reached end of file
+1046.7465 	EXP 	Sound  started
+1047.2458 	EXP 	Sound  reached end of file
+1047.2459 	EXP 	Sound  started
+1050.2444 	EXP 	Sound  reached end of file
+1050.2445 	EXP 	Sound  started
+1050.7442 	EXP 	Sound  reached end of file
+1050.7442 	EXP 	Sound  started
+1051.2440 	EXP 	Sound  reached end of file
+1051.2441 	EXP 	Sound  started
+1052.1930 	DATA 	Keypress: 2
+1052.9528 	DATA 	Keypress: space
+1052.9559 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 35 / 48', units='norm', win=Window(...), wrapWidth=1)
+1055.4589 	EXP 	Sound  reached end of file
+1055.4589 	EXP 	Sound  started
+1055.9415 	EXP 	Sound  reached end of file
+1055.9416 	EXP 	Sound  started
+1056.4417 	EXP 	Sound  reached end of file
+1056.4418 	EXP 	Sound  started
+1059.4407 	EXP 	Sound  reached end of file
+1059.4408 	EXP 	Sound  started
+1059.9395 	EXP 	Sound  reached end of file
+1059.9395 	EXP 	Sound  started
+1060.4395 	EXP 	Sound  reached end of file
+1060.4395 	EXP 	Sound  started
+1060.8245 	DATA 	Keypress: 1
+1061.4971 	DATA 	Keypress: space
+1061.5000 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 36 / 48', units='norm', win=Window(...), wrapWidth=1)
+1064.0039 	EXP 	Sound  reached end of file
+1064.0039 	EXP 	Sound  started
+1064.4882 	EXP 	Sound  reached end of file
+1064.4883 	EXP 	Sound  started
+1064.9880 	EXP 	Sound  reached end of file
+1064.9880 	EXP 	Sound  started
+1067.9870 	EXP 	Sound  reached end of file
+1067.9871 	EXP 	Sound  started
+1068.4860 	EXP 	Sound  reached end of file
+1068.4860 	EXP 	Sound  started
+1068.9863 	EXP 	Sound  reached end of file
+1068.9864 	EXP 	Sound  started
+1069.6083 	DATA 	Keypress: 1
+1070.2331 	DATA 	Keypress: space
+1070.2365 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 37 / 48', units='norm', win=Window(...), wrapWidth=1)
+1072.7418 	EXP 	Sound  reached end of file
+1072.7418 	EXP 	Sound  started
+1073.2179 	EXP 	Sound  reached end of file
+1073.2180 	EXP 	Sound  started
+1073.7182 	EXP 	Sound  reached end of file
+1073.7183 	EXP 	Sound  started
+1076.7162 	EXP 	Sound  reached end of file
+1076.7163 	EXP 	Sound  started
+1077.2164 	EXP 	Sound  reached end of file
+1077.2165 	EXP 	Sound  started
+1077.7165 	EXP 	Sound  reached end of file
+1077.7166 	EXP 	Sound  started
+1078.9844 	DATA 	Keypress: 2
+1079.5287 	DATA 	Keypress: space
+1079.5324 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 38 / 48', units='norm', win=Window(...), wrapWidth=1)
+1082.0358 	EXP 	Sound  reached end of file
+1082.0358 	EXP 	Sound  started
+1082.5131 	EXP 	Sound  reached end of file
+1082.5131 	EXP 	Sound  started
+1083.0135 	EXP 	Sound  reached end of file
+1083.0136 	EXP 	Sound  started
+1086.0119 	EXP 	Sound  reached end of file
+1086.0120 	EXP 	Sound  started
+1086.5115 	EXP 	Sound  reached end of file
+1086.5115 	EXP 	Sound  started
+1087.0119 	EXP 	Sound  reached end of file
+1087.0120 	EXP 	Sound  started
+1087.9281 	DATA 	Keypress: 2
+1088.3522 	DATA 	Keypress: space
+1088.3550 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 39 / 48', units='norm', win=Window(...), wrapWidth=1)
+1090.8577 	EXP 	Sound  reached end of file
+1090.8577 	EXP 	Sound  started
+1091.3428 	EXP 	Sound  reached end of file
+1091.3428 	EXP 	Sound  started
+1091.8436 	EXP 	Sound  reached end of file
+1091.8437 	EXP 	Sound  started
+1094.8413 	EXP 	Sound  reached end of file
+1094.8414 	EXP 	Sound  started
+1095.3414 	EXP 	Sound  reached end of file
+1095.3415 	EXP 	Sound  started
+1095.8416 	EXP 	Sound  reached end of file
+1095.8417 	EXP 	Sound  started
+1096.6162 	DATA 	Keypress: 1
+1097.3362 	DATA 	Keypress: space
+1097.3403 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 40 / 48', units='norm', win=Window(...), wrapWidth=1)
+1099.8441 	EXP 	Sound  reached end of file
+1099.8442 	EXP 	Sound  started
+1100.3223 	EXP 	Sound  reached end of file
+1100.3224 	EXP 	Sound  started
+1100.8228 	EXP 	Sound  reached end of file
+1100.8229 	EXP 	Sound  started
+1103.8213 	EXP 	Sound  reached end of file
+1103.8214 	EXP 	Sound  started
+1104.3217 	EXP 	Sound  reached end of file
+1104.3219 	EXP 	Sound  started
+1104.8207 	EXP 	Sound  reached end of file
+1104.8208 	EXP 	Sound  started
+1106.9601 	DATA 	Keypress: 1
+1108.1921 	DATA 	Keypress: space
+1108.1955 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 41 / 48', units='norm', win=Window(...), wrapWidth=1)
+1110.6989 	EXP 	Sound  reached end of file
+1110.6989 	EXP 	Sound  started
+1111.1848 	EXP 	Sound  reached end of file
+1111.1849 	EXP 	Sound  started
+1111.6851 	EXP 	Sound  reached end of file
+1111.6852 	EXP 	Sound  started
+1114.6827 	EXP 	Sound  reached end of file
+1114.6828 	EXP 	Sound  started
+1115.1828 	EXP 	Sound  reached end of file
+1115.1829 	EXP 	Sound  started
+1115.6825 	EXP 	Sound  reached end of file
+1115.6825 	EXP 	Sound  started
+1115.9000 	DATA 	Keypress: 2
+1117.3360 	DATA 	Keypress: space
+1117.3390 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 42 / 48', units='norm', win=Window(...), wrapWidth=1)
+1119.8426 	EXP 	Sound  reached end of file
+1119.8426 	EXP 	Sound  started
+1120.3141 	EXP 	Sound  reached end of file
+1120.3142 	EXP 	Sound  started
+1120.8132 	EXP 	Sound  reached end of file
+1120.8133 	EXP 	Sound  started
+1123.8124 	EXP 	Sound  reached end of file
+1123.8124 	EXP 	Sound  started
+1124.3124 	EXP 	Sound  reached end of file
+1124.3124 	EXP 	Sound  started
+1124.8114 	EXP 	Sound  reached end of file
+1124.8115 	EXP 	Sound  started
+1125.2455 	DATA 	Keypress: 2
+1126.7360 	DATA 	Keypress: space
+1126.7389 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 43 / 48', units='norm', win=Window(...), wrapWidth=1)
+1129.2411 	EXP 	Sound  reached end of file
+1129.2412 	EXP 	Sound  started
+1129.7261 	EXP 	Sound  reached end of file
+1129.7262 	EXP 	Sound  started
+1130.2266 	EXP 	Sound  reached end of file
+1130.2267 	EXP 	Sound  started
+1133.2253 	EXP 	Sound  reached end of file
+1133.2255 	EXP 	Sound  started
+1133.7251 	EXP 	Sound  reached end of file
+1133.7252 	EXP 	Sound  started
+1134.2248 	EXP 	Sound  reached end of file
+1134.2249 	EXP 	Sound  started
+1135.8240 	DATA 	Keypress: 1
+1136.3120 	DATA 	Keypress: space
+1136.3156 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 44 / 48', units='norm', win=Window(...), wrapWidth=1)
+1138.8187 	EXP 	Sound  reached end of file
+1138.8187 	EXP 	Sound  started
+1139.2889 	EXP 	Sound  reached end of file
+1139.2890 	EXP 	Sound  started
+1139.7888 	EXP 	Sound  reached end of file
+1139.7888 	EXP 	Sound  started
+1142.7868 	EXP 	Sound  reached end of file
+1142.7869 	EXP 	Sound  started
+1143.2873 	EXP 	Sound  reached end of file
+1143.2874 	EXP 	Sound  started
+1143.7867 	EXP 	Sound  reached end of file
+1143.7867 	EXP 	Sound  started
+1145.1039 	DATA 	Keypress: 2
+1145.7839 	DATA 	Keypress: space
+1145.7883 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 45 / 48', units='norm', win=Window(...), wrapWidth=1)
+1148.2935 	EXP 	Sound  reached end of file
+1148.2936 	EXP 	Sound  started
+1148.7682 	EXP 	Sound  reached end of file
+1148.7682 	EXP 	Sound  started
+1149.2673 	EXP 	Sound  reached end of file
+1149.2673 	EXP 	Sound  started
+1152.2668 	EXP 	Sound  reached end of file
+1152.2669 	EXP 	Sound  started
+1152.7659 	EXP 	Sound  reached end of file
+1152.7660 	EXP 	Sound  started
+1153.2656 	EXP 	Sound  reached end of file
+1153.2657 	EXP 	Sound  started
+1153.8078 	DATA 	Keypress: 2
+1154.2330 	DATA 	Keypress: space
+1154.2385 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 46 / 48', units='norm', win=Window(...), wrapWidth=1)
+1156.7412 	EXP 	Sound  reached end of file
+1156.7413 	EXP 	Sound  started
+1157.2140 	EXP 	Sound  reached end of file
+1157.2140 	EXP 	Sound  started
+1157.7145 	EXP 	Sound  reached end of file
+1157.7146 	EXP 	Sound  started
+1160.7133 	EXP 	Sound  reached end of file
+1160.7133 	EXP 	Sound  started
+1161.2122 	EXP 	Sound  reached end of file
+1161.2123 	EXP 	Sound  started
+1161.7126 	EXP 	Sound  reached end of file
+1161.7127 	EXP 	Sound  started
+1162.1134 	DATA 	Keypress: 1
+1162.6159 	DATA 	Keypress: space
+1162.6198 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 47 / 48', units='norm', win=Window(...), wrapWidth=1)
+1165.1224 	EXP 	Sound  reached end of file
+1165.1224 	EXP 	Sound  started
+1165.5942 	EXP 	Sound  reached end of file
+1165.5943 	EXP 	Sound  started
+1166.0939 	EXP 	Sound  reached end of file
+1166.0940 	EXP 	Sound  started
+1169.0927 	EXP 	Sound  reached end of file
+1169.0928 	EXP 	Sound  started
+1169.5931 	EXP 	Sound  reached end of file
+1169.5931 	EXP 	Sound  started
+1170.0927 	EXP 	Sound  reached end of file
+1170.0928 	EXP 	Sound  started
+1170.5769 	DATA 	Keypress: 2
+1171.1838 	DATA 	Keypress: space
+1171.1870 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Trial 48 / 48', units='norm', win=Window(...), wrapWidth=1)
+1173.6914 	EXP 	Sound  reached end of file
+1173.6915 	EXP 	Sound  started
+1174.1737 	EXP 	Sound  reached end of file
+1174.1738 	EXP 	Sound  started
+1174.6739 	EXP 	Sound  reached end of file
+1174.6740 	EXP 	Sound  started
+1177.6723 	EXP 	Sound  reached end of file
+1177.6724 	EXP 	Sound  started
+1178.1722 	EXP 	Sound  reached end of file
+1178.1722 	EXP 	Sound  started
+1178.6714 	EXP 	Sound  reached end of file
+1178.6714 	EXP 	Sound  started
+1179.2319 	DATA 	Keypress: 1
+1180.0718 	DATA 	Keypress: space
+1182.6881 	DATA 	Keypress: 4
+1185.9518 	DATA 	Keypress: space
